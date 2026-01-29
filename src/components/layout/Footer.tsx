@@ -1,0 +1,228 @@
+import { Link } from "react-router-dom";
+import { Linkedin, Facebook, Youtube, Instagram } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import workersSilhouette from "@/assets/workers-silhouette.png";
+
+const footerLinks = {
+  pages: [
+    { name: "Home", href: "/" },
+    { name: "About us", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Projects", href: "/projects" },
+    { name: "Albums", href: "/gallery" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Career", href: "/about" },
+    { name: "Reviews", href: "/reviews" },
+    { name: "Contact", href: "/contact" },
+  ],
+  services: [
+    { name: "Roof Installation", href: "/services" },
+    { name: "Roof Repair", href: "/services" },
+    { name: "Roof Replacement", href: "/services" },
+    { name: "Roof Inspections", href: "/services" },
+    { name: "Roof Coating", href: "/services" },
+    { name: "Commercial Roofing", href: "/services" },
+  ],
+  roofingTypes: [
+    { name: "Asphalt shingle", href: "/roofing-types" },
+    { name: "Clay Tile", href: "/roofing-types" },
+    { name: "Concrete Tile", href: "/roofing-types" },
+    { name: "Synthetic roofing", href: "/roofing-types" },
+    { name: "Metal Roofing", href: "/roofing-types" },
+    { name: "Architectural", href: "/roofing-types" },
+    { name: "Wood Shake", href: "/roofing-types" },
+    { name: "Solar roofing", href: "/roofing-types" },
+    { name: "Slate Roofing", href: "/roofing-types" },
+    { name: "Flat roofing", href: "/roofing-types" },
+  ],
+};
+
+const socialLinks = [
+  { name: "LINKEDIN", icon: Linkedin, href: "#" },
+  { name: "FACEBOOK", icon: Facebook, href: "#" },
+  { name: "TWITTER/X", icon: null, customIcon: "𝕏", href: "#" },
+  { name: "YOUTUBE", icon: Youtube, href: "#" },
+  { name: "INSTAGRAM", icon: Instagram, href: "#" },
+  { name: "PINTEREST", icon: null, customIcon: "P", href: "#" },
+];
+
+export default function Footer() {
+  return (
+    <footer>
+
+      {/* Worker Silhouettes - Light Background */}
+      <div className="relative bg-background overflow-hidden">
+        <img
+          src={workersSilhouette}
+          alt="Roofing workers silhouette"
+          className="w-full h-auto max-h-64 object-contain object-bottom"
+        />
+      </div>
+
+      {/* Main Footer - Dark Section */}
+      <div className="bg-foreground text-background">
+        <div className="container py-12">
+          {/* Links Grid + Newsletter */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-10 border-b border-background/20">
+            {/* Pages */}
+            <div>
+              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
+                Pages
+              </h4>
+              <ul className="space-y-2">
+                {footerLinks.pages.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-background/70 hover:text-background transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
+                Services
+              </h4>
+              <ul className="space-y-2">
+                {footerLinks.services.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-background/70 hover:text-background transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Roofing Types */}
+            <div>
+              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
+                Roofing Types
+              </h4>
+              <ul className="space-y-2">
+                {footerLinks.roofingTypes.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-background/70 hover:text-background transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Newsletter + Social - spans 2 cols */}
+            <div className="col-span-2">
+              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-background/50 mb-4">
+                Subscribe to the Newsletter
+              </h4>
+              <div className="flex gap-2 mb-6">
+                <Input
+                  type="email"
+                  placeholder="jane@framer.com"
+                  className="bg-background/10 border-background/20 text-background placeholder:text-background/50 h-12"
+                />
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90 uppercase font-bold text-xs px-6 h-12 shrink-0">
+                  Subscribe
+                </Button>
+              </div>
+
+              {/* Social Links - 3x2 Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    className="flex items-center justify-center gap-2 px-4 py-3 bg-background/10 hover:bg-background/20 transition-colors text-xs font-medium"
+                  >
+                    {social.icon ? (
+                      <social.icon className="h-4 w-4" />
+                    ) : (
+                      <span className="text-sm font-bold">{social.customIcon}</span>
+                    )}
+                    <span>{social.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Info Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8">
+            <div>
+              <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
+                Phone
+              </h5>
+              <p className="text-sm text-background/70">(217) 555-0134</p>
+              <p className="text-sm text-primary">(217) 444-0154</p>
+            </div>
+            <div>
+              <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
+                Email
+              </h5>
+              <p className="text-sm text-primary">rooferio@email.com</p>
+            </div>
+            <div>
+              <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
+                Address
+              </h5>
+              <p className="text-sm text-background/70">
+                123 Main Street, Suite 200, Austin, TX 78701
+              </p>
+            </div>
+            <div>
+              <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
+                Opening Hours
+              </h5>
+              <p className="text-sm text-background/70">Mon to Sat:</p>
+              <p className="text-sm text-background/70">9.00am - 8.30pm</p>
+              <p className="text-sm text-background/50 mt-1">Sun: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Giant Brand Name Watermark */}
+        <div className="overflow-hidden py-4">
+          <h2 
+            className="font-heading font-bold text-[15vw] leading-none tracking-tight text-center select-none uppercase"
+            style={{ 
+              color: "transparent",
+              WebkitTextStroke: "2px rgba(255,255,255,0.15)"
+            }}
+          >
+            ROOFERIO
+          </h2>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-background/10">
+          <div className="container py-4">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/40">
+              <div className="flex gap-6">
+                <Link to="/privacy" className="hover:text-background transition-colors">
+                  Privacy Policy
+                </Link>
+                <Link to="/terms" className="hover:text-background transition-colors">
+                  Terms
+                </Link>
+              </div>
+              <p>©Template by RealMehedi</p>
+              <p>Built in Framer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
