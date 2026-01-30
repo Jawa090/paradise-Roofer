@@ -6,27 +6,27 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "HOME", href: "/" },
+  { name: "ABOUT", href: "/about" },
   {
-    name: "Services",
+    name: "SERVICES",
     href: "/services",
     children: [
-      { name: "Free Roof Drone Inspection", href: "/services/inspection" },
-      { name: "Roof Repair", href: "/services/repair" },
-      { name: "Roof Replacement", href: "/services/replacement" },
-      { name: "Fascia Repair & Replacement", href: "/services/fascia" },
-      { name: "Gutters Repair & Replacement", href: "/services/gutters" },
-      { name: "Soffit Repair & Replacement", href: "/services/soffit" },
-      { name: "Attic Insulation", href: "/services/attic-insulation" },
-      { name: "All Interior Renos", href: "/services/interior-renos" },
-      { name: "Roof Installation", href: "/services/installation" },
-      { name: "Residential Roofing", href: "/services/residential" },
-      { name: "Commercial Roofing", href: "/services/commercial" },
-      { name: "Roof Coating & Restoration", href: "/services/coating" },
+      { name: "FREE ROOF DRONE INSPECTION", href: "/services/inspection" },
+      { name: "ROOF REPAIR", href: "/services/repair" },
+      { name: "ROOF REPLACEMENT", href: "/services/replacement" },
+      { name: "FASCIA REPAIR & REPLACEMENT", href: "/services/fascia" },
+      { name: "GUTTERS REPAIR & REPLACEMENT", href: "/services/gutters" },
+      { name: "SOFFIT REPAIR & REPLACEMENT", href: "/services/soffit" },
+      { name: "ATTIC INSULATION", href: "/services/attic-insulation" },
+      { name: "ALL INTERIOR RENOS", href: "/services/interior-renos" },
+      { name: "ROOF INSTALLATION", href: "/services/installation" },
+      { name: "RESIDENTIAL ROOFING", href: "/services/residential" },
+      { name: "COMMERCIAL ROOFING", href: "/services/commercial" },
+      { name: "ROOF COATING & RESTORATION", href: "/services/coating" },
     ],
   },
-  { name: "Contact", href: "/contact" },
+  { name: "CONTACT", href: "/contact" },
 ];
 
 export default function Header() {
@@ -40,7 +40,7 @@ export default function Header() {
       <nav className="container flex items-center justify-between py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Paradise Roofer" className="h-12 w-auto object-contain" />
+          <img src={logo} alt="Paradise Roofer" className="h-16 w-auto object-contain" />
         </Link>
 
 
@@ -52,7 +52,7 @@ export default function Header() {
               <div key={item.name} className="relative group">
                 <Link
                   to={item.href}
-                  className={`flex items-center gap-1 text-xs font-medium uppercase tracking-wide transition-colors ${isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-foreground"
+                  className={`flex items-center gap-1 text-sm font-bold uppercase tracking-wide transition-colors ${isActive(item.href) ? "text-primary" : "text-foreground hover:text-foreground"
                     }`}
                 >
                   {item.name}
@@ -65,7 +65,7 @@ export default function Header() {
                       <Link
                         key={child.name}
                         to={child.href}
-                        className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-muted transition-colors rounded-sm"
+                        className="block px-4 py-2 text-sm font-bold text-foreground hover:text-foreground hover:bg-muted transition-colors rounded-sm uppercase tracking-wide"
                       >
                         {child.name}
                       </Link>
@@ -77,9 +77,9 @@ export default function Header() {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium uppercase tracking-wide transition-colors ${isActive(item.href)
+                className={`text-sm font-bold uppercase tracking-wide transition-colors ${isActive(item.href)
                   ? "text-primary"
-                  : "text-foreground/80 hover:text-foreground"
+                  : "text-foreground hover:text-foreground"
                   }`}
               >
                 {item.name}
@@ -91,9 +91,9 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
           <Link to="/contact">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 uppercase text-xs font-semibold tracking-wide px-4 py-2 h-auto group">
-              Free Quote
-              <ArrowRight className="h-3 w-3 ml-1 group-hover:translate-x-1 transition-transform" />
+            <Button className="bg-black text-white hover:bg-black/90 uppercase text-sm font-bold tracking-wide px-6 py-2 h-auto group">
+              FREE QUOTE
+              <ChevronDown className="h-4 w-4 ml-1 -rotate-90" />
             </Button>
           </Link>
         </div>

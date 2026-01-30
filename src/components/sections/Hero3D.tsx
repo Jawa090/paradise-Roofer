@@ -53,7 +53,7 @@ export default function Hero3D() {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  return <section ref={containerRef} className="relative bg-[#141414] text-background flex flex-col overflow-hidden" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} style={{
+  return <section ref={containerRef} className="relative bg-[#141414] text-background flex flex-col overflow-hidden pt-20" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} style={{
     perspective: "1500px"
   }}>
     {/* Section 1: Top Badge Row */}
