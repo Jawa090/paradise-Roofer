@@ -3,23 +3,23 @@ import { Shield, Award, Package, DollarSign } from "lucide-react";
 const reasons = [
   {
     icon: Shield,
-    title: "No Worries, No What-Ifs.",
-    description: "We're fully insured so your home — and your peace of mind — are always protected."
+    title: "Fully Insured & Licensed Protection",
+    description: "No risks, no surprises. We're fully insured and licensed to protect your home and give you total peace of mind."
   },
   {
     icon: Award,
-    title: "Certified, Verified, And Trusted.",
-    description: "We're officially recognized pros who play by the rules (and raise the bar)."
+    title: "Certified Roofing Experts",
+    description: "Verified experts with 20+ years experience. We exceed industry standards for quality roof installation, repair, and replacement."
   },
   {
     icon: Package,
-    title: "Only The Good Stuff Up Top.",
-    description: "We use top-tier materials that hold strong through storms, sun, and squirrel attacks."
+    title: "Premium Roofing Materials",
+    description: "Top-grade shingles, metal roofing, tile, and flat roof systems that withstand storms, hail, and harsh weather."
   },
   {
     icon: DollarSign,
-    title: "Fair Prices, No Funny Business.",
-    description: "We keep things affordable without cutting corners — great roofs at great value."
+    title: "Affordable Pricing",
+    description: "Honest, affordable rates for roof repair, replacement, gutters, inspections, and all services have no hidden fees, just great value."
   },
 ];
 
@@ -29,13 +29,13 @@ export default function WhyChooseUs() {
       <div className="container">
         <div className="max-w-3xl mx-auto bg-background p-8 md:p-12">
           <div className="text-center mb-10">
-            <span className="section-label mb-4 inline-block">🔨 Why Choose Rooferio 🔨</span>
-            <h2 className="headline-lg text-2xl md:text-3xl lg:text-4xl">
-              Because Your Roof
+            <span className="section-label mb-4 inline-block">Why Choose Paradise Roofers?</span>
+            <h2 className="headline-lg text-2xl md:text-3xl lg:text-4xl font-bold">
+              Because Canadian roofs  
               <br />
-              Deserves Better
+              deserve roofing experts
               <br />
-              Than 'Good Enough'
+              you can trust
             </h2>
           </div>
 

@@ -159,86 +159,87 @@ export default function CurvedCarousel() {
     };
   };
   return <section className="bg-secondary overflow-hidden" data-framer-name="Section - Portfolio">
-      {/* Heading And Buttons */}
-      <div className="container py-12" data-framer-name="Heading And Buttons">
-        {/* Section Header - Dark Text Middle Aligned */}
-        <div className="flex flex-col items-center mb-8">
-          {/* Label with orange lines */}
-          <div className="flex items-center gap-4 mb-6">
-            <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
-            <p className="text-sm font-semibold uppercase tracking-wider">Our Portfolio</p>
-            <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
-          </div>
-          {/* Centered H2 */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-            A Look at What We've Nailed
-          </h2>
+    {/* Heading And Buttons */}
+    <div className="container py-12" data-framer-name="Heading And Buttons">
+      {/* Section Header - Dark Text Middle Aligned */}
+      <div className="flex flex-col items-center mb-8">
+        {/* Label with orange lines */}
+        <div className="flex items-center gap-4 mb-6">
+          <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+          <p className="text-sm font-semibold uppercase tracking-wider">Our Recent Roofing Projects
+          </p>
+          <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
         </div>
-
-        {/* Buttons Wrapper */}
-        <div className="flex justify-center gap-4" data-framer-name="Buttons Wrapper">
-          <Link to="/projects">
-            <button 
-              className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
-              style={{ backgroundColor: 'rgb(20, 20, 20)', color: 'rgb(255, 255, 255)' }}
-            >
-              <span>View Projects</span>
-              <div className="flex items-center -space-x-2">
-                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
-                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
-                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
-              </div>
-            </button>
-          </Link>
-          <Link to="/gallery">
-            <button 
-              className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
-              style={{ backgroundColor: 'rgb(20, 20, 20)', color: 'rgb(255, 255, 255)' }}
-            >
-              <span>View Gallery</span>
-              <div className="flex items-center -space-x-2">
-                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
-                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
-                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
-              </div>
-            </button>
-          </Link>
-        </div>
+        {/* Centered H2 */}
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+          A Look at What We've Nailed
+        </h2>
       </div>
 
-      {/* Curved Carousel */}
-      <div ref={containerRef} className={`relative h-[350px] md:h-[400px] ${isDragging ? "cursor-grabbing" : "cursor-grab"}`} style={{
+      {/* Buttons Wrapper */}
+      <div className="flex justify-center gap-4" data-framer-name="Buttons Wrapper">
+        <Link to="/projects">
+          <button
+            className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
+            style={{ backgroundColor: 'rgb(20, 20, 20)', color: 'rgb(255, 255, 255)' }}
+          >
+            <span>View Projects</span>
+            <div className="flex items-center -space-x-2">
+              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
+              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
+              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
+            </div>
+          </button>
+        </Link>
+        <Link to="/gallery">
+          <button
+            className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
+            style={{ backgroundColor: 'rgb(20, 20, 20)', color: 'rgb(255, 255, 255)' }}
+          >
+            <span>View Gallery</span>
+            <div className="flex items-center -space-x-2">
+              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
+              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
+              <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
+            </div>
+          </button>
+        </Link>
+      </div>
+    </div>
+
+    {/* Curved Carousel */}
+    <div ref={containerRef} className={`relative h-[350px] md:h-[400px] ${isDragging ? "cursor-grabbing" : "cursor-grab"}`} style={{
       perspective: "1000px"
     }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleMouseUp}>
-        {/* Cards Container */}
-        <div className="absolute inset-0 flex items-center justify-center" style={{
+      {/* Cards Container */}
+      <div className="absolute inset-0 flex items-center justify-center" style={{
         transformStyle: "preserve-3d"
       }}>
-          {projects.map((project, i) => {
+        {projects.map((project, i) => {
           const style = getCardStyle(i);
           return <div key={project.id} className="absolute w-[150px] md:w-[180px] h-[200px] md:h-[260px] overflow-hidden shadow-xl" style={{
             ...style,
             transition: isDragging ? "none" : "transform 0.15s ease-out, filter 0.15s ease-out",
             transformStyle: "preserve-3d"
           }}>
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover" draggable={false} />
-              </div>;
+            <img src={project.image} alt={project.title} className="w-full h-full object-cover" draggable={false} />
+          </div>;
         })}
-        </div>
-
-        {/* Drag Indicator */}
-        <div className="absolute bottom-4 right-8 md:right-16 flex items-center gap-2 bg-foreground/80 text-background px-4 py-2 text-xs font-bold uppercase">
-          <GripHorizontal className="h-4 w-4" />
-          <span>Drag</span>
-        </div>
       </div>
 
-      {/* Edge Blur Overlays */}
-      <div className="pointer-events-none absolute left-0 w-24 md:w-48 h-[400px] bg-gradient-to-r from-secondary via-secondary/80 to-transparent" style={{
+      {/* Drag Indicator */}
+      <div className="absolute bottom-4 right-8 md:right-16 flex items-center gap-2 bg-foreground/80 text-background px-4 py-2 text-xs font-bold uppercase">
+        <GripHorizontal className="h-4 w-4" />
+        <span>Drag</span>
+      </div>
+    </div>
+
+    {/* Edge Blur Overlays */}
+    <div className="pointer-events-none absolute left-0 w-24 md:w-48 h-[400px] bg-gradient-to-r from-secondary via-secondary/80 to-transparent" style={{
       marginTop: "-400px"
     }} />
-      <div className="pointer-events-none absolute right-0 w-24 md:w-48 h-[400px] bg-gradient-to-l from-secondary via-secondary/80 to-transparent" style={{
+    <div className="pointer-events-none absolute right-0 w-24 md:w-48 h-[400px] bg-gradient-to-l from-secondary via-secondary/80 to-transparent" style={{
       marginTop: "-400px"
     }} />
-    </section>;
+  </section>;
 }

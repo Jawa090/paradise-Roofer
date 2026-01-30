@@ -52,7 +52,7 @@ const blogPosts = [
     date: "Jun 22, 2025",
   },
   {
-    title: "We Won! Rooferio Named Best Roofing Company of 2025",
+    title: "We Won! Paradise Roofers Named Best Roofing Company of 2025",
     excerpt: "Thank you to our amazing customers and hardworking team.",
     image: completedRoof,
     category: "News",
@@ -110,11 +110,10 @@ export default function Blogs() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 text-sm font-medium uppercase tracking-wide transition-colors ${
-                  activeCategory === category
+                className={`px-4 py-2 text-sm font-medium uppercase tracking-wide transition-colors ${activeCategory === category
                     ? "bg-foreground text-background"
                     : "bg-muted hover:bg-muted/80"
-                }`}
+                  }`}
               >
                 {category}
               </button>

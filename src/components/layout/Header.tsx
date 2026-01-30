@@ -2,32 +2,30 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
+import logo from "@/assets/logo.png";
 
 const navigation = [
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   {
     name: "Services",
     href: "/services",
     children: [
-      { name: "Roof Installation", href: "/services/installation" },
+      { name: "Free Roof Drone Inspection", href: "/services/inspection" },
       { name: "Roof Repair", href: "/services/repair" },
       { name: "Roof Replacement", href: "/services/replacement" },
-      { name: "Roof Inspections", href: "/services/inspections" },
-      { name: "Roof Coating", href: "/services/coating" },
+      { name: "Fascia Repair & Replacement", href: "/services/fascia" },
+      { name: "Gutters Repair & Replacement", href: "/services/gutters" },
+      { name: "Soffit Repair & Replacement", href: "/services/soffit" },
+      { name: "Attic Insulation", href: "/services/attic-insulation" },
+      { name: "All Interior Renos", href: "/services/interior-renos" },
+      { name: "Roof Installation", href: "/services/installation" },
+      { name: "Residential Roofing", href: "/services/residential" },
       { name: "Commercial Roofing", href: "/services/commercial" },
+      { name: "Roof Coating & Restoration", href: "/services/coating" },
     ],
   },
-  { name: "Projects", href: "/projects" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Reviews", href: "/reviews" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Types", href: "/roofing-types" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -42,42 +40,47 @@ export default function Header() {
       <nav className="container flex items-center justify-between py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <span className="font-heading text-2xl font-bold italic text-foreground tracking-tight">
-            para<span className="text-primary">d</span>ise
-          </span>
+          <img src={logo} alt="Paradise Roofer" className="h-12 w-auto object-contain" />
         </Link>
+
+
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-6">
           {navigation.map((item) =>
             item.children ? (
-              <DropdownMenu key={item.name}>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-xs font-medium text-foreground/80 hover:text-foreground transition-colors uppercase tracking-wide">
+              <div key={item.name} className="relative group">
+                <Link
+                  to={item.href}
+                  className={`flex items-center gap-1 text-xs font-medium uppercase tracking-wide transition-colors ${isActive(item.href) ? "text-primary" : "text-foreground/80 hover:text-foreground"
+                    }`}
+                >
                   {item.name}
-                  <ChevronDown className="h-3 w-3" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-background border-border">
-                  {item.children.map((child) => (
-                    <DropdownMenuItem key={child.name} asChild>
+                  <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
+                </Link>
+
+                <div className="absolute left-0 top-full pt-2 hidden group-hover:block min-w-[600px] z-50">
+                  <div className="bg-background border border-border shadow-lg rounded-md overflow-hidden p-4 grid grid-cols-2 gap-2">
+                    {item.children.map((child) => (
                       <Link
+                        key={child.name}
                         to={child.href}
-                        className="text-foreground/80 hover:text-foreground"
+                        className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-muted transition-colors rounded-sm"
                       >
                         {child.name}
                       </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
+                    ))}
+                  </div>
+                </div>
+              </div>
             ) : (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-xs font-medium uppercase tracking-wide transition-colors ${
-                  isActive(item.href)
-                    ? "text-primary"
-                    : "text-foreground/80 hover:text-foreground"
-                }`}
+                className={`text-xs font-medium uppercase tracking-wide transition-colors ${isActive(item.href)
+                  ? "text-primary"
+                  : "text-foreground/80 hover:text-foreground"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -134,11 +137,10 @@ export default function Header() {
                 ) : (
                   <Link
                     to={item.href}
-                    className={`block text-sm font-medium uppercase tracking-wide py-2 ${
-                      isActive(item.href)
-                        ? "text-primary"
-                        : "text-foreground/80 hover:text-foreground"
-                    }`}
+                    className={`block text-sm font-medium uppercase tracking-wide py-2 ${isActive(item.href)
+                      ? "text-primary"
+                      : "text-foreground/80 hover:text-foreground"
+                      }`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}

@@ -5,12 +5,8 @@ import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import Hero3D from "@/components/sections/Hero3D";
-import CurvedCarousel from "@/components/sections/CurvedCarousel";
 import SplitRevealSection from "@/components/sections/SplitRevealSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import BlogPreview from "@/components/sections/BlogPreview";
-import RoofingTypesPreview from "@/components/sections/RoofingTypesPreview";
-import ReviewsPreview from "@/components/sections/ReviewsPreview";
 import HowWeWork from "@/components/sections/HowWeWork";
 import roofInspection from "@/assets/roof-inspection.jpg";
 import roofInstallation from "@/assets/roof-installation.jpg";
@@ -21,74 +17,89 @@ import metalRoof from "@/assets/metal-roof.jpg";
 const services = [
   {
     title: "Roof Installation",
-    description: "Quality roof installation built to protect your home",
+    description: "New roofs built right: shingle, metal, tile, flat, or asphalt for homes and commercial properties.",
     image: roofInstallation,
-    href: "/services",
-  },
-  {
-    title: "Roof Repair",
-    description: "Fast roof repairs to stop leaks and prevent damage",
-    image: roofInspection,
-    href: "/services",
+    href: "/services/installation",
   },
   {
     title: "Roof Replacement",
-    description: "Out with the old—upgrade to a weather-ready roof",
+    description: "Remove old roofs, install durable upgrades. Residential and commercial specialists.",
     image: completedRoof,
-    href: "/services",
+    href: "/services/replacement",
   },
+  {
+    title: "Roof Repair",
+    description: "Fix leaks, shingles, damage fast. Includes leak detection, wind/hail, storm repair.",
+    image: roofInspection,
+    href: "/services/repair",
+  },
+
   {
     title: "Roof Inspections",
-    description: "Spot problems early, fix them fast, and keep your roof happy.",
+    description: "Spot issues early with detailed checks.",
     image: roofInspection,
-    href: "/services",
+    href: "/services/inspection",
   },
   {
-    title: "Roof Coating",
-    description: "It's like sunscreen... but for your roof.",
+    title: "Emergency Roof Repair",
+    description: "24/7 emergency roof repair. Fast response for leaks, storm damage, urgent issues.",
     image: roofCoating,
-    href: "/services",
+    href: "/services/repair",
   },
   {
-    title: "Commercial Roofing",
-    description: "From the ground up to the top of the build—we've got you covered.",
+    title: "Gutter Services",
+    description: "Installation, repair, cleaning to prevent water damage.",
     image: metalRoof,
-    href: "/services",
+    href: "/services/gutters",
+  },
+  {
+    title: "Skylight & Ventilation",
+    description: "Install/repair skylights, attic ventilation, insulation for energy savings.",
+    image: metalRoof,
+    href: "/services/attic-insulation",
   },
 ];
 
 const faqs = [
   {
-    question: "How do I know if my roof needs replacing?",
-    answer: "If your roof is over 20 years old, you see missing shingles, or you're collecting buckets during rainstorms — it's probably time. We can confirm with a free inspection.",
+    question: "How much does roof repair cost in Canada?",
+    answer: "Roof repair costs $500–$5,000 depending on damage size, materials, and location. Minor shingle fixes start at $300; full leak repair averages $2,000. Free quotes available.",
   },
   {
-    question: "Do you offer free estimates?",
-    answer: "Yes! We provide free, no-obligation estimates for all roofing projects. Just give us a call or fill out our contact form.",
+    question: "How long does a new roof last in Canada?",
+    answer: "Asphalt shingles last 15-30 years; metal roofing 40-70 years; tile 50+ years. Canadian winters shorten lifespan without proper maintenance.",
   },
   {
-    question: "How long does a roof replacement take?",
-    answer: "Most residential roof replacements take 1-3 days depending on size and complexity. We'll give you an accurate timeline during your free estimate.",
+    question: "What is emergency roof repair?",
+    answer: "24/7 service for storm damage, leaks, or fallen branches. Includes tarping to prevent interior damage. Response within hours across Canada.",
   },
   {
-    question: "What roofing materials do you offer?",
-    answer: "We install asphalt shingles, metal roofing, clay tiles, slate, wood shake, and flat roofing systems. We'll help you choose the best option for your home.",
+    question: "Do you offer free roof inspections in Canada?",
+    answer: "Yes, free on-site inspections for homes and businesses. We check shingles, leaks, ventilation, and gutters using drone tech.",
   },
   {
-    question: "Are your roofers licensed and insured?",
-    answer: "Absolutely. We're fully licensed, bonded, and insured. We carry comprehensive liability and workers' compensation coverage for your protection.",
+    question: "How much does roof replacement cost per square?",
+    answer: "$400-$800/square (100 sq ft) installed. Asphalt shingles cheapest; metal/tile higher. Factors: pitch, access, materials.",
   },
   {
-    question: "Do you offer warranties?",
-    answer: "Yes, we offer comprehensive warranties on both materials and workmanship. The specific terms depend on the roofing system you choose.",
+    question: "When should I replace my roof?",
+    answer: "Metal roofing for snow/ice; asphalt shingles with ice shield; TPO flat roofs for commercial use. All impact-resistant.",
   },
   {
-    question: "Can you help with insurance claims?",
-    answer: "We can assist with documentation and work directly with your insurance company to help streamline the claims process.",
+    question: "What roofing materials work best for Canadian weather?",
+    answer: "Metal roofing for snow/ice; asphalt shingles with ice shield; TPO flat roofs for commercial use. All impact-resistant.",
   },
   {
-    question: "Do you do emergency repairs?",
-    answer: "Yes — we're available 24/7 for emergency roof repairs. Call our emergency line anytime and we'll have someone out as soon as possible.",
+    question: "Do you handle insurance claims for storm damage?",
+    answer: "Yes, we assist with hail, wind, storm claims. Full documentation and direct insurer coordination in Canada.",
+  },
+  {
+    question: "How long does roof installation take?",
+    answer: "Asphalt shingle roof: 1-3 days for average home. Commercial or steep roofs: 3-7 days. Weather permitting.",
+  },
+  {
+    question: "What warranty do you offer on roofing services?",
+    answer: "10-50 year material warranties; 5-10 year workmanship. Full coverage on installations, repairs, gutters.",
   },
 ];
 
@@ -108,12 +119,13 @@ export default function Index() {
             {/* Label with orange lines */}
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
-              <p className="text-sm font-semibold uppercase tracking-wider">Our services</p>
+              <p className="text-sm font-semibold uppercase tracking-wider">Our Roofing Services
+              </p>
               <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
             </div>
             {/* Centered H2 */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              heights, leaving you safe and worry-free.
+              Heights, Leaving You Safe and Worry-Free.
             </h2>
           </div>
 
@@ -129,13 +141,13 @@ export default function Index() {
               >
                 <div className="p-6 pb-4">
                   <div className="mb-4">
-                    <h3 
+                    <h3
                       className="font-bold text-lg mb-2"
                       style={{ color: 'rgb(33, 32, 27)' }}
                     >
                       {service.title}
                     </h3>
-                    <p 
+                    <p
                       className="text-sm"
                       style={{ color: 'rgb(33, 32, 27)' }}
                     >
@@ -143,10 +155,10 @@ export default function Index() {
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Image Container with Hover Effect */}
                 <div className="relative h-40 overflow-hidden">
-                  <div 
+                  <div
                     className="absolute inset-0 transition-all duration-300 group-hover:scale-110"
                     style={{ transform: 'translate(-50%, -50%)', top: '50%', left: '50%', width: '200%', height: '200%' }}
                   >
@@ -156,9 +168,9 @@ export default function Index() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  
+
                   {/* Hover Overlay with View Button */}
-                  <div 
+                  <div
                     className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ backdropFilter: 'blur(5px)', backgroundColor: 'rgb(255, 148, 54)' }}
                   >
@@ -179,7 +191,7 @@ export default function Index() {
           {/* View All Services Button */}
           <div className="flex justify-center mt-10">
             <Link to="/services">
-              <button 
+              <button
                 className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
                 style={{ backgroundColor: 'rgb(20, 20, 20)', color: 'rgb(255, 255, 255)' }}
               >
@@ -195,8 +207,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* 360° Curved Draggable Portfolio */}
-      <CurvedCarousel />
+
 
       {/* Why Choose Us */}
       <WhyChooseUs />
@@ -206,15 +217,6 @@ export default function Index() {
 
       {/* How We Work */}
       <HowWeWork />
-
-      {/* Reviews Preview */}
-      <ReviewsPreview />
-
-      {/* Roofing Types Preview */}
-      <RoofingTypesPreview />
-
-      {/* Blog Preview */}
-      <BlogPreview />
 
       {/* FAQ Section */}
       <section className="py-20 bg-background">
@@ -232,17 +234,15 @@ export default function Index() {
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-border">
                 <button
-                  className={`w-full flex items-center justify-between p-6 text-left transition-colors ${
-                    openFaq === i ? "bg-foreground text-background" : "hover:bg-muted"
-                  }`}
+                  className={`w-full flex items-center justify-between p-6 text-left transition-colors ${openFaq === i ? "bg-foreground text-background" : "hover:bg-muted"
+                    }`}
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 >
                   <span className="font-heading font-bold text-sm uppercase tracking-wide pr-4">
                     {faq.question}
                   </span>
-                  <div className={`w-10 h-10 flex items-center justify-center shrink-0 ${
-                    openFaq === i ? "bg-primary" : "bg-muted"
-                  }`}>
+                  <div className={`w-10 h-10 flex items-center justify-center shrink-0 ${openFaq === i ? "bg-primary" : "bg-muted"
+                    }`}>
                     {openFaq === i ? (
                       <ChevronUp className="h-5 w-5" />
                     ) : (

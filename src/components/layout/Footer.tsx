@@ -9,32 +9,17 @@ const footerLinks = {
     { name: "Home", href: "/" },
     { name: "About us", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Projects", href: "/projects" },
-    { name: "Albums", href: "/gallery" },
-    { name: "Blogs", href: "/blogs" },
-    { name: "Career", href: "/about" },
-    { name: "Reviews", href: "/reviews" },
     { name: "Contact", href: "/contact" },
   ],
   services: [
-    { name: "Roof Installation", href: "/services" },
-    { name: "Roof Repair", href: "/services" },
-    { name: "Roof Replacement", href: "/services" },
-    { name: "Roof Inspections", href: "/services" },
-    { name: "Roof Coating", href: "/services" },
-    { name: "Commercial Roofing", href: "/services" },
-  ],
-  roofingTypes: [
-    { name: "Asphalt shingle", href: "/roofing-types" },
-    { name: "Clay Tile", href: "/roofing-types" },
-    { name: "Concrete Tile", href: "/roofing-types" },
-    { name: "Synthetic roofing", href: "/roofing-types" },
-    { name: "Metal Roofing", href: "/roofing-types" },
-    { name: "Architectural", href: "/roofing-types" },
-    { name: "Wood Shake", href: "/roofing-types" },
-    { name: "Solar roofing", href: "/roofing-types" },
-    { name: "Slate Roofing", href: "/roofing-types" },
-    { name: "Flat roofing", href: "/roofing-types" },
+    { name: "Roof Installation", href: "/services/installation" },
+    { name: "Roof Repair", href: "/services/repair" },
+    { name: "Roof Replacement", href: "/services/replacement" },
+    { name: "Roof Inspections", href: "/services/inspection" },
+    { name: "Roof Coating", href: "/services/coating" },
+    { name: "Commercial Roofing", href: "/services/commercial" },
+    { name: "Gutters & Eavestrough", href: "/services/gutters" },
+    { name: "Attic Insulation", href: "/services/attic-insulation" },
   ],
 };
 
@@ -64,7 +49,7 @@ export default function Footer() {
       <div className="bg-foreground text-background">
         <div className="container py-12">
           {/* Links Grid + Newsletter */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 pb-10 border-b border-background/20">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-10 border-b border-background/20">
             {/* Pages */}
             <div>
               <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
@@ -91,25 +76,6 @@ export default function Footer() {
               </h4>
               <ul className="space-y-2">
                 {footerLinks.services.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-sm text-background/70 hover:text-background transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Roofing Types */}
-            <div>
-              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
-                Roofing Types
-              </h4>
-              <ul className="space-y-2">
-                {footerLinks.roofingTypes.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
@@ -171,7 +137,7 @@ export default function Footer() {
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Email
               </h5>
-              <p className="text-sm text-primary">rooferio@email.com</p>
+              <p className="text-sm text-primary">sales@paradiseroofers.com</p>
             </div>
             <div>
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
@@ -193,16 +159,10 @@ export default function Footer() {
         </div>
 
         {/* Giant Brand Name Watermark */}
-        <div className="overflow-hidden py-4">
-          <h2 
-            className="font-heading font-bold text-[15vw] leading-none tracking-tight text-center select-none uppercase"
-            style={{ 
-              color: "transparent",
-              WebkitTextStroke: "2px rgba(255,255,255,0.15)"
-            }}
-          >
-            ROOFERIO
-          </h2>
+        <div className="overflow-hidden py-4 flex justify-center">
+          <h1 className="text-[12vw] font-black text-background/10 whitespace-nowrap select-none">
+            PARADISE ROOFERS
+          </h1>
         </div>
 
         {/* Bottom Bar */}
@@ -217,8 +177,7 @@ export default function Footer() {
                   Terms
                 </Link>
               </div>
-              <p>©Template by RealMehedi</p>
-              <p>Built in Framer</p>
+              <p>© {new Date().getFullYear()} Paradise Roofers. All rights reserved.</p>
             </div>
           </div>
         </div>

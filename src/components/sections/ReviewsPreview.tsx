@@ -9,24 +9,24 @@ const ratings = [
 
 const testimonials = [
   {
-    quote: "I called three companies. One ghosted me, one gave me a quote that made me cry, and then I found Ridge & Nail Roofing. These guys were fast, funny, and absolutely nailed it — literally.",
-    author: "Dave Mulberry",
-    role: "House Owner, Austin, TX",
+    quote: "I thought I’d have buckets everywhere in our Toronto home. Instead, the team fixed our shingle roof leak fast and cleaned up perfectly. Roof and sanity saved!",
+    author: "Mark T.",
+    role: "Homeowner, Toronto, ON",
   },
   {
-    quote: "I thought I'd have to put buckets all over the office. Instead, Nate and the team fixed it in a flash and even cleaned up after themselves. My roof and my sanity are both saved.",
-    author: "Ellis Granger",
-    role: "House Owner, Austin, TX",
+    quote: "Expected mess and delays for metal roof replacement. Got clean work, friendly Canadian crew, and my yard looking better. Roofing made it easy!",
+    author: "Jennifer L.",
+    role: "Homeowner, Vancouver, BC",
   },
   {
-    quote: "I expected noise, mess, and weird upcharges. What I got was a clean job, friendly crew, and my lawn looking better than when they arrived. Shoutout to Nate for making roofing feel easy.",
-    author: "Bennett Hale",
-    role: "House Owner, Austin, TX",
+    quote: "The pro team showed up with top tools for emergency storm repair. Even sent drone photos after now I recommend them across Canada!",
+    author: "Robert K.",
+    role: "Homeowner, Calgary, AB",
   },
   {
-    quote: "These folks showed up with good vibes, good tools, and got the job done like pros. Nate even sent drone pics after — now I brag about my roof at BBQs.",
-    author: "Marcus Flint",
-    role: "House Owner, Austin, TX",
+    quote: "Free roof inspection caught skylight leaks early. Honest local pros saved us thousands on our Ottawa home.",
+    author: "David S.",
+    role: "Homeowner, Ottawa, ON",
   },
 ];
 

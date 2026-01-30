@@ -56,102 +56,99 @@ export default function Hero3D() {
   return <section ref={containerRef} className="relative bg-[#141414] text-background flex flex-col overflow-hidden" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} style={{
     perspective: "1500px"
   }}>
-      {/* Section 1: Top Badge Row */}
-      <div className="container pt-6 z-10 relative">
-        <div className="flex flex-wrap justify-between gap-4">
-          {badges.map((badge, i) => <span key={i} className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-background/80">
-              <span>{badge.icon}</span>
-              {badge.text}
-            </span>)}
+    {/* Section 1: Top Badge Row */}
+    <div className="container pt-6 z-10 relative">
+      <div className="flex flex-wrap justify-between gap-4">
+        {badges.map((badge, i) => <span key={i} className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-background/80">
+          <span>{badge.icon}</span>
+          {badge.text}
+        </span>)}
+      </div>
+    </div>
+
+    {/* Section 2: Hero Content - Top Content */}
+    <div className="container relative z-10 md:py-16 mx-px py-[20px] my-0" data-framer-name="Top Content">
+      {/* Heading Wrapper */}
+      <div className="max-w-4xl" data-framer-name="Heading Wrapper">
+        <div style={{ transform: "none" }}>
+          <h1
+            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-left leading-tight"
+            style={{ color: 'rgb(255, 251, 245)' }}
+          >
+            Best Roofing Contractor<br />
+            Free Roof Inspection Today
+          </h1>
         </div>
       </div>
 
-      {/* Section 2: Hero Content - Top Content */}
-      <div className="container relative z-10 md:py-16 mx-px py-[20px] my-0" data-framer-name="Top Content">
-        {/* Heading Wrapper */}
-        <div className="max-w-4xl" data-framer-name="Heading Wrapper">
-          <div style={{ transform: "none" }}>
-            <h1 
-              className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 text-left leading-tight"
-              style={{ color: 'rgb(255, 251, 245)' }}
+      {/* Buttons and Subtext */}
+      <div className="border-t border-white/20 pt-6" data-framer-name="Buttons and Subtext">
+        {/* Buttons Wrapper */}
+        <div className="flex flex-row justify-around flex-wrap gap-4 mb-6 items-center py-10" data-framer-name="Buttons Wrapper">
+          {/* Orange CTA Button */}
+          <Link to="/contact">
+            <button
+              className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
+              style={{ backgroundColor: 'rgb(255, 156, 69)', color: 'rgb(0, 0, 0)' }}
             >
-              The Roofers<br />
-              Your Neighbors<br />
-              Discreetly Prefer
-            </h1>
-          </div>
-        </div>
+              <span>Get Your Free Quote</span>
+              <div className="flex items-center -space-x-2">
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
+              </div>
+            </button>
+          </Link>
 
-        {/* Buttons and Subtext */}
-        <div className="border-t border-white/20 pt-6" data-framer-name="Buttons and Subtext">
-          {/* Buttons Wrapper */}
-          <div className="flex flex-wrap gap-4 mb-6" data-framer-name="Buttons Wrapper">
-            {/* Orange CTA Button */}
-            <Link to="/contact">
-              <button 
-                className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
-                style={{ backgroundColor: 'rgb(255, 156, 69)', color: 'rgb(0, 0, 0)' }}
-              >
-                <span>Get Your Free Quote</span>
-                <div className="flex items-center -space-x-2">
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
-                </div>
-              </button>
-            </Link>
-
-            {/* Phone Button */}
-            <a href="tel:2125027604">
-              <button 
-                className="inline-flex items-center gap-3 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
-                style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'rgb(255, 252, 252)' }}
-              >
-                <Phone className="h-5 w-5 fill-current" />
-                <span>(212) 502-7604</span>
-                <div className="flex items-center -space-x-2">
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
-                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
-                </div>
-              </button>
-            </a>
-          </div>
-
+          {/* Phone Button */}
+          <a href="tel:2125027604">
+            <button
+              className="inline-flex items-center gap-3 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'rgb(255, 252, 252)' }}
+            >
+              <Phone className="h-5 w-5 fill-current" />
+              <span>(212) 502-7604</span>
+              <div className="flex items-center -space-x-2">
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
+                <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
+              </div>
+            </button>
+          </a>
           {/* Subtext Wrapper */}
           <div data-framer-name="Subtext Wrapper">
-            <p className="text-white/80 text-sm md:text-base max-w-2xl">
-              Hammers are roaring and shingles are soaring in Toronto, Brampton, Mississauga, Halton Hills, Oakville, and Milton — and we're taking the GTA by storm!
-            </p>
+            <p className="text-white/80 text-sm md:text-base max-w-2xl font-bold">
+              Paradise Roofing services for homes and businesses. Licensed experts handle roof installation, repair, replacement, inspections, and more with free quotes and 20+ years experience in roofing services.          </p>
           </div>
         </div>
       </div>
+    </div>
 
-      {/* Section 3: Hero Image Wrapper */}
-      <div className="relative w-full overflow-visible" style={{
+    {/* Section 3: Hero Image Wrapper */}
+    <div className="relative w-full overflow-visible" style={{
       aspectRatio: "4.46097",
       backgroundColor: "#141414"
     }}>
-        <div 
-          className="absolute overflow-hidden transition-transform duration-200 ease-out" 
+      <div
+        className="absolute overflow-hidden transition-transform duration-200 ease-out"
+        style={{
+          inset: "-100px 50px -160px 50px",
+          transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg) scale(1.05)`,
+          transformStyle: "preserve-3d",
+          transformOrigin: "center center"
+        }}
+      >
+        <img
+          src={heroImage}
+          alt="Professional roofers installing shingles"
+          className="w-full h-full object-cover"
           style={{
-            inset: "-100px 50px -160px 50px",
-            transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg) scale(1.05)`,
-            transformStyle: "preserve-3d",
-            transformOrigin: "center center"
+            willChange: "transform",
+            transform: `translateY(${scrollTransform.translateY}px) scale(${scrollTransform.scale})`,
+            transition: "transform 0.1s ease-out"
           }}
-        >
-          <img 
-            src={heroImage} 
-            alt="Professional roofers installing shingles" 
-            className="w-full h-full object-cover"
-            style={{
-              willChange: "transform",
-              transform: `translateY(${scrollTransform.translateY}px) scale(${scrollTransform.scale})`,
-              transition: "transform 0.1s ease-out"
-            }}
-          />
-        </div>
+        />
       </div>
-    </section>;
+    </div>
+  </section>;
 }

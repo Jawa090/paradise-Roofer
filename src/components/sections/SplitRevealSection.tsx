@@ -5,40 +5,52 @@ import splitLeft from "@/assets/split-left.png";
 import splitRight from "@/assets/split-right.png";
 
 const leftStats = [
-  { 
-    number: "21", 
-    suffix: "K+", 
-    label: "roofs installed",
-    description: "From cozy homes to massive commercial builds — we've covered a lot of ground"
+  {
+    number: "1000",
+    suffix: "+",
+    label: "Roofs Installed",
+    description: "From homes to commercial buildings of Canada expert installation of shingles, metal, tile, and flat roofs"
   },
-  { 
-    number: "3,500", 
-    suffix: "+", 
-    label: "repairs completed",
-    description: "Fast, reliable, and leak-proof — just how roof repairs should be."
+  {
+    number: "500",
+    suffix: "+",
+    label: "Repairs Completed",
+    description: "Fast leak detection, storm damage, and emergency roof repairs – reliable every time"
+  },
+  {
+    number: "25",
+    suffix: "+",
+    label: "Certified roofers",
+    description: "Licensed pros handling roof replacement, gutters, skylights, insulation, and maintenance"
+  },
+  {
+    number: "4.9",
+    suffix: "star",
+    label: "Best ratings",
+    description: "Trusted by Canada homeowners on Google and Yelp for roofing services."
   },
 ];
 
 const rightStats = [
-  { 
-    number: "42", 
-    suffix: "+", 
+  {
+    number: "42",
+    suffix: "+",
     label: "expert roofers",
     description: "Skilled, certified, and always up for the climb."
   },
-  { 
-    number: "4.9", 
-    suffix: "-star", 
+  {
+    number: "4.9",
+    suffix: "-star",
     label: "average rating",
     description: "Across Google, Facebook, and Yelp — customers love us"
   },
 ];
 
 const features = [
-  { icon: Puzzle, text: "Every roof we build is made to fit your home — not some template." },
-  { icon: MessageCircle, text: "From your first call to final cleanup, you'll speak with real people who actually know roofs" },
-  { icon: Home, text: "We live here too, so we treat your home like our own." },
-  { icon: Search, text: "From hidden damage to tiny leaks — we catch the small stuff before it's big." },
+  { icon: Puzzle, text: "Custom roofs fit your needs perfectly: shingles, metal, tile, or flat." },
+  { icon: MessageCircle, text: "Speak directly with pros who know roof repair, replacement, and leak detection." },
+  { icon: Home, text: "The local team treats your property like family with top care." },
+  { icon: Search, text: "Thorough inspections spot leaks, damage, and problems before they grow." },
 ];
 
 // Animated number component
@@ -55,13 +67,13 @@ function AnimatedNumber({ value, suffix }: { value: string; suffix: string }) {
           const numericValue = parseFloat(value.replace(/,/g, ''));
           const duration = 2000;
           const startTime = Date.now();
-          
+
           const animate = () => {
             const elapsed = Date.now() - startTime;
             const progress = Math.min(elapsed / duration, 1);
             const easeOut = 1 - Math.pow(1 - progress, 3);
             const current = Math.round(numericValue * easeOut);
-            
+
             if (value.includes(',')) {
               setDisplayValue(current.toLocaleString());
             } else if (value.includes('.')) {
@@ -69,14 +81,14 @@ function AnimatedNumber({ value, suffix }: { value: string; suffix: string }) {
             } else {
               setDisplayValue(current.toString());
             }
-            
+
             if (progress < 1) {
               requestAnimationFrame(animate);
             } else {
               setDisplayValue(value);
             }
           };
-          
+
           requestAnimationFrame(animate);
         }
       },
@@ -92,10 +104,10 @@ function AnimatedNumber({ value, suffix }: { value: string; suffix: string }) {
 
   return (
     <div ref={ref} className="flex items-baseline gap-1">
-      <span 
+      <span
         className="font-heading font-medium tracking-tight"
-        style={{ 
-          fontSize: '90px', 
+        style={{
+          fontSize: '90px',
           lineHeight: '1em',
           letterSpacing: '-0.04em',
           color: 'rgb(255, 251, 245)'
@@ -103,9 +115,9 @@ function AnimatedNumber({ value, suffix }: { value: string; suffix: string }) {
       >
         {displayValue}
       </span>
-      <span 
+      <span
         className="font-heading font-medium"
-        style={{ 
+        style={{
           fontSize: '41px',
           lineHeight: '1em',
           letterSpacing: '-0.04em',
@@ -126,17 +138,17 @@ export default function SplitRevealSection() {
   useEffect(() => {
     const handleScroll = () => {
       if (!sectionRef.current) return;
-      
+
       const rect = sectionRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       const sectionTop = rect.top;
       const sectionHeight = rect.height;
-      
+
       // Calculate progress based on how much of the section has scrolled past
       // Start animation when section enters viewport, complete when it's 40% scrolled
       const triggerStart = windowHeight * 0.3;
       const triggerEnd = -sectionHeight * 0.3;
-      
+
       if (sectionTop <= triggerStart && sectionTop >= triggerEnd) {
         const progress = Math.min(1, Math.max(0, (triggerStart - sectionTop) / (triggerStart - triggerEnd)));
         setScrollProgress(progress);
@@ -149,7 +161,7 @@ export default function SplitRevealSection() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Initial call
-    
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -157,42 +169,42 @@ export default function SplitRevealSection() {
   // Phase 1: 0-0.4 - Header and description appear
   // Phase 2: 0.4-1 - Video and benefits appear, header fades
   const splitDistance = scrollProgress * 150; // Max 150% translateX
-  
+
   // Header section (lines 286-295): appears 0-0.4, fades out 0.4-0.7
-  const headerOpacity = scrollProgress < 0.4 
-    ? scrollProgress / 0.4 
-    : scrollProgress < 0.7 
-      ? 1 - ((scrollProgress - 0.4) / 0.3) 
+  const headerOpacity = scrollProgress < 0.4
+    ? scrollProgress / 0.4
+    : scrollProgress < 0.7
+      ? 1 - ((scrollProgress - 0.4) / 0.3)
       : 0;
-  const headerTranslateY = scrollProgress < 0.4 
-    ? (1 - scrollProgress / 0.4) * 100 
+  const headerTranslateY = scrollProgress < 0.4
+    ? (1 - scrollProgress / 0.4) * 100
     : 0;
-  
+
   // Description (line 297): appears 0-0.4, fades out 0.4-0.7
   const descOpacity = headerOpacity;
   const descTranslateY = headerTranslateY;
-  
+
   // Video and benefits (lines 304-367): appears 0.4-0.8, stays visible
-  const videoOpacity = scrollProgress < 0.4 
-    ? 0 
-    : scrollProgress < 0.8 
-      ? (scrollProgress - 0.4) / 0.4 
+  const videoOpacity = scrollProgress < 0.4
+    ? 0
+    : scrollProgress < 0.8
+      ? (scrollProgress - 0.4) / 0.4
       : 1;
-  const videoTranslateY = scrollProgress < 0.4 
-    ? 100 
-    : scrollProgress < 0.8 
-      ? (1 - (scrollProgress - 0.4) / 0.4) * 100 
+  const videoTranslateY = scrollProgress < 0.4
+    ? 100
+    : scrollProgress < 0.8
+      ? (1 - (scrollProgress - 0.4) / 0.4) * 100
       : 0;
-  
+
   // Center container opacity and scale
   const centerContentOpacity = scrollProgress > 0 ? 1 : 0;
   const centerContentScale = 0.85 + (Math.min(scrollProgress, 0.4) / 0.4) * 0.15;
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      className="relative min-h-[200vh]" 
-      id="about" 
+      className="relative min-h-[200vh]"
+      id="about"
       data-framer-name="Section - About"
     >
       {/* Sticky Container */}
@@ -200,18 +212,18 @@ export default function SplitRevealSection() {
         {/* Statistics - Split Layout */}
         <div className="grid md:grid-cols-2 h-full" data-framer-name="Statistics - Sticky">
           {/* Left Panel - Slides Left */}
-          <div 
-            className="relative h-full transition-transform duration-100 ease-out" 
+          <div
+            className="relative h-full transition-transform duration-100 ease-out"
             data-framer-name="Left"
-            style={{ 
+            style={{
               transform: `translateX(-${splitDistance}%)`,
               willChange: 'transform'
             }}
           >
             <div className="absolute inset-0">
-              <img 
-                src={splitLeft} 
-                alt="Roofing team at work" 
+              <img
+                src={splitLeft}
+                alt="Roofing team at work"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -219,13 +231,13 @@ export default function SplitRevealSection() {
             <div className="absolute inset-0 flex flex-col justify-between p-8 md:p-12">
               <div className="ml-auto text-right max-w-[300px]">
                 <AnimatedNumber value={leftStats[0].number} suffix={leftStats[0].suffix} />
-                <h3 
+                <h3
                   className="font-heading font-bold text-xl uppercase mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {leftStats[0].label}
                 </h3>
-                <p 
+                <p
                   className="text-sm mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
@@ -234,13 +246,13 @@ export default function SplitRevealSection() {
               </div>
               <div className="ml-auto text-right max-w-[300px]">
                 <AnimatedNumber value={leftStats[1].number} suffix={leftStats[1].suffix} />
-                <h3 
+                <h3
                   className="font-heading font-bold text-xl uppercase mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {leftStats[1].label}
                 </h3>
-                <p 
+                <p
                   className="text-sm mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
@@ -251,18 +263,18 @@ export default function SplitRevealSection() {
           </div>
 
           {/* Right Panel - Slides Right */}
-          <div 
-            className="relative h-full transition-transform duration-100 ease-out" 
+          <div
+            className="relative h-full transition-transform duration-100 ease-out"
             data-framer-name="Right"
-            style={{ 
+            style={{
               transform: `translateX(${splitDistance}%)`,
               willChange: 'transform'
             }}
           >
             <div className="absolute inset-0">
-              <img 
-                src={splitRight} 
-                alt="Roofing team at work" 
+              <img
+                src={splitRight}
+                alt="Roofing team at work"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -270,13 +282,13 @@ export default function SplitRevealSection() {
             <div className="absolute inset-0 flex flex-col justify-between p-8 md:p-12">
               <div className="mr-auto text-left max-w-[300px]">
                 <AnimatedNumber value={rightStats[0].number} suffix={rightStats[0].suffix} />
-                <h3 
+                <h3
                   className="font-heading font-bold text-xl uppercase mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {rightStats[0].label}
                 </h3>
-                <p 
+                <p
                   className="text-sm mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
@@ -285,13 +297,13 @@ export default function SplitRevealSection() {
               </div>
               <div className="mr-auto text-left max-w-[300px]">
                 <AnimatedNumber value={rightStats[1].number} suffix={rightStats[1].suffix} />
-                <h3 
+                <h3
                   className="font-heading font-bold text-xl uppercase mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {rightStats[1].label}
                 </h3>
-                <p 
+                <p
                   className="text-sm mt-2"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
@@ -303,7 +315,7 @@ export default function SplitRevealSection() {
         </div>
 
         {/* Center Content - About Section (rises up in the middle) */}
-        <div 
+        <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none"
           style={{
             opacity: centerContentOpacity,
@@ -313,8 +325,8 @@ export default function SplitRevealSection() {
         >
           <div className="bg-background w-full max-w-4xl mx-4 md:mx-8 p-8 md:p-12 pointer-events-auto">
             {/* Section Header - Phase 1: appears first, fades out */}
-            <div 
-              className="flex flex-col items-center mb-8 transition-all duration-100" 
+            <div
+              className="flex flex-col items-center mb-8 transition-all duration-100"
               data-framer-name="About - Sticky"
               style={{
                 opacity: headerOpacity,
@@ -323,31 +335,29 @@ export default function SplitRevealSection() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
-                <p className="text-sm font-semibold uppercase tracking-wider">About us</p>
+                <p className="text-sm font-semibold uppercase tracking-wider">About Your Local Roofing Experts</p>
                 <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-center">
-                Serving Roofs Since 1982
+                Roofing Since 2004
               </h2>
             </div>
 
             {/* Description - Phase 1: appears with header, fades out */}
-            <p 
+            <p
               className="text-center max-w-3xl mx-auto text-muted-foreground mb-8 transition-all duration-100"
               style={{
                 opacity: descOpacity,
                 transform: `translateY(${descTranslateY}px)`,
               }}
             >
-              We're a friendly, family-run roofing company that's been keeping homes dry and happy since 1982. 
-              Whether it's a sneaky leak or a full roof makeover, we show up with tools in hand, smiles on our faces, 
-              and zero drama. Great work, fair prices, and roofs that last — that's how we roll.
+              Serving Canada for 20+ years, we're licensed roofers specializing in installation, repair, replacement, inspections, gutters, skylights, and maintenance. From residential shingle roofs to commercial flat systems, our 25+ pros deliver premium materials, fair prices, and full warranties. We treat every home like our own with honest service, 24/7 emergency response, and 4.9-star reviews from locals. Free quotes and inspections get your project started right.
             </p>
 
             {/* Video and Benefits Wrapper - Phase 2: appears later, stays visible */}
-            <div 
-              className="grid md:grid-cols-2 gap-8 transition-all duration-100" 
-              data-framer-name="Video and Benefits Wrapper" 
+            <div
+              className="grid md:grid-cols-2 gap-8 transition-all duration-100"
+              data-framer-name="Video and Benefits Wrapper"
               id="video"
               style={{
                 opacity: videoOpacity,
@@ -355,11 +365,11 @@ export default function SplitRevealSection() {
               }}
             >
               {/* Video Section */}
-              <div 
+              <div
                 className="relative aspect-video bg-muted overflow-hidden cursor-pointer group"
                 onClick={() => setIsVideoPlaying(!isVideoPlaying)}
               >
-                <video 
+                <video
                   src="https://videos.pexels.com/video-files/9700224/9700224-hd_1920_1080_30fps.mp4"
                   loop
                   muted
@@ -369,7 +379,7 @@ export default function SplitRevealSection() {
                   style={{ filter: 'contrast(1.05) grayscale(1)' }}
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div 
+                  <div
                     className="w-16 h-16 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"
                     style={{ backgroundColor: 'rgb(255, 148, 54)' }}
                   >
@@ -383,12 +393,12 @@ export default function SplitRevealSection() {
                 {/* Benefits List */}
                 <div className="space-y-0">
                   {features.map((feature, i) => (
-                    <div 
-                      key={i} 
+                    <div
+                      key={i}
                       className={`flex items-start gap-4 py-4 ${i > 0 ? 'border-t' : ''}`}
                       style={{ borderColor: 'rgba(20, 20, 20, 0.2)' }}
                     >
-                      <div 
+                      <div
                         className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
                         style={{ backgroundColor: 'rgba(20, 20, 20, 0.1)' }}
                       >
@@ -402,7 +412,7 @@ export default function SplitRevealSection() {
                 {/* CTA Button */}
                 <div className="mt-6">
                   <Link to="/about">
-                    <button 
+                    <button
                       className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
                       style={{ backgroundColor: 'rgb(20, 20, 20)', color: 'rgb(255, 255, 255)' }}
                     >
