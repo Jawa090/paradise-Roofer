@@ -1,9 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
-import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Component, Home, Search, Hammer, CheckCircle2, AlertTriangle, Layers } from "lucide-react";
+import { Phone, ArrowRight, Shield, Award, MapPin, Component, Home, Search, Hammer, CheckCircle2, AlertTriangle, Layers, Wrench, FileText, Zap, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
-import fasciaImage from "@/assets/roof-coating.jpg"; // Using coating as placeholder for now or maybe one of the other images
-import completedRoof from "@/assets/completed-roof.jpg";
+import fasciaImage from "@/assets/roof-coating.jpg";
 
 export default function FasciaRepair() {
     return (
@@ -15,24 +14,24 @@ export default function FasciaRepair() {
                         {/* Label */}
                         <div className="flex items-center gap-2">
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
-                            <span className="text-sm font-bold uppercase tracking-wider">Exterior Woodwork</span>
+                            <span className="text-sm font-bold uppercase tracking-wider">Fascia Repair & Replacement Services</span>
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Fascia & Soffit Repair<br />
-                            Specialists
+                            Fascia Repair & Replacement<br />
+                            in Toronto & GTA
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Your fascia boards do more than just look good—they hold your gutters up. Rotten wood leads to sagging gutters, water damage, and pest infestations.
+                                    Rotten fascia boards causing gutter problems? We specialize in fascia repair and complete replacement for Toronto homes where wood rot has compromised roof edges, gutters, and exterior appearance. Licensed Paradise Roofers fix sagging gutters, leaking fascia joints, and deteriorated boards across Toronto, Mississauga, Vaughan, Markham.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We replace rotten wood and install heavy-gauge aluminum capping that never needs painting. Protect your roof's edge with a maintenance-free finish.
+                                    Free drone inspection reveals hidden rot before it spreads. Same-day repairs for minor damage. Full replacement packages include soffit ventilation + seamless gutters. 20-year warranty on aluminum/PVC fascia systems.
                                 </p>
                             </div>
 
@@ -63,30 +62,31 @@ export default function FasciaRepair() {
                         {/* Badges Bar */}
                         <div className="bg-white border border-border shadow-sm py-6 px-4 md:px-12 mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="flex items-center gap-3 justify-center md:justify-start">
-                                <Component className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Custom Aluminum Bending</span>
+                                <FileText className="h-6 w-6 text-black fill-current" />
+                                <span className="font-bold text-sm uppercase tracking-wide">FREE Drone Assessment</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Shield className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Rot-Proof Guarantee</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">20-Year Warranty</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
-                                <Award className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Perfect Color Match</span>
+                                <Zap className="h-6 w-6 text-black fill-current" />
+                                <span className="font-bold text-sm uppercase tracking-wide">Same-Day Repairs</span>
                             </div>
                         </div>
                     </div>
 
                     {/* Intro Extension */}
                     <div className="mt-12 max-w-4xl">
-                        <p className="text-lg text-muted-foreground">
-                            Water overflowing from clogged gutters often splashes back onto the fascia board. If it is painted wood, it eventually rots. Once the wood softens, gutter spikes pull out, and your eavestroughs begin to fall. Our solution is to remove the rot, install structural spruce sub-fascia, and cap it with custom-bent aluminum that matches your home's aesthetic and sheds water permanently.
+                        <h3 className="text-2xl font-bold mb-4">Why Toronto Fascia Boards Fail Fast</h3>
+                        <p className="text-lg text-muted-foreground mb-4">
+                            Fascia rot destroys 70% of gutter systems. Water trapped behind gutters rots unprotected wood within 5-7 years in Toronto's humid climate. Standing water from a poor gutter slope accelerates decay. Freeze-thaw cycles crack already weakened boards.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* Signs You Need Upgrade */}
+            {/* 6 Common Fascia Failure Signs */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
                     <div className="flex items-start gap-6 mb-12">
@@ -94,7 +94,7 @@ export default function FasciaRepair() {
                             <Search className="h-10 w-10 text-white" strokeWidth={4} />
                         </div>
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Signs of Fascia Rot</h2>
+                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">6 Common Fascia Failure Signs</h2>
                             <p className="text-lg font-medium text-muted-foreground">Check your roofline for these warning signs:</p>
                         </div>
                     </div>
@@ -102,30 +102,57 @@ export default function FasciaRepair() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                title: "1. Peeling Paint",
-                                icon: Layers,
-                                points: [
-                                    "Flaking paint on wood trim",
-                                    "Discolored or grey wood",
-                                    "Sign of moisture saturation"
-                                ]
-                            },
-                            {
-                                title: "2. Detached Gutters",
+                                title: "Gutters sagging or pulling away from house",
                                 icon: AlertTriangle,
                                 points: [
-                                    "Gutters pulling away from house",
-                                    "Spikes coming loose",
-                                    "Wood too soft to hold screws"
+                                    "Visible separation between gutter and fascia",
+                                    "Gutter spikes coming loose",
+                                    "Water pooling behind gutters"
                                 ]
                             },
                             {
-                                title: "3. Pest Entry",
+                                title: "Brown streaks below gutter seams (rot stains)",
+                                icon: Layers,
+                                points: [
+                                    "Dark staining on fascia boards",
+                                    "Discoloration spreading downward",
+                                    "Evidence of water infiltration"
+                                ]
+                            },
+                            {
+                                title: "Peeling paint or soft wood when probed",
+                                icon: Component,
+                                points: [
+                                    "Paint flaking off in large sections",
+                                    "Wood feels spongy to touch",
+                                    "Screwdriver easily penetrates wood"
+                                ]
+                            },
+                            {
+                                title: "Gutter leaks at fascia connection points",
                                 icon: Home,
                                 points: [
-                                    "Holes in wood",
-                                    "Squirrels/Raccoons in attic",
-                                    "Wasps nesting in gaps"
+                                    "Water dripping from gutter joints",
+                                    "Loose or missing gutter brackets",
+                                    "Visible gaps between gutter and fascia"
+                                ]
+                            },
+                            {
+                                title: "Small woodpecker holes (rot entry points)",
+                                icon: Search,
+                                points: [
+                                    "Multiple small holes in fascia",
+                                    "Evidence of insect activity",
+                                    "Birds targeting soft, rotted wood"
+                                ]
+                            },
+                            {
+                                title: "Icicles forming directly on fascia (no protection)",
+                                icon: Wrench,
+                                points: [
+                                    "Ice buildup on fascia boards",
+                                    "No proper ice and water shield",
+                                    "Winter damage accelerating rot"
                                 ]
                             }
                         ].map((item, i) => (
@@ -149,58 +176,146 @@ export default function FasciaRepair() {
             </section>
 
 
-            {/* Our Services Grid */}
+            {/* Complete Fascia Repair & Replacement Services */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Our Aluminum Services</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">We use Gentek and Kaycan aluminum for a premium, long-lasting finish.</p>
+                    <h2 className="text-3xl font-bold uppercase mb-4">Complete Fascia Repair & Replacement Services</h2>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">Professional fascia solutions engineered for Toronto's extreme weather conditions.</p>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {[
-                            { title: "Wood Replacement", desc: "Removing verify rotten fascia and installing fresh spruce structural boards." },
-                            { title: "Aluminum Capping", desc: "Custom bending heavy gauge aluminum on-site to wrap your wood fascia perfectly." },
-                            { title: "Soffit Ventilation", desc: "Replacing blocked plywood soffits with vented aluminum panels for attic airflow." },
-                            { title: "Drip Edge Install", desc: "Adding roof-edge metal to ensure water drips into the gutter, not behind the fascia." },
-                        ].map((service, i) => (
-                            <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border hover:border-[#FF9C45] transition-colors">
-                                <CheckCircle2 className="h-8 w-8 text-[#FF9C45] mb-3" />
-                                <h3 className="font-bold text-lg mb-2">{service.title}</h3>
-                                <p className="text-sm text-muted-foreground">{service.desc}</p>
+                    <div className="grid md:grid-cols-1 gap-8 mb-12">
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <FileText className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">Free Drone Fascia Assessment ($250 Value)</h3>
                             </div>
-                        ))}
+                            <p className="text-muted-foreground mb-4">
+                                4K aerial reveals rot patterns, gutter attachment failures, soffit ventilation blockages. Thermal scan shows moisture trapped behind boards.
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Wrench className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">Targeted Fascia Repair (Under 30% Damage)</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Individual board section replacement. Epoxy consolidation for minor rot. Custom-cut matching wood. Metal flashing prevents recurrence.
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Component className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">Complete Fascia Replacement (Recommended)</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Full perimeter aluminum or PVC fascia boards. Seamless gutter reattachment. Proper flashing/soffit integration. Color-matched to siding.
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Zap className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">Emergency Fascia Service</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Sagging gutters pulling fascia off house. Storm-damaged fascia/gutter systems. Temporary bracing until full repair.
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Home className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">Fascia + Soffit + Gutter Packages</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Continuous ventilation soffits (50% net free area). Seamless aluminum gutters properly sloped. Complete exterior water management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Materials Comparison Table */}
+            <section className="py-20 bg-[#F9F9F9]">
+                <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-8 text-center">Fascia Materials Toronto Weather Tested</h2>
+                    <div className="overflow-x-auto bg-white rounded-xl shadow-sm border border-border">
+                        <table className="w-full text-left border-collapse">
+                            <thead className="bg-black text-white">
+                                <tr>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Material</th>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Rot Proof</th>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Toronto Lifespan</th>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Cost per Linear Ft</th>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Maintenance</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-border">
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Aluminum Fascia</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">Yes</td>
+                                    <td className="px-6 py-4">35-50 years</td>
+                                    <td className="px-6 py-4">$12-$18</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">None</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">PVC Fascia</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">Yes</td>
+                                    <td className="px-6 py-4">40-60 years</td>
+                                    <td className="px-6 py-4">$15-$22</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">None</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Pressure Treated Wood</td>
+                                    <td className="px-6 py-4 font-bold text-red-600">No</td>
+                                    <td className="px-6 py-4">7-12 years</td>
+                                    <td className="px-6 py-4">$8-$12</td>
+                                    <td className="px-6 py-4 text-red-600">Annual paint</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Cedar (Premium)</td>
+                                    <td className="px-6 py-4 font-bold text-red-600">No</td>
+                                    <td className="px-6 py-4">10-15 years</td>
+                                    <td className="px-6 py-4">$18-$25</td>
+                                    <td className="px-6 py-4 text-red-600">Annual seal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="mt-6 text-center">
+                        <p className="text-lg font-bold text-[#FF9C45]">
+                            Aluminum = 5x longer life, zero maintenance, perfect gutter support.
+                        </p>
                     </div>
                 </div>
             </section>
 
             {/* Process */}
-            <section className="py-20 bg-[#F9F9F9]">
+            <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Installation Process</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our Simple Process of Fascia Repair</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {[
                             {
                                 step: "01",
-                                title: "Inspection",
-                                time: "On-Site",
-                                desc: "We check if the wood is structurally sound or needs replacement."
+                                title: "FREE Drone + Ground Inspection",
+                                desc: "Laser level checks gutter slope. Moisture meter probes rot depth. Drone reveals hidden upper damage. Digital report same day."
                             },
                             {
                                 step: "02",
-                                title: "Gutters Down",
-                                time: "Construction",
-                                desc: "We carefully remove existing gutters to access the fascia board behind them."
+                                title: "Custom Fabrication & Prep",
+                                desc: "Aluminum/PVC fascia cut to exact lengths onsite. Rotten wood completely removed (not patched). Soffit ventilation planned."
                             },
                             {
                                 step: "03",
-                                title: "Wood Repair & Wrap",
-                                time: "Construction",
-                                desc: "Rotten wood is replaced. Aluminum is bent and installed with colour-matched nails."
+                                title: "Precision Installation",
+                                desc: "Hidden brackets every 16\". Seamless gutter reattachment. Metal flashing prevents water behind fascia. Color-matched caulking."
                             },
                             {
                                 step: "04",
-                                title: "Re-Install",
-                                time: "Completion",
-                                desc: "Gutters are re-hung (or replaced) with hidden hangers screwed into fresh wood."
+                                title: "Final Test",
+                                desc: "High-pressure hose verifies zero leaks at all joints."
                             }
                         ].map((item, i) => (
                             <div key={i} className="flex gap-6">
@@ -209,44 +324,7 @@ export default function FasciaRepair() {
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                                    <span className="text-sm font-bold text-[#FF9C45] uppercase tracking-wider mb-2 block">{item.time}</span>
                                     <p className="text-muted-foreground">{item.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Success Stories */}
-            <section className="py-20 bg-background">
-                <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Before & After</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "Scarborough Side-Split",
-                                img: completedRoof,
-                                problem: "Raccoon hole in rotten fascia corner",
-                                result: "Wood replaced, steel mesh installed, capped in black aluminum."
-                            },
-                            {
-                                title: "Markham Heritage Home",
-                                img: fasciaImage,
-                                problem: "Peeling paint every 2 years",
-                                result: "Entire trim system wrapped in white woodgrain aluminum."
-                            }
-                        ].map((story, i) => (
-                            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-border flex flex-col md:flex-row h-full">
-                                <div className="md:w-1/3 h-48 md:h-auto bg-muted">
-                                    <img src={story.img} alt={story.title} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="p-6 md:w-2/3 flex flex-col justify-center">
-                                    <h3 className="font-bold text-lg mb-2">{story.title}</h3>
-                                    <div className="space-y-1 text-sm">
-                                        <p><span className="font-bold text-red-600">Problem:</span> {story.problem}</p>
-                                        <p><span className="font-bold text-green-600">Result:</span> {story.result}</p>
-                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -257,13 +335,15 @@ export default function FasciaRepair() {
             {/* FAQ */}
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl">
-                    <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Common Questions</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "Does aluminum capping rust?", a: "No, aluminum does not rust. It is the perfect material for Canadian weather." },
-                            { q: "Can you match my window color?", a: "Yes, we carry over 30 colors including standard white, brown, black, sandalwood, and grey." },
-                            { q: "Do I have to change my gutters too?", a: "Not necessarily. If your gutters are in good shape, we can detach them, do the fascia work, and reinstall them." },
-                            { q: "Is wood better than aluminum?", a: "Structurally, wood is needed for strength. But for the exterior surface, aluminum is superior because it never needs painting." },
+                            { q: "Cost per linear foot?", a: "Aluminum fascia $12-18/ft installed. Complete fascia/soffit/gutter packages $28-35/ft." },
+                            { q: "How long does installation take?", a: "Single story average home: 1 day. Two-story or complex 1.5 days." },
+                            { q: "Free inspection included?", a: "Yes – drone assessment standard. Reveals rot you can't see." },
+                            { q: "Warranty on fascia replacement?", a: "20 years aluminum/PVC. Lifetime against rot." },
+                            { q: "Do gutters need replacing too?", a: "90% yes. We slope new gutters properly during fascia work." },
+                            { q: "Emergency service available?", a: "24/7 for sagging/falling gutters. Temporary bracing until full repair." }
                         ].map((faq, i) => (
                             <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                 <h4 className="font-bold text-base mb-2 flex items-start gap-2">

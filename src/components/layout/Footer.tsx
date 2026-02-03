@@ -21,6 +21,20 @@ const footerLinks = {
     { name: "Gutters & Eavestrough", href: "/services/gutters" },
     { name: "Attic Insulation", href: "/services/attic-insulation" },
   ],
+  locations: [
+    { name: "Brampton", href: "/locations/brampton" },
+    { name: "Mississauga", href: "/locations/mississauga" },
+    { name: "Milton", href: "/locations/milton" },
+    { name: "Oakville", href: "/locations/oakville" },
+    { name: "Etobicoke", href: "/locations/etobicoke" },
+    { name: "Scarborough", href: "/locations/scarborough" },
+    { name: "Vaughan", href: "/locations/vaughan" },
+    { name: "Markham", href: "/locations/markham" },
+    { name: "Richmond Hill", href: "/locations/richmond-hill" },
+    { name: "Aurora", href: "/locations/aurora" },
+    { name: "Burlington", href: "/locations/burlington" },
+    { name: "Ajax", href: "/locations/ajax" },
+  ],
 };
 
 const socialLinks = [
@@ -49,7 +63,7 @@ export default function Footer() {
       <div className="bg-foreground text-background">
         <div className="container py-12">
           {/* Links Grid + Newsletter */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-10 border-b border-background/20">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 pb-10 border-b border-background/20">
             {/* Pages */}
             <div>
               <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
@@ -85,6 +99,33 @@ export default function Footer() {
                     </Link>
                   </li>
                 ))}
+              </ul>
+            </div>
+
+            {/* Locations */}
+            <div>
+              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-4">
+                Locations
+              </h4>
+              <ul className="space-y-2">
+                {footerLinks.locations.slice(0, 4).map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-background/70 hover:text-background transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+                <li>
+                  <Link
+                    to="/locations"
+                    className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+                  >
+                    See More →
+                  </Link>
+                </li>
               </ul>
             </div>
 

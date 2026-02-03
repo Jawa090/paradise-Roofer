@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/services/Index";
+import Locations from "./pages/Locations";
 
 import Contact from "./pages/Contact";
 
@@ -26,6 +27,20 @@ import ResidentialRoofing from "./pages/services/ResidentialRoofing";
 import CommercialRoofing from "./pages/services/CommercialRoofing";
 import RoofCoating from "./pages/services/RoofCoating";
 
+// Location Pages
+import Brampton from "./pages/locations/Brampton";
+import Mississauga from "./pages/locations/Mississauga";
+import Milton from "./pages/locations/Milton";
+import Oakville from "./pages/locations/Oakville";
+import Etobicoke from "./pages/locations/Etobicoke";
+import Scarborough from "./pages/locations/Scarborough";
+import Vaughan from "./pages/locations/Vaughan";
+import Markham from "./pages/locations/Markham";
+import RichmondHill from "./pages/locations/RichmondHill";
+import Aurora from "./pages/locations/Aurora";
+import Burlington from "./pages/locations/Burlington";
+import Ajax from "./pages/locations/Ajax";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -39,6 +54,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/locations" element={<Locations />} />
 
           {/* Service Routes */}
           <Route path="/services/installation" element={<RoofInstallation />} />
@@ -55,6 +71,20 @@ const App = () => (
           <Route path="/services/coating" element={<RoofCoating />} />
 
           <Route path="/services/:slug" element={<Services />} />
+
+          {/* Location Routes */}
+          <Route path="/locations/brampton" element={<Brampton />} />
+          <Route path="/locations/mississauga" element={<Mississauga />} />
+          <Route path="/locations/milton" element={<Milton />} />
+          <Route path="/locations/oakville" element={<Oakville />} />
+          <Route path="/locations/etobicoke" element={<Etobicoke />} />
+          <Route path="/locations/scarborough" element={<Scarborough />} />
+          <Route path="/locations/vaughan" element={<Vaughan />} />
+          <Route path="/locations/markham" element={<Markham />} />
+          <Route path="/locations/richmond-hill" element={<RichmondHill />} />
+          <Route path="/locations/aurora" element={<Aurora />} />
+          <Route path="/locations/burlington" element={<Burlington />} />
+          <Route path="/locations/ajax" element={<Ajax />} />
 
           <Route path="/contact" element={<Contact />} />
 

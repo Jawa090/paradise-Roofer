@@ -1,11 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
-import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Eye, FileText, Camera, Smartphone, CheckCircle2, AlertTriangle, CloudRain, Wind, Home } from "lucide-react";
+import { Phone, ArrowRight, Shield, MapPin, Eye, FileText, Camera, CheckCircle2, AlertTriangle, CloudRain, Wind, Home, Zap, Target, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import roofInspection from "@/assets/roof-inspection.jpg";
-import completedRoof from "@/assets/completed-roof.jpg";
-import metalRoof from "@/assets/metal-roof.jpg";
-import roofingBanner from "@/assets/roofers-banner.jpg";
 
 export default function RoofInspection() {
     return (
@@ -23,18 +20,21 @@ export default function RoofInspection() {
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Free Roof Drone Inspection<br />
-                            in Toronto & The GTA
+                            FREE Roof Drone Inspection<br />
+                            Toronto & GTA Homeowners
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Stop guessing about your roof's health. Traditional ladders and binoculars can't see hairline cracks or hidden moisture.
+                                    Worried about your roof but hate the ladder risk? We fly a professional drone over your house for a complete roof check that finds leaks, bad shingles, and ice dam trouble before they cost you thousands.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We use advanced 4K cinematic drones to scan every square inch of your roof—shingles, flashings, chimneys, and vents—without a single boot touching your granules. Safe, fast, and completely free.
+                                    This $350 service is 100% FREE. No obligation. No hard sell. We do this across Toronto, Mississauga, Vaughan, Markham everywhere in the GTA. It takes 15 minutes and you get a digital report the same day with pictures showing exactly what we found.
+                                </p>
+                                <p className="text-lg font-bold text-[#FF9C45]">
+                                    Book your FREE drone check now, we only have room for 10 houses per week.
                                 </p>
                             </div>
 
@@ -81,71 +81,66 @@ export default function RoofInspection() {
 
                     {/* Intro Extension */}
                     <div className="mt-12 max-w-4xl">
+                        <h3 className="text-2xl font-bold mb-4">Why Drone Checks Beat Climbing Ladders Every Time</h3>
+                        <p className="text-lg text-muted-foreground mb-4">
+                            I've climbed more roofs than I can count, and ladders miss most problems. You can't safely walk steep pitches or see behind chimneys. No good photos means no proof for insurance. Plus Toronto rain cancels half the inspections anyway.
+                        </p>
                         <p className="text-lg text-muted-foreground">
-                            Why risk a roofer falling off your property or damaging your shingles by walking on them? Our drone technology provides a superior inspection. We can zoom in 50x to see nail pops, granule loss, and sealant failures that human eyes miss. Within hours, you receive a comprehensive digital report documenting every defect, ready for your insurance company or your own peace of mind.
+                            Drones fix all that. We get crystal clear 4K pictures of every shingle and flashing. The heat camera finds wet spots under shingles 2 years before your ceiling stains. 36x zoom lets us check ridge caps from 50 feet away – completely safe. Small fixes now save big money later. That's why we do this free.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* What We Look For */}
+            {/* Why Choose Us */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
                     <div className="flex items-start gap-6 mb-12">
                         <div className="bg-[#FF9C45] rounded-xl p-4 shadow-[0_4px_0_0_rgba(180,83,9,1)] shrink-0">
-                            <Eye className="h-10 w-10 text-white" strokeWidth={4} />
+                            <Shield className="h-10 w-10 text-white" strokeWidth={4} />
                         </div>
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">What Our Drones Detect</h2>
-                            <p className="text-lg font-medium text-muted-foreground">We uncover hidden issues before they become expensive leaks:</p>
+                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Why Choose our FREE Roof Drone Inspection</h2>
+                            <p className="text-lg font-medium text-muted-foreground">Professional drone service you can trust:</p>
                         </div>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             {
-                                title: "1. Missing or Damaged Shingles",
-                                icon: Wind,
+                                title: "Trained Commercial Drone Pilots",
+                                icon: Users,
                                 points: [
-                                    "Wind-blown tabs",
-                                    "Creased shingles (storm damage)",
-                                    "Thermal splitting"
+                                    "Legal requirement compliance",
+                                    "Transport Canada certified",
+                                    "Professional equipment only"
                                 ]
                             },
                             {
-                                title: "2. Flashing Failures",
-                                icon: AlertTriangle,
+                                title: "4.9 Stars from 400+ Reviews",
+                                icon: Target,
                                 points: [
-                                    "Rusted chimney flashing",
-                                    "Lifted wall step flashing",
-                                    "Failed valley metal"
+                                    "Actual Toronto reviews",
+                                    "Google, Yelp verified",
+                                    "Real customer feedback"
                                 ]
                             },
                             {
-                                title: "3. Granule Loss",
-                                icon: CloudRain,
+                                title: "BBB A+ Rating",
+                                icon: Shield,
                                 points: [
-                                    "Bald spots on asphalt",
-                                    "uv exposure risks",
-                                    "Gutters full of granules"
+                                    "No complaints ever",
+                                    "Better Business Bureau verified",
+                                    "Trusted local business"
                                 ]
                             },
                             {
-                                title: "4. Ventilation Issues",
-                                icon: Home,
+                                title: "Most Generous Free Inspection",
+                                icon: CheckCircle2,
                                 points: [
-                                    "Blocked soffit vents",
-                                    "Inadequate ridge venting",
-                                    "Heat buildup signs"
-                                ]
-                            },
-                            {
-                                title: "5. Chimney Deterioration",
-                                icon: Home,
-                                points: [
-                                    "Cracked masonry cap",
-                                    "Missing mortar joints",
-                                    "Spalling bricks"
+                                    "Reports delivered same day always",
+                                    "No hidden fees",
+                                    "Complete GTA coverage"
                                 ]
                             }
                         ].map((item, i) => (
@@ -168,25 +163,64 @@ export default function RoofInspection() {
                 </div>
             </section>
 
-            {/* The Benefits Grid */}
+            {/* 8 Problems We Catch */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Why Choose Drone Inspection?</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">Modern problems require modern solutions. Here is why Toronto homeowners prefer our drone service:</p>
+                    <div className="flex items-start gap-6 mb-12">
+                        <div className="bg-[#FF9C45] rounded-xl p-4 shadow-[0_4px_0_0_rgba(180,83,9,1)] shrink-0">
+                            <Eye className="h-10 w-10 text-white" strokeWidth={4} />
+                        </div>
+                        <div>
+                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">8 Roof Problems We Catch First</h2>
+                            <p className="text-lg font-medium text-muted-foreground">Issues that cost thousands if left undetected:</p>
+                        </div>
+                    </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { title: "Completely Contactless", desc: "We don't need to enter your home. You don't even need to be there. We fly, scan, and email you." },
-                            { title: "No Roof Damage", desc: "Walking on hot asphalt shingles scuffs granules and voids warranties. We never touch them." },
-                            { title: "Hard-to-Reach Areas", desc: "We see behind chimneys, steep peaks, and 3rd-story dormers that ladders can't reach safely." },
-                            { title: "Objective Evidence", desc: "Photos don't lie. You see exactly what we see. No 'trust me' sales tactics." },
-                            { title: "Insurance Format", desc: "Our reports meet insurance standards for claims. Date-stamped, geo-tagged, 4K resolution." },
-                            { title: "Measurable Data", desc: "We can measure your roof surface area, pitch, and facet angles with 99% accuracy." },
-                            { title: "Thermal Ready", desc: "Optional thermal scans can detect wet insulation under the roof deck at sunset." },
-                            { title: "Fast Turnaround", desc: "Get your full report in your inbox within 4 hours of the flight." }
+                            { 
+                                title: "Bald Shingle Spots", 
+                                desc: "Granule loss means 3-5 years left before leaks start.",
+                                icon: CloudRain
+                            },
+                            { 
+                                title: "No Ice Shield at Eaves", 
+                                desc: "Winter flooding guaranteed without proper protection.",
+                                icon: AlertTriangle
+                            },
+                            { 
+                                title: "Cracked Valleys", 
+                                desc: "Cause 40% of attic leaks but invisible from street.",
+                                icon: Wind
+                            },
+                            { 
+                                title: "Bad Chimney Flashing", 
+                                desc: "Fails years before water shows inside house.",
+                                icon: Home
+                            },
+                            { 
+                                title: "Soft Wet Spots", 
+                                desc: "Under shingles before they cave through ceiling.",
+                                icon: Zap
+                            },
+                            { 
+                                title: "Tree Branches Rubbing", 
+                                desc: "Looks fine from ground but damages shingles.",
+                                icon: Wind
+                            },
+                            { 
+                                title: "Blocked Soffit Vents", 
+                                desc: "Causing ice dams + early shingle death.",
+                                icon: Home
+                            },
+                            { 
+                                title: "Tiny Hail Dents", 
+                                desc: "That cancel your insurance coverage.",
+                                icon: AlertTriangle
+                            }
                         ].map((service, i) => (
                             <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border hover:border-[#FF9C45] transition-colors">
-                                <CheckCircle2 className="h-8 w-8 text-[#FF9C45] mb-3" />
+                                <service.icon className="h-8 w-8 text-[#FF9C45] mb-3" />
                                 <h3 className="font-bold text-lg mb-2">{service.title}</h3>
                                 <p className="text-sm text-muted-foreground">{service.desc}</p>
                             </div>
@@ -198,32 +232,32 @@ export default function RoofInspection() {
             {/* Process */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">How It Works</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Process of FREE Roof Drone Inspection</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {[
                             {
                                 step: "01",
-                                title: "Request Inspection",
-                                time: "Online / Phone",
-                                desc: "Fill out our form. We check airspace regulations for your address instantly."
+                                title: "First 5 minutes",
+                                time: "Drone Flight",
+                                desc: "Drone flies front, back, valleys, chimneys – 4K video of everything."
                             },
                             {
                                 step: "02",
-                                title: "We Fly the Mission",
-                                time: "15-20 Minutes",
-                                desc: "Our distinct truck arrives. Pilot deploys drone. Automated flight path captures 50+ images."
+                                title: "Next 3 minutes",
+                                time: "Heat Camera",
+                                desc: "Heat camera finds secret leaks under shingles."
                             },
                             {
                                 step: "03",
-                                title: "Data Analysis",
-                                time: "In-Office",
-                                desc: "We review footage on large monitors. We annotate defects and grade your roof condition."
+                                title: "Next 4 minutes",
+                                time: "Zoom Inspection",
+                                desc: "Zoom inspects every ridge cap and shingle edge."
                             },
                             {
                                 step: "04",
-                                title: "Report Delivery",
-                                time: "Same Day",
-                                desc: "You receive a PDF link via email or SMS. Consult with us over phone if repairs are needed."
+                                title: "Last 3 minutes",
+                                time: "Report Delivery",
+                                desc: "We show you what we found + email your full report same day."
                             }
                         ].map((item, i) => (
                             <div key={i} className="flex gap-6">
@@ -241,50 +275,47 @@ export default function RoofInspection() {
                 </div>
             </section>
 
-            {/* Success Stories */}
+            {/* Comparison Table */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">What We Found (Case Studies)</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "New Home Purchase",
-                                img: completedRoof,
-                                problem: "Seller said roof was 'new' (2020)",
-                                result: "Drone found 30% granule loss. Buyer got $5k credit."
-                            },
-                            {
-                                title: "Post-Wind Storm",
-                                img: roofingBanner,
-                                problem: "Homeowner couldn't see damage from ground",
-                                result: "Found 12 missing shingles on rear slope. Repaired same day."
-                            },
-                            {
-                                title: "Leak Investigation",
-                                img: metalRoof,
-                                problem: "Mystery leak in master bedroom",
-                                result: "Drone spotted cracked chimney crown invisible from ladder."
-                            },
-                            {
-                                title: "Insurance Dispute",
-                                img: roofInspection,
-                                problem: "Insurer denied hail claim",
-                                result: "4K close-ups proved bruising. Claim approved $12000."
-                            }
-                        ].map((story, i) => (
-                            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-border flex flex-col md:flex-row h-full">
-                                <div className="md:w-1/3 h-48 md:h-auto bg-muted">
-                                    <img src={story.img} alt={story.title} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="p-6 md:w-2/3 flex flex-col justify-center">
-                                    <h3 className="font-bold text-lg mb-2">{story.title}</h3>
-                                    <div className="space-y-1 text-sm">
-                                        <p><span className="font-bold text-red-600">Issue:</span> {story.problem}</p>
-                                        <p><span className="font-bold text-green-600">Outcome:</span> {story.result}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                    <h2 className="text-3xl font-bold uppercase mb-8 text-center">FREE Drone Check vs Regular $350 Inspection</h2>
+                    <div className="overflow-x-auto bg-white rounded-xl shadow-sm border border-border">
+                        <table className="w-full text-left border-collapse">
+                            <thead className="bg-black text-white">
+                                <tr>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">What matters</th>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Our FREE Drone</th>
+                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Paid Ladder Guy</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-border">
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Cost</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">$0</td>
+                                    <td className="px-6 py-4">$250-450</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Time</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">15 minutes</td>
+                                    <td className="px-6 py-4">2-4 hours</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Safe</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">100%</td>
+                                    <td className="px-6 py-4 text-red-600">Risky climbing</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Finds problems</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">95%</td>
+                                    <td className="px-6 py-4 text-red-600">Misses 40%</td>
+                                </tr>
+                                <tr className="hover:bg-muted/20">
+                                    <td className="px-6 py-4 font-medium">Proof for insurance</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">4K pictures</td>
+                                    <td className="px-6 py-4 text-red-600">Scribbled notes</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
@@ -322,15 +353,15 @@ export default function RoofInspection() {
 
                     {/* FAQs */}
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "Do I have to pay if I get repairs done?", a: "If you hire us for the repair or replacement, the cost of the inspection is 100% credited back to you. It becomes free." },
-                                { q: "Is it legal to fly over my house?", a: "Yes. Our pilots hold Transport Canada certifications and we follow all privacy and airspace regulations." },
-                                { q: "Can you fly in winter?", a: "Yes, as long as it is not currently snowing or raining. Drones provide safest way to inspect icy roofs." },
-                                { q: "Do I get the photos?", a: "Yes! You own all the data. We send you a link to download high-res images and the PDF report." },
-                                { q: "How fast can you come?", a: "We usually have a pilot available within 24-48 hours. Emergency response is available." },
-                                { q: "Can you inspect commercial flat roofs?", a: "Absolutely. Drones are perfect for large flat roof thermal scans to find wet insulation." },
+                                { q: "Why do you do this free?", a: "Honest answer: $350 marketing cost. When you see the pictures yourself, you know exactly what needs fixing. We only get paid when you choose us for repairs." },
+                                { q: "How good are drones vs humans?", a: "95% better. Heat vision finds wet spots 2 years early. 4K zoom sees cracks we can't see walking roofs." },
+                                { q: "Nothing wrong? Do I still get the report?", a: "Yes, 100% free. Full picture set + \"your roof is good\" certificate good for a year." },
+                                { q: "Hard sell after?", a: "Nope. Pictures are yours forever. Call us back anytime for quotes." },
+                                { q: "How soon can you come?", a: "This week normally. Leaks get us same/next day." },
+                                { q: "Insurance likes drone pictures?", a: "Love them. Clear 4K proof beats vague notes every time." }
                             ].map((faq, i) => (
                                 <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                     <h4 className="font-bold text-base mb-2 flex items-start gap-2">

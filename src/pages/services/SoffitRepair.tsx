@@ -1,10 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
-import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Wind, Thermometer, Construction, Fan, CheckCircle2, Home, LayoutDashboard } from "lucide-react";
+import { Phone, ArrowRight, Shield, Award, MapPin, Wind, Thermometer, Construction, Fan, CheckCircle2, Home, LayoutDashboard, FileText, Zap, DollarSign, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofInspection from "@/assets/roof-inspection.jpg";
-import roofCoating from "@/assets/roof-coating.jpg"; // Placeholder
-import completedRoof from "@/assets/completed-roof.jpg";
+import roofCoating from "@/assets/roof-coating.jpg";
 
 export default function SoffitRepair() {
     return (
@@ -16,24 +14,24 @@ export default function SoffitRepair() {
                         {/* Label */}
                         <div className="flex items-center gap-2">
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
-                            <span className="text-sm font-bold uppercase tracking-wider">Attic Ventilation Systems</span>
+                            <span className="text-sm font-bold uppercase tracking-wider">Soffit Repair & Replacement Services</span>
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Soffit Repair<br />
-                            & Replacement
+                            Complete Soffit Repair & Replacement<br />
+                            in Toronto & GTA
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Your attic needs to breathe. Blocked or painted-over soffits trap heat and moisture, leading to mold, ice dams, and higher energy bills.
+                                    Soffit problems causing ice dams and poor attic ventilation? We provide professional soffit repair and complete replacement for Toronto homes where clogged vents, rotten wood, and failing soffits create moisture buildup, ice dams, and skyrocketing hydro bills. Licensed Paradise Roofers serve Toronto, Mississauga, Vaughan, Markham with continuous ventilation soffits, proper fascia integration, and complete exterior packages.
                                 </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We install modern vented aluminum and vinyl soffit systems that maximize airflow while keeping pests out. Upgrade your intake ventilation today.
+                                <p className="text-lg font-bold text-[#FF9C45]">
+                                    Every soffit job starts with FREE drone inspection ($350 value) revealing hidden rot, ventilation blockages, and moisture patterns before work begins. Fast 1-2 day installations, 25-year warranties, zero mess guarantee across entire GTA region.
                                 </p>
                             </div>
 
@@ -64,16 +62,16 @@ export default function SoffitRepair() {
                         {/* Badges Bar */}
                         <div className="bg-white border border-border shadow-sm py-6 px-4 md:px-12 mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="flex items-center gap-3 justify-center md:justify-start">
-                                <Wind className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Increased Airflow</span>
+                                <FileText className="h-6 w-6 text-black fill-current" />
+                                <span className="font-bold text-sm uppercase tracking-wide">FREE Drone Inspection</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Shield className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Pest Resistant</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">25-Year Warranties</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
-                                <LayoutDashboard className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Maintenance Free</span>
+                                <Zap className="h-6 w-6 text-black fill-current" />
+                                <span className="font-bold text-sm uppercase tracking-wide">1-2 Day Installation</span>
                             </div>
                         </div>
                     </div>
@@ -87,98 +85,62 @@ export default function SoffitRepair() {
                 </div>
             </section>
 
-            {/* Signs You Need Upgrade */}
-            <section className="py-20 bg-[#F9F9F9]">
+            {/* What Our Complete Soffit Replacement Service Delivers */}
+            <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <div className="flex items-start gap-6 mb-12">
-                        <div className="bg-[#FF9C45] rounded-xl p-4 shadow-[0_4px_0_0_rgba(180,83,9,1)] shrink-0">
-                            <Thermometer className="h-10 w-10 text-white" strokeWidth={4} />
-                        </div>
-                        <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Signs of Blocked Soffits</h2>
-                            <p className="text-lg font-medium text-muted-foreground">Is your attic suffocating? Look for these signs:</p>
-                        </div>
-                    </div>
+                    <h2 className="text-3xl font-bold uppercase mb-4">What Our Complete Soffit Replacement Service Delivers?</h2>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">Professional soffit solutions engineered for Toronto's extreme weather conditions.</p>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[
-                            {
-                                title: "1. Ice Dams",
-                                icon: Thermometer,
-                                points: [
-                                    "Common sign of heat loss",
-                                    "Attic is too warm",
-                                    "Need more cold air intake"
-                                ]
-                            },
-                            {
-                                title: "2. Peeling Paint",
-                                icon: LayoutDashboard,
-                                points: [
-                                    "Paint peeling on overhangs",
-                                    "Moisture trapped in wood",
-                                    "Rotting look"
-                                ]
-                            },
-                            {
-                                title: "3. High AC Bills",
-                                icon: Wind,
-                                points: [
-                                    "Air conditioner runs nonstop",
-                                    "Upstairs rooms are hot",
-                                    "Heat radiating from ceiling"
-                                ]
-                            },
-                            {
-                                title: "4. Mold Smell",
-                                icon: Home,
-                                points: [
-                                    "Musty odor in upper floor",
-                                    "Black spots on attic deck",
-                                    "Rust on roofing nails"
-                                ]
-                            }
-                        ].map((item, i) => (
-                            <div key={i} className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-all">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <item.icon className="h-6 w-6 text-[#FF9C45]" />
-                                    <h3 className="font-bold text-lg">{item.title}</h3>
-                                </div>
-                                <ul className="space-y-2">
-                                    {item.points.map((pt, idx) => (
-                                        <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                            <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-black shrink-0" />
-                                            {pt}
-                                        </li>
-                                    ))}
-                                </ul>
+                    <div className="grid md:grid-cols-1 gap-8 mb-12">
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Construction className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">1: Complete Tear-Off & Ventilation Planning</h3>
                             </div>
-                        ))}
+                            <p className="text-muted-foreground mb-4">
+                                Full soffit removal reveals rotten fascia boards, blocked rafter vents. Continuous vent strips planned for 50% net free ventilation area (Toronto code + extra capacity). Rotten fascia repaired before new soffits installed.
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <LayoutDashboard className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">2: Professional Soffit Installation</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Aluminum or vinyl soffit panels with hidden fasteners (no visible screws). Vented panels every 16" provide maximum attic airflow. Proper fascia/soffit transition with metal flashing prevents water entry. Color-matched to siding/gutters.
+                            </p>
+                            <p className="text-sm text-[#FF9C45] font-semibold">
+                                Bonus Services: Seamless gutter reinstallation, attic insulation evaluation, ice dam prevention package quote.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Our Services Grid */}
-            <section className="py-20 bg-background">
+            {/* Our Premium Soffit Materials */}
+            <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Soffit Ventilation Services</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">We increase your Net Free Area (NFA) for optimal attic health.</p>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <h2 className="text-3xl font-bold uppercase mb-8 text-center">Our Premium Soffit Materials</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: "Aluminum Vented Soffit", desc: "Perforated aluminum panels installed over open rafter tails for maximum airflow." },
-                            { title: "Vinyl Soffit Installation", desc: "Durable, dent-resistant vinyl options in a variety of UV-resistant colors." },
-                            { title: "Intake Vent Installation", desc: "Adding new intake vents near the gutter line if overhangs are too small." },
-                            { title: "Rafter Baffle Install", desc: "Ensuring insulation doesn't block the air path from soffit to ridge." },
-                            { title: "Rotten Wood Removal", desc: "Removing old rotten plywood soffits before installing new panels." },
-                            { title: "Fascia Coordination", desc: "Matching soffit colors perfectly with fascia capping and eavestroughs." },
-                            { title: "Pot Light Integration", desc: "Cutting clean, safe openings for exterior recessed lighting." },
-                            { title: "Animal Barrier Mesh", desc: "Adding steel mesh behind vents to prevent squirrels and raccoons entry." }
-                        ].map((service, i) => (
-                            <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border hover:border-[#FF9C45] transition-colors">
-                                <CheckCircle2 className="h-8 w-8 text-[#FF9C45] mb-3" />
-                                <h3 className="font-bold text-lg mb-2">{service.title}</h3>
-                                <p className="text-sm text-muted-foreground">{service.desc}</p>
+                            {
+                                title: "Aluminum Soffit – Most Popular (80% of Jobs)",
+                                desc: "0.027 gauge seamless aluminum, continuous vent strips, 35-50 year lifespan. No rot, no paint, perfect ventilation. $15-$22 per linear foot installed. North York bungalows, Scarborough semis.",
+                                icon: Shield
+                            },
+                            {
+                                title: "Vinyl Soffit – Budget Maintenance Free",
+                                desc: "Heavy-duty 0.040 gauge PVC, interlocking panels, 30-45 year lifespan. No dents, no rot, good ventilation. $12-$18 per linear foot. Mississauga family homes, Etobicoke two-stories.",
+                                icon: Award
+                            }
+                        ].map((material, i) => (
+                            <div key={i} className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-all">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <material.icon className="h-6 w-6 text-[#FF9C45]" />
+                                    <h3 className="font-bold text-lg">{material.title}</h3>
+                                </div>
+                                <p className="text-sm text-muted-foreground">{material.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -186,80 +148,34 @@ export default function SoffitRepair() {
             </section>
 
             {/* Process */}
-            <section className="py-20 bg-[#F9F9F9]">
+            <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Ventilation Upgrade Process</h2>
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our Complete Soffit Replacement Process</h2>
+                    <div className="grid md:grid-cols-1 gap-8">
                         {[
                             {
-                                step: "01",
-                                title: "Airflow Calculation",
-                                time: "Inspection",
-                                desc: "We identify your attic square footage and calculate required intake vs exhaust ventilation."
+                                step: "Day 0",
+                                title: "FREE Professional Drone Inspection",
+                                desc: "4K aerial thermal scan reveals moisture trapped behind soffits, ventilation blockages, rot patterns affecting fascia. Precise linear footage measurement + digital report emailed same day."
                             },
                             {
-                                step: "02",
-                                title: "Opening the Airway",
-                                time: "Prep Work",
-                                desc: "We cut holes in existing plywood soffits or remove them entirely to let air in."
+                                step: "Day 1",
+                                title: "Complete System Removal & Fascia Repair",
+                                desc: "Laser level verifies fascia straightness. Rotten fascia boards cut out, replaced with aluminum/PVC. Rafter block vents cleaned – wasp nests, debris, painted over vents removed completely. Ice & water shield extended to proper eaves coverage."
                             },
                             {
-                                step: "03",
-                                title: "Panel Installation",
-                                time: "Install",
-                                desc: "New vented panels are cut to size and secured into channel runners for a clean look."
-                            },
-                            {
-                                step: "04",
-                                title: "Baffle Check",
-                                time: "Interior Check",
-                                desc: "We check inside the attic to ensure insulation isn't blocking the new airflow path."
+                                step: "Day 2",
+                                title: "Precision Soffit Installation & Ventilation",
+                                desc: "0.027 aluminum panels installed with hidden clips every 16 inches. Continuous vent strips every panel (50% net free area). Metal flashing transitions to fascia/gutters prevent water entry. Color-matched caulking all joints."
                             }
                         ].map((item, i) => (
-                            <div key={i} className="flex gap-6">
-                                <div className="text-5xl font-black text-[#FF9C45]/20 font-mono">
+                            <div key={i} className="flex gap-6 bg-muted/30 p-6 rounded-lg border border-border">
+                                <div className="text-4xl font-black text-[#FF9C45]/20 font-mono shrink-0">
                                     {item.step}
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                                    <span className="text-sm font-bold text-[#FF9C45] uppercase tracking-wider mb-2 block">{item.time}</span>
+                                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                                     <p className="text-muted-foreground">{item.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Case Studies */}
-            <section className="py-20 bg-background">
-                <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Results</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "Brampton Subdivision",
-                                img: completedRoof,
-                                problem: "Builder installed solid wood soffits with 0 vents",
-                                result: "Cut continuous strip vents. Installed perforated aluminum. Attic temp dropped 20 degrees."
-                            },
-                            {
-                                title: "North York Reno",
-                                img: roofInspection,
-                                problem: "Raccoons pushed up weak vinyl soffit",
-                                result: "Heavy gauge aluminum screwed into new framing. Animal proof."
-                            }
-                        ].map((story, i) => (
-                            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-border flex flex-col md:flex-row h-full">
-                                <div className="md:w-1/3 h-48 md:h-auto bg-muted">
-                                    <img src={story.img} alt={story.title} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="p-6 md:w-2/3 flex flex-col justify-center">
-                                    <h3 className="font-bold text-lg mb-2">{story.title}</h3>
-                                    <div className="space-y-1 text-sm">
-                                        <p><span className="font-bold text-red-600">Problem:</span> {story.problem}</p>
-                                        <p><span className="font-bold text-green-600">Result:</span> {story.result}</p>
-                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -270,13 +186,17 @@ export default function SoffitRepair() {
             {/* FAQ */}
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl">
-                    <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Soffit FAQs</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "What is soffit?", a: "Soffit is the material covering the underside of your roof overhang. It bridges the gap between your home's exterior wall and the roofline." },
-                            { q: "Why does it need holes?", a: "Cold air enters through soffit holes (intake), rises as it warms, and exits the roof vents (exhaust). This cycle keeps your roof cold in winter to stop ice dams." },
-                            { q: "Can critters get through the holes?", a: "Standard perforated soffit has tiny holes too small for insects or rodents. It's much safer than open vents." },
-                            { q: "Does aluminum fade?", a: "Today's baked-on enamel aluminum finishes are incredibly resistant to UV fading and chalking." },
+                            { q: "Average cost for soffit replacement Toronto?", a: "1,500 linear ft average home: $18K-$28K complete system. Soffit only $12-22/ft. Complete soffit/fascia/gutter $28-38/ft installed." },
+                            { q: "How long does soffit installation take?", a: "Single story: 1 day. Two-story homes: 1.5-2 days. Weather dependent." },
+                            { q: "Free inspection before quoting?", a: "FREE drone inspection standard ($350 value). Reveals exact rot, ventilation issues before work starts." },
+                            { q: "Do soffits affect ice dams?", a: "80% of ice dams caused by poor soffit ventilation. Proper continuous vents eliminate permanently." },
+                            { q: "Insurance cover soffit damage?", a: "Yes for wind/storm damage. We provide drone photos + documentation. 92% claims approved." },
+                            { q: "Mess during soffit replacement?", a: "Zero mess. Drop cloths everywhere. Magnetic boots. Continuous cleanup. Final magnet sweep." },
+                            { q: "What warranty on new soffits?", a: "25-year Paradise workmanship + lifetime manufacturer warranty on aluminum panels. Transferable." },
+                            { q: "Do gutters need fixing too?", a: "95% need new gutters during soffit work. We reinstall seamless gutters properly sloped." }
                         ].map((faq, i) => (
                             <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                 <h4 className="font-bold text-base mb-2 flex items-start gap-2">

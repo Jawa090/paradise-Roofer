@@ -5,29 +5,10 @@ import heroImage from "@/assets/hero-roofing.jpg";
 import teamPhoto from "@/assets/team-photo.jpg";
 import completedRoof from "@/assets/completed-roof.jpg";
 
-const timeline = [
-  { year: "2008", title: "We Raised Roofing", description: "Founded in a small garage with big dreams and bigger ladders." },
-  { year: "2012", title: "A Year of Growth", description: "Expanded our team and took on our first commercial projects." },
-  { year: "2015", title: "Awards & Recognition", description: "Named Best Roofing Company in GTA three years running." },
-  { year: "2023", title: "Leading with Purpose", description: "Now serving thousands of happy customers across Ontario." },
-];
-
-const values = [
-  { icon: CheckCircle, title: "Craftsmanship You Can Trust", description: "Every nail, every shingle, done right the first time." },
-  { icon: Users, title: "People Before Profit", description: "We build relationships, not just roofs." },
-  { icon: Award, title: "Excellence in Every Detail", description: "From inspection to cleanup, we sweat the small stuff." },
-  { icon: Target, title: "Accountability & Honesty", description: "If we make a mistake, we own it and fix it." },
-];
-
 const team = [
-  { name: "Djaramillo 'Drake' Garcia", role: "Founder & CEO", image: teamPhoto },
-  { name: "Marcus James", role: "Operations Manager", image: teamPhoto },
-  { name: "Elena Ramirez", role: "Lead Estimator", image: teamPhoto },
-];
-
-const stats = [
-  { number: "2450+", label: "Homes Happily Installed" },
-  { number: "98.7%", suffix: "%", label: "Happy Customer Rating" },
+  { name: "Mike P.", role: "Lead Installer", description: "18 yrs experience. GAF Master Elite. Scarborough family man.", image: teamPhoto },
+  { name: "Sarah T.", role: "Service Manager", description: "12 yrs coordinating 100+ weekly jobs. Ex-insurance adjuster.", image: teamPhoto },
+  { name: "Carlos R.", role: "Drone Tech", description: "Certified pilot finds leaks others miss. Mississauga dad of 4.", image: teamPhoto },
 ];
 
 export default function About() {
@@ -40,30 +21,47 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/90 to-foreground/70" />
         </div>
         <div className="container relative z-10">
-          <span className="section-label text-primary mb-4 inline-block">About Us</span>
+          <span className="section-label text-primary mb-4 inline-block">About Paradise Roofers</span>
           <h1 className="headline-xl text-4xl md:text-6xl lg:text-7xl max-w-4xl">
-            Our Story Is
+            20+ Years of Toronto
             <br />
-            As Sturdy As
-            <br />
-            Our Roofs—
+            Roofing Excellence—
             <br />
             Come Meet Us!
           </h1>
+          <p className="text-background/80 text-lg mt-6 max-w-3xl">
+            Trusted roofers serving Toronto, Mississauga, Vaughan, Markham & GTA. We install 2,000+ roofs yearly with free drone inspections, seamless gutters, fascia/soffit restoration, and 25-year warranties. Licensed. Insured. 4.9★ reviews.
+          </p>
         </div>
       </section>
 
       {/* Timeline */}
       <section className="py-20 bg-background">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8">
-            {timeline.map((item, i) => (
-              <div key={i} className="border-l-2 border-primary pl-6">
-                <div className="text-primary font-heading font-bold text-2xl mb-2">{item.year}</div>
-                <h3 className="font-heading font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
-              </div>
-            ))}
+          <div className="text-center mb-12">
+            <h2 className="headline-lg text-3xl md:text-4xl mb-8">Proven Results</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6">
+              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">2,000+</div>
+              <h3 className="font-heading font-bold text-lg mb-2">roofs installed</h3>
+              <p className="text-muted-foreground text-sm">Etobicoke bungalows to Vaughan commercial</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">98.7%</div>
+              <h3 className="font-heading font-bold text-lg mb-2">satisfaction</h3>
+              <p className="text-muted-foreground text-sm">4.9★ Google/Yelp/BBB combined</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">500+</div>
+              <h3 className="font-heading font-bold text-lg mb-2">claims won</h3>
+              <p className="text-muted-foreground text-sm">Toronto storm victims made whole</p>
+            </div>
+            <div className="text-center p-6">
+              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">24</div>
+              <h3 className="font-heading font-bold text-lg mb-2">hrs emergency response</h3>
+              <p className="text-muted-foreground text-sm">GTA-wide coverage guaranteed</p>
+            </div>
           </div>
         </div>
       </section>
@@ -84,7 +82,7 @@ export default function About() {
               </p>
               <blockquote className="border-l-4 border-primary pl-6 italic">
                 "When you trust us with your roof, you trust us with your home."
-                <footer className="mt-2 text-sm not-italic font-semibold">— Drake Garcia, Founder</footer>
+                <footer className="mt-2 text-sm not-italic font-semibold">— Paradise Roofers Team</footer>
               </blockquote>
             </div>
             <div>
@@ -94,61 +92,35 @@ export default function About() {
         </div>
       </section>
 
-      {/* Vision */}
-      <section className="py-20 bg-foreground text-background">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="section-label text-primary mb-4 inline-block">Our Vision</span>
-            <h2 className="headline-lg text-3xl md:text-4xl mb-6">
-              To Become The Most
-              <br />
-              Trusted Name In Roofing
-            </h2>
-            <p className="text-background/70">
-              We're not just building roofs — we're building a legacy of trust, quality, and community. Our goal is to set the standard for what roofing should be: honest, reliable, and always putting the customer first.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
+      {/* Why Choose Us */}
       <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-12">
-            <span className="section-label mb-4 inline-block">Our Values</span>
             <h2 className="headline-lg text-3xl md:text-4xl">
-              The Heart Behind
-              <br />
-              The Hard Hats
+              Why Choose Paradise Roofers?
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, i) => (
-              <div key={i} className="text-center p-6">
-                <value.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <h3 className="font-heading font-bold text-lg mb-2">{value.title}</h3>
-                <p className="text-muted-foreground text-sm">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-20 bg-muted">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="headline-lg text-3xl md:text-4xl">
-              Hard Hats On, Results Up
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto">
-            {stats.map((stat, i) => (
-              <div key={i} className="text-center">
-                <div className="text-6xl md:text-7xl font-heading font-bold text-primary">{stat.number}</div>
-                <div className="text-lg text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
+            <div className="text-center p-6">
+              <CheckCircle className="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 className="font-heading font-bold text-lg mb-2">Free Drone Roof Inspections</h3>
+              <p className="text-muted-foreground text-sm">4K aerial analysis spots leaks invisible from ladders ($350 value, always free)</p>
+            </div>
+            <div className="text-center p-6">
+              <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 className="font-heading font-bold text-lg mb-2">Complete Exterior Packages</h3>
+              <p className="text-muted-foreground text-sm">Roof + gutters + fascia + soffit + attic insulation by one expert crew</p>
+            </div>
+            <div className="text-center p-6">
+              <Award className="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 className="font-heading font-bold text-lg mb-2">24/7 Emergency Service</h3>
+              <p className="text-muted-foreground text-sm">Active leaks, storm damage, ice dams – GTA response within 2 hours</p>
+            </div>
+            <div className="text-center p-6">
+              <Target className="h-12 w-12 mx-auto mb-4 text-primary" />
+              <h3 className="font-heading font-bold text-lg mb-2">98% Insurance Success Rate</h3>
+              <p className="text-muted-foreground text-sm">We handle claims, documentation, adjuster negotiations for Toronto homeowners</p>
+            </div>
           </div>
         </div>
       </section>
@@ -159,9 +131,7 @@ export default function About() {
           <div className="text-center mb-12">
             <span className="section-label mb-4 inline-block">Our Team</span>
             <h2 className="headline-lg text-3xl md:text-4xl">
-              The Hands (And Hearts)
-              <br />
-              Behind Your Roof
+              Meet Your Roofers
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -171,7 +141,8 @@ export default function About() {
                   <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                 </div>
                 <h3 className="font-heading font-bold text-lg">{member.name}</h3>
-                <p className="text-muted-foreground text-sm">{member.role}</p>
+                <p className="text-primary text-sm font-semibold mb-2">{member.role}</p>
+                <p className="text-muted-foreground text-sm">{member.description}</p>
               </div>
             ))}
           </div>

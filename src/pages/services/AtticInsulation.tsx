@@ -1,10 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
-import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Thermometer, Wind, DollarSign, Home, CheckCircle2, AlertTriangle, Snowflake } from "lucide-react";
+import { Phone, ArrowRight, MapPin, Thermometer, DollarSign, Home, CheckCircle2, AlertTriangle, Snowflake } from "lucide-react";
 import { Link } from "react-router-dom";
 import roofCoating from "@/assets/roof-coating.jpg";
-import roofInspection from "@/assets/roof-inspection.jpg";
-import completedRoof from "@/assets/completed-roof.jpg";
 
 export default function AtticInsulation() {
     return (
@@ -22,18 +20,18 @@ export default function AtticInsulation() {
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Attic Insulation<br />
-                            & Ventilation Upgrades
+                            R50 Attic Insulation<br />
+                            Toronto Building Code
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Stop heating the neighborhood. If your home has uneven temperatures, high energy bills, or giant icicles in winter, you likely have an attic insulation problem.
+                                    Toronto's new building code requires R50 attic insulation (was R40). Most homes built before 2020 have R12-R20 insulation that wastes thousands yearly on heating bills.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We upgrade Toronto homes to R60 standards, preventing heat loss and stopping ice dams permanently. Save up to 25% on your utility bills this year.
+                                    We upgrade your attic to R50+ with premium blown-in insulation. Qualify for EcoHome rebates up to $5,000. Stop ice dams, cut energy bills 30%, make every room comfortable.
                                 </p>
                             </div>
 
@@ -65,11 +63,11 @@ export default function AtticInsulation() {
                         <div className="bg-white border border-border shadow-sm py-6 px-4 md:px-12 mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Thermometer className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">R-60 Upgrade Standard</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">R50 Building Code</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <DollarSign className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">Eligible for Rebates</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">$5,000 EcoHome Rebates</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Snowflake className="h-6 w-6 text-black fill-current" />
@@ -82,6 +80,183 @@ export default function AtticInsulation() {
                     <div className="mt-12 max-w-4xl">
                         <p className="text-lg text-muted-foreground">
                             Most older Toronto homes have R12 to R20 insulation (3-5 inches), which is woefully inadequate for our climate. This causes heat to escape into your attic, melting snow on your roof which then refreezes at the eaves as destructive ice dams. Our comprehensive attic tune-up includes air sealing, baffle installation for airflow, and top-up with premium fiberglass or cellulose to R60 depth (22 inches+).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Why Toronto Attics Need R50 Insulation NOW */}
+            <section className="py-20 bg-background">
+                <div className="container max-w-6xl">
+                    <div className="flex items-start gap-6 mb-12">
+                        <div className="bg-[#FF9C45] rounded-xl p-4 shadow-[0_4px_0_0_rgba(180,83,9,1)] shrink-0">
+                            <AlertTriangle className="h-10 w-10 text-white" strokeWidth={4} />
+                        </div>
+                        <div>
+                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Why Toronto Attics Need R50 Insulation NOW</h2>
+                            <p className="text-lg font-medium text-muted-foreground">New building code requirements and climate realities make upgrades essential</p>
+                        </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            {
+                                title: "New Building Code",
+                                icon: Home,
+                                desc: "Toronto updated building code from R40 to R50 minimum. Homes built before 2020 don't meet current standards."
+                            },
+                            {
+                                title: "Climate Change Impact",
+                                icon: Snowflake,
+                                desc: "More extreme temperature swings mean your heating/cooling systems work harder with inadequate insulation."
+                            },
+                            {
+                                title: "Energy Cost Crisis",
+                                icon: DollarSign,
+                                desc: "Natural gas prices up 40% since 2019. Poor insulation means you're literally heating the outdoors."
+                            },
+                            {
+                                title: "Ice Dam Epidemic",
+                                icon: AlertTriangle,
+                                desc: "Warm attics melt roof snow that refreezes at eaves, causing thousands in water damage annually."
+                            },
+                            {
+                                title: "Resale Value Impact",
+                                icon: CheckCircle2,
+                                desc: "Energy-efficient homes sell 15% faster. R50 insulation is now expected by buyers and inspectors."
+                            },
+                            {
+                                title: "Health & Comfort",
+                                icon: Thermometer,
+                                desc: "Uneven temperatures create drafts, humidity issues, and force HVAC systems to overwork."
+                            }
+                        ].map((item, i) => (
+                            <div key={i} className="bg-muted/30 p-6 rounded-xl border border-border hover:border-[#FF9C45] transition-colors">
+                                <item.icon className="h-8 w-8 text-[#FF9C45] mb-4" />
+                                <h3 className="font-bold text-lg mb-3">{item.title}</h3>
+                                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Attic Insulation Types */}
+            <section className="py-20 bg-[#F9F9F9]">
+                <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-4">Attic Insulation Types</h2>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">We install the two most effective insulation materials for Toronto's climate</p>
+
+                    <div className="overflow-x-auto">
+                        <table className="w-full bg-white rounded-xl border border-border shadow-sm">
+                            <thead>
+                                <tr className="border-b border-border">
+                                    <th className="text-left p-6 font-bold">Feature</th>
+                                    <th className="text-left p-6 font-bold text-[#FF9C45]">Blown-in Fiberglass</th>
+                                    <th className="text-left p-6 font-bold text-[#FF9C45]">Blown-in Cellulose</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">R-Value per inch</td>
+                                    <td className="p-6">R3.8</td>
+                                    <td className="p-6">R3.6</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">Depth for R50</td>
+                                    <td className="p-6">13 inches</td>
+                                    <td className="p-6">14 inches</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">Fire resistance</td>
+                                    <td className="p-6">Non-combustible</td>
+                                    <td className="p-6">Treated with fire retardant</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">Pest resistance</td>
+                                    <td className="p-6">Rodents avoid fiberglass</td>
+                                    <td className="p-6">Treated with boric acid (pest deterrent)</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">Settling over time</td>
+                                    <td className="p-6">Minimal (2-3%)</td>
+                                    <td className="p-6">Moderate (5-8%)</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">Moisture resistance</td>
+                                    <td className="p-6">Excellent (doesn't absorb water)</td>
+                                    <td className="p-6">Good (treated for moisture)</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-6 font-medium">Best for</td>
+                                    <td className="p-6">Clean attics, allergy concerns</td>
+                                    <td className="p-6">Sound dampening, eco-friendly choice</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            {/* Toronto R-Value Upgrade Savings Calculator */}
+            <section className="py-20 bg-background">
+                <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-4">Toronto R-Value Upgrade Savings Calculator</h2>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">Annual energy savings based on typical 1,500 sq ft Toronto home</p>
+
+                    <div className="overflow-x-auto">
+                        <table className="w-full bg-white rounded-xl border border-border shadow-sm">
+                            <thead>
+                                <tr className="border-b border-border bg-[#F9F9F9]">
+                                    <th className="text-left p-6 font-bold">Current R-Value</th>
+                                    <th className="text-left p-6 font-bold">Upgrade to R50</th>
+                                    <th className="text-left p-6 font-bold">Annual Gas Savings</th>
+                                    <th className="text-left p-6 font-bold">Annual Electric Savings</th>
+                                    <th className="text-left p-6 font-bold">Total Annual Savings</th>
+                                    <th className="text-left p-6 font-bold">Payback Period</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">R12 (3 inches)</td>
+                                    <td className="p-6">+R38 upgrade</td>
+                                    <td className="p-6 text-green-600 font-bold">$680</td>
+                                    <td className="p-6 text-green-600 font-bold">$420</td>
+                                    <td className="p-6 text-green-600 font-bold">$1,100</td>
+                                    <td className="p-6 font-bold">2.8 years</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">R20 (5 inches)</td>
+                                    <td className="p-6">+R30 upgrade</td>
+                                    <td className="p-6 text-green-600 font-bold">$520</td>
+                                    <td className="p-6 text-green-600 font-bold">$310</td>
+                                    <td className="p-6 text-green-600 font-bold">$830</td>
+                                    <td className="p-6 font-bold">3.2 years</td>
+                                </tr>
+                                <tr className="border-b border-border">
+                                    <td className="p-6 font-medium">R30 (8 inches)</td>
+                                    <td className="p-6">+R20 upgrade</td>
+                                    <td className="p-6 text-green-600 font-bold">$340</td>
+                                    <td className="p-6 text-green-600 font-bold">$180</td>
+                                    <td className="p-6 text-green-600 font-bold">$520</td>
+                                    <td className="p-6 font-bold">4.1 years</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-6 font-medium">R40 (10 inches)</td>
+                                    <td className="p-6">+R10 upgrade</td>
+                                    <td className="p-6 text-green-600 font-bold">$180</td>
+                                    <td className="p-6 text-green-600 font-bold">$90</td>
+                                    <td className="p-6 text-green-600 font-bold">$270</td>
+                                    <td className="p-6 font-bold">5.8 years</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div className="mt-8 bg-[#F9F9F9] p-6 rounded-xl border border-border">
+                        <p className="text-sm text-muted-foreground">
+                            <strong>Calculations based on:</strong> Natural gas at $1.20/m³, electricity at $0.17/kWh (Toronto Hydro 2024 rates), 
+                            1,500 sq ft home, 2,200 heating degree days. Actual savings vary by home size, age, and usage patterns.
                         </p>
                     </div>
                 </div>
@@ -197,32 +372,32 @@ export default function AtticInsulation() {
             {/* Process */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our Upgrade Process</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our R50 Upgrade Process</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {[
                             {
                                 step: "01",
-                                title: "Attic Inspection",
+                                title: "Free Attic Assessment",
                                 time: "30 Minutes",
-                                desc: "We measure current depth, check for mold, and inspect baffles/ventilation intake."
+                                desc: "We measure current R-value, check for air leaks, inspect ventilation, and calculate exact insulation needed for R50."
                             },
                             {
                                 step: "02",
-                                title: "Prep & Seal",
-                                time: "1-2 Hours",
-                                desc: "Hose setup. We install baffles, seal gaps, and clear debris. Protective runners laid in your home."
+                                title: "Air Sealing & Prep",
+                                time: "2-3 Hours",
+                                desc: "Seal gaps around pot lights, pipes, wires. Install rafter baffles. Clear debris. Protect your home with drop cloths."
                             },
                             {
                                 step: "03",
-                                title: "Machine Blow-In",
+                                title: "Blown-in Insulation",
                                 time: "1-2 Hours",
-                                desc: "Truck-mounted system blows fresh insulation to precise R60 depth (approx 22 inches)."
+                                desc: "Truck-mounted blower delivers premium fiberglass or cellulose to precise R50 depth. Real-time monitoring ensures even coverage."
                             },
                             {
                                 step: "04",
-                                title: "Clean Up & Signoff",
+                                title: "Quality Check & Cleanup",
                                 time: "30 Minutes",
-                                desc: "We vacuum the hatch area. You inspect the depth rulers. Immediate difference in comfort."
+                                desc: "Measure final depth with rulers. Vacuum access area. Install weatherstripped hatch cover. You feel the difference immediately."
                             }
                         ].map((item, i) => (
                             <div key={i} className="flex gap-6">
@@ -240,42 +415,6 @@ export default function AtticInsulation() {
                 </div>
             </section>
 
-            {/* Case Studies */}
-            <section className="py-20 bg-background">
-                <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Insulation Success Stories</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "North York 2-Story",
-                                img: completedRoof,
-                                problem: "$400/mo gas bills & freezing master bedroom",
-                                result: "Upgraded R12 to R60. Bedroom now warm, bills down 20%."
-                            },
-                            {
-                                title: "Etobicoke Leaky Attic",
-                                img: roofInspection,
-                                problem: "Ice dams causing leaks every Feb",
-                                result: "Proper air sealing + baffles. Zero ice dams this winter."
-                            }
-                        ].map((story, i) => (
-                            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-border flex flex-col md:flex-row h-full">
-                                <div className="md:w-1/3 h-48 md:h-auto bg-muted">
-                                    <img src={story.img} alt={story.title} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="p-6 md:w-2/3 flex flex-col justify-center">
-                                    <h3 className="font-bold text-lg mb-2">{story.title}</h3>
-                                    <div className="space-y-1 text-sm">
-                                        <p><span className="font-bold text-red-600">Problem:</span> {story.problem}</p>
-                                        <p><span className="font-bold text-green-600">Result:</span> {story.result}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Coverage & FAQs */}
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl space-y-20">
@@ -285,23 +424,29 @@ export default function AtticInsulation() {
                         <div>
                             <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                                 <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                Service Availability
+                                Coverage Areas
                             </h3>
                             <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
                                 <span>• Toronto (All Districts)</span>
                                 <span>• Mississauga & Brampton</span>
                                 <span>• Vaughan & Richmond Hill</span>
                                 <span>• Markham & Scarborough</span>
+                                <span>• Oakville & Burlington</span>
+                                <span>• Ajax & Pickering</span>
+                                <span>• Etobicoke & North York</span>
+                                <span>• Newmarket & Aurora</span>
                             </div>
                         </div>
                         <div>
                             <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                                 <DollarSign className="h-5 w-5 text-[#FF9C45]" />
-                                Government Rebates
+                                EcoHome Rebates Available
                             </h3>
                             <div className="grid grid-cols-1 gap-2 text-sm text-muted-foreground">
-                                <span>• We help document R-Value upgrades</span>
-                                <span>• Eligible for Enbridge Home Efficiency Rebates (Program dependent)</span>
+                                <span>• Up to $5,000 for R50 upgrades</span>
+                                <span>• We handle all rebate paperwork</span>
+                                <span>• Pre-approval available</span>
+                                <span>• Combines with utility rebates</span>
                             </div>
                         </div>
                     </div>
@@ -311,11 +456,14 @@ export default function AtticInsulation() {
                         <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "How messy is the process?", a: "Very clean. The machine stays in the truck. We run a hose through your front door or window. We use drop cloths and vacuum everything before leaving." },
-                                { q: "Fiberglass or Cellulose?", a: "Both achieve R60. Cellulose settles more but is denser/quieter. Ultraviolet fiberglass is dust-free and lighter. We install both." },
-                                { q: "Can you just add on top of old insulation?", a: "Yes, as long as the old insulation isn't wet, moldy, or full of rodent droppings. It saves money to layer it." },
-                                { q: "How long does it take?", a: "A typical 1500 sq ft attic takes about 2-3 hours from start to finish." },
-                                { q: "Will this help in summer too?", a: "Yes! It prevents attic heat (which can reach 150°F) from radiating down into your bedrooms, helping your AC." },
+                                { q: "How much does R50 insulation cost?", a: "Typical 1,500 sq ft attic costs $2,800-$3,500 for R50 upgrade. Price depends on current insulation level and access difficulty. EcoHome rebates reduce net cost significantly." },
+                                { q: "Can you blow insulation over existing?", a: "Yes, as long as existing insulation isn't wet, moldy, or contaminated. We add the exact amount needed to reach R50 total." },
+                                { q: "How long does installation take?", a: "Complete R50 upgrade takes 4-6 hours: 2-3 hours prep/air sealing, 1-2 hours blowing, 30 minutes cleanup. Most jobs done in one day." },
+                                { q: "Will this stop ice dams completely?", a: "R50 insulation combined with proper air sealing eliminates 95% of ice dam problems. Remaining issues usually involve ventilation or roof design." },
+                                { q: "Fiberglass or cellulose - which is better?", a: "Both reach R50 effectively. Fiberglass is cleaner, settles less. Cellulose is eco-friendly, better sound dampening. We install both based on your priorities." },
+                                { q: "Do you guarantee the R-value?", a: "Yes. We measure depth with rulers and guarantee R50 performance. If settling occurs within 5 years, we top up free." },
+                                { q: "How messy is the installation?", a: "Very clean process. Blower truck stays outside, hose runs through door/window. We use drop cloths and vacuum thoroughly before leaving." },
+                                { q: "When will I see energy savings?", a: "Immediately. Most customers notice more even temperatures within 24 hours. Full energy savings show on next month's utility bill." }
                             ].map((faq, i) => (
                                 <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                     <h4 className="font-bold text-base mb-2 flex items-start gap-2">

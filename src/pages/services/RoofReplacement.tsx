@@ -1,11 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
-import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Home, Hammer, Trash2, Layers, Umbrella, DollarSign, Calendar, CheckCircle2 } from "lucide-react";
+import { Phone, ArrowRight, Shield, Award, Star, MapPin, Home, Hammer, Trash2, Layers, Umbrella, DollarSign, Calendar, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import completedRoof from "@/assets/completed-roof.jpg";
-import roofInspection from "@/assets/roof-inspection.jpg";
-import metalRoof from "@/assets/metal-roof.jpg";
-import roofingBanner from "@/assets/roofers-banner.jpg";
 
 export default function RoofReplacement() {
     return (
@@ -24,17 +21,20 @@ export default function RoofReplacement() {
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
                             Complete Roof Replacement<br />
-                            in Toronto & The GTA
+                            in Toronto & GTA
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Is your roof over 15 years old? Seeing curling shingles or granules in your gutters? It might be time to stop patching and start protecting.
+                                    Is your 15+ year old roof failing? We provide professional complete roof replacement for Toronto homes and businesses, handling everything from full tear-off to premium new installation with proper ice dam protection designed specifically for harsh Canadian winters.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We don't just "re-roof"—we install complete roofing systems engineered for Toronto winters. With 50-year material warranties and our leak-proof guarantee, a Paradise roof is the last roof you'll ever need.
+                                    Whether you need durable asphalt shingles, long-lasting metal roofing systems, elegant concrete tiles, or commercial flat roof membranes, our licensed Paradise Roofers team delivers exceptional results.
+                                </p>
+                                <p className="text-lg font-bold text-[#FF9C45]">
+                                    Every replacement starts with FREE drone inspection ($350 value) showing exactly what condition your deck and underlayment are in before we begin. Fast 1-3 day installations, 25-year workmanship warranties, zero mess guarantee, proudly serving Toronto, Mississauga, Vaughan, Markham, Richmond Hill, Oakville, and entire GTA region.
                                 </p>
                             </div>
 
@@ -66,15 +66,15 @@ export default function RoofReplacement() {
                         <div className="bg-white border border-border shadow-sm py-6 px-4 md:px-12 mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Shield className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">50-Year Material Warranty</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">25-Year Workmanship Warranty</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Award className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">GAF Master Elite Certified</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">FREE Drone Inspection</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Star className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">10-Year Labor Guarantee</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">Zero Mess Guarantee</span>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ export default function RoofReplacement() {
                 </div>
             </section>
 
-            {/* Signs You Need Replacement */}
+            {/* When It's Time to Replace */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
                     <div className="flex items-start gap-6 mb-12">
@@ -96,56 +96,74 @@ export default function RoofReplacement() {
                             <Home className="h-10 w-10 text-white" strokeWidth={4} />
                         </div>
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Signs You Need A New Roof</h2>
-                            <p className="text-lg font-medium text-muted-foreground">If you see these signs, your roof may be past the point of repair:</p>
+                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">When It's Time to Replace Your Toronto Roof – Don't Wait</h2>
+                            <p className="text-lg font-medium text-muted-foreground">Toronto roofs face brutal conditions that shorten lifespans significantly. Here are the 7 clear signs your roof needs complete replacement rather than endless repairs:</p>
                         </div>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                title: "1. Curling & Buckling Shingles",
-                                icon: Layers,
+                                title: "Age 15+ years",
+                                icon: Calendar,
                                 points: [
-                                    "Shingle edges verify upward",
-                                    "Indicates older shingles drying out",
-                                    "Risk: Wind will blow them off easily"
+                                    "Even well-maintained asphalt shingles reach end of engineered life",
+                                    "Granules wash completely away, flexible oils evaporate",
+                                    "Becoming brittle and crack-prone"
                                 ]
                             },
                             {
-                                title: "2. Heavy Granule Loss",
+                                title: "Granules filling your gutters",
                                 icon: Trash2,
                                 points: [
-                                    "Granules in gutters or downspouts",
-                                    "Dark spots on shingles",
-                                    "Risk: UV rays destroy asphalt core"
+                                    "Heavy granule loss indicates UV degradation through entire shingle mat",
+                                    "More granules lost = faster leak progression",
+                                    "Clear sign of advanced deterioration"
                                 ]
                             },
                             {
-                                title: "3. Daylight in Attic",
-                                icon: Calendar,
+                                title: "Interior ceiling stains or water marks",
+                                icon: Umbrella,
                                 points: [
-                                    "Seeing light through roof boards",
-                                    "Moisture/mold on insulation",
-                                    "Risk: Active leaks & rotten deck"
+                                    "Leaks already penetrated attic reaching interior surfaces",
+                                    "Patching won't stop accelerating damage",
+                                    "Structural damage may be occurring"
                                 ]
                             },
                             {
-                                title: "4. Sagging Roof Deck",
+                                title: "Skyrocketing hydro bills",
+                                icon: DollarSign,
+                                points: [
+                                    "Poor attic insulation + ice dams force constant heating",
+                                    "New roof + insulation upgrade cuts bills 25-35%",
+                                    "Energy efficiency dramatically improved"
+                                ]
+                            },
+                            {
+                                title: "Missing or curling shingles",
+                                icon: Layers,
+                                points: [
+                                    "Wind damage worsens exponentially",
+                                    "Each storm loses more protection exposing underlayment",
+                                    "Cascading failure pattern"
+                                ]
+                            },
+                            {
+                                title: "Annual ice dams",
                                 icon: Home,
                                 points: [
-                                    "Depressions in the roof line",
-                                    "Spongy feel when walking on it",
-                                    "Risk: Structural failure impending"
+                                    "Missing ice/water shield + poor ventilation guarantees winter flooding",
+                                    "Proper replacement eliminates permanently",
+                                    "Prevents costly interior damage"
                                 ]
                             },
                             {
-                                title: "5. Age Over 20 Years",
-                                icon: Calendar,
+                                title: "Professional inspection recommends replacement",
+                                icon: CheckCircle2,
                                 points: [
-                                    "Most 3-tab shingles last 15-20 yrs",
-                                    "Sealant strips fail after decades",
-                                    "Risk: Sudden failure in storms"
+                                    "Our drone analysis reveals plywood deck rot, failed underlayment",
+                                    "40%+ shingle damage = replace immediately",
+                                    "Smart math: $25K new roof today vs $35K emergency replacement + $15K interior repairs = $25K savings replacing proactively"
                                 ]
                             }
                         ].map((item, i) => (
@@ -168,27 +186,82 @@ export default function RoofReplacement() {
                 </div>
             </section>
 
-            {/* The Paradise Standard Grid */}
+            {/* Complete Service Delivery */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">The Paradise Replacement Standard</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">We exceed Ontario Building Code requirements on every single install. Here is what makes our roofs superior:</p>
+                    <h2 className="text-3xl font-bold uppercase mb-4">What Our Complete Roof Replacement Service Delivers</h2>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">Professional roof replacement engineered for Toronto's extreme weather conditions.</p>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid md:grid-cols-1 gap-8 mb-12">
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Trash2 className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">1: Complete Tear-Off & Deck Restoration</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Full dumpster service hauls 3-5 tons old shingles offsite (never your driveway). Every plywood sheet inspected – rotted sections cut out, sistered with marine-grade plywood. Ice & water shield installed full 42" eaves coverage PLUS all valleys, penetrations (Toronto code + extra protection).
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Layers className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">2: Professional Underlayment & Shingle Installation</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Synthetic underlayment entire roof surface (not cheap asphalt felt). 6-nail fastening pattern meets 160km/h Toronto wind code. Proper starter strip installation prevents wind-driven rain entry. Architectural-grade shingles with impact resistance, algae protection, 40-year lifespan.
+                            </p>
+                        </div>
+
+                        <div className="bg-muted/30 p-8 rounded-lg border border-border">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Hammer className="h-8 w-8 text-[#FF9C45]" />
+                                <h3 className="font-bold text-xl">3: Precision Flashing & Final Details</h3>
+                            </div>
+                            <p className="text-muted-foreground mb-4">
+                                Step flashing rebuilt around chimneys, skylights using color-matched metal. New valley liners double thickness prevent cross-flow leaks. Metal ridge caps sealed with butyl tape. Complete fascia inspection – rotten boards replaced before gutters installed.
+                            </p>
+                            <p className="text-sm text-[#FF9C45] font-semibold">
+                                Bonus Services Included: Free attic insulation evaluation, soffit ventilation assessment, seamless gutter quote, 25-year transferable warranty registration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Premium Materials */}
+            <section className="py-20 bg-[#F9F9F9]">
+                <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-8 text-center">Our Premium Roof Replacement Materials</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
                         {[
-                            { title: "Complete Tear-Off", desc: "We never layer over old roofs. We strip down to the wood deck to inspect for rot and ensure a perfect nailing surface." },
-                            { title: "6ft Ice & Water Shield", desc: "Code only requires 3ft. We install 6ft to prevent ice dams from backing water up into your eaves and walls." },
-                            { title: "Synthetic Underlayment", desc: "No old-school felt paper. We use breathable, tear-proof synthetic underlayment for secondary water protection." },
-                            { title: "Premium Drip Edge", desc: "Aluminum drip edge installed on all rakes and eaves to guide water directly into gutters, preventing fascia rot." },
-                            { title: "Starter Shingle Row", desc: "Dedicated starter strips sealed at the eaves to prevent wind uplift (many roofers skip this)." },
-                            { title: "Optimized Ventilation", desc: "Calculation of Net Free Area to install the perfect mix of ridge vents and soffit vents for longevity." },
-                            { title: "High-Wind Shingles", desc: "Installation of GAF Timberline or Owens Corning Duration shingles rated for 130mph+ winds." },
-                            { title: "Magnet Clean Sweep", desc: "We run industrial magnets over your lawn, driveway, and gardens to ensure 100% nail cleanup." }
-                        ].map((service, i) => (
-                            <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border hover:border-[#FF9C45] transition-colors">
-                                <CheckCircle2 className="h-8 w-8 text-[#FF9C45] mb-3" />
-                                <h3 className="font-bold text-lg mb-2">{service.title}</h3>
-                                <p className="text-sm text-muted-foreground">{service.desc}</p>
+                            {
+                                title: "Asphalt Architectural Shingles",
+                                desc: "GAF Timberline HDZ or IKO Cambridge: 40-year lifespan, Class 4 impact rating (hail resistant), StainGuard algae protection. $450-$650 per square installed. Perfect North York bungalows, Scarborough semis, Etobicoke two-stories.",
+                                icon: Home
+                            },
+                            {
+                                title: "Standing Seam Metal Roofing",
+                                desc: "24-gauge steel or aluminum with concealed clips. 50-70 year lifespan. Snow slides off preventing ice dams. Energy Star cool roof coating cuts AC bills. $900-$1,400 per square. Ideal Mississauga modern homes, Vaughan executive properties.",
+                                icon: Shield
+                            },
+                            {
+                                title: "Concrete Tile Roofing",
+                                desc: "Lightweight concrete mimicking clay/slate. 50-75 year durability. Class A fire rating, superior freeze-thaw resistance. $900-$1,300 per square. Leaside heritage homes, Lawrence Park estates.",
+                                icon: Award
+                            },
+                            {
+                                title: "TPO Commercial Flat Roofing",
+                                desc: "White reflective membrane reduces urban heat island effect. 20-30 year warranty. Fully adhered prevents ponding. $650-$1,050 per square. Condo buildings, commercial strip plazas, large garages.",
+                                icon: Star
+                            }
+                        ].map((material, i) => (
+                            <div key={i} className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-all">
+                                <div className="flex items-center gap-3 mb-4">
+                                    <material.icon className="h-6 w-6 text-[#FF9C45]" />
+                                    <h3 className="font-bold text-lg">{material.title}</h3>
+                                </div>
+                                <p className="text-sm text-muted-foreground">{material.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -196,92 +269,44 @@ export default function RoofReplacement() {
             </section>
 
             {/* Process */}
-            <section className="py-20 bg-[#F9F9F9]">
+            <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our 4-Step Replacement Process</h2>
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our Complete Roof Replacement Process</h2>
+                    <div className="grid md:grid-cols-1 gap-8">
                         {[
                             {
                                 step: "01",
-                                title: "Consultation & Material Selection",
-                                time: "Day 1",
-                                desc: "We help you choose the right shingle color and profile. We verify ventilation needs and provide a fixed-price quote."
+                                title: "FREE Professional Drone Inspection",
+                                desc: "FAA-certified pilot captures 4K aerial imagery, thermal moisture scan, precise square footage measurements. Same-day digital report reveals deck condition, ice shield presence, ventilation issues before work begins."
                             },
                             {
                                 step: "02",
-                                title: "Property Protection & Tear Off",
-                                time: "Day 2 (Morning)",
-                                desc: "We tarp your landscaping, driveway, and pool. We remove old shingles and haul them away immediately in our bin."
+                                title: "Complete System Tear-Off & Deck Restoration",
+                                desc: "Street-placed dumpster eliminates driveway damage. Full tear-off to plywood deck – every sheet inspected. Rotten plywood cut out, replaced with exterior-grade marine plywood. Ice & water shield installed all eaves (42\" minimum), valleys, skylights, chimneys."
                             },
                             {
                                 step: "03",
-                                title: "System Installation",
-                                time: "Day 2 (Afternoon)",
-                                desc: "Installation of ice shield, underlayment, drip edge, flashings, and new shingles. Ridge vents installed last."
+                                title: "Precision Underlayment & Main Field Installation",
+                                desc: "Synthetic underlayment entire surface (3x stronger than felt paper). 6-nail fastening pattern every shingle (Toronto 160km/h wind code). Architectural starter strips, metal drip edge, proper valley construction. Fascia boards replaced before final layers."
                             },
                             {
                                 step: "04",
-                                title: "Cleanup & Final Inspection",
-                                time: "Day 2 (Evening)",
-                                desc: "Magnetic sweep of entire property. Blower cleanup of gutters. Final drone photos and warranty registration."
+                                title: "Flashing Perfection & Quality Control",
+                                desc: "Step flashing rebuilt chimneys/skylights using color-matched aluminum. Double valley liners prevent cross-flow. Metal ridge caps sealed permanently. Final hose testing verifies zero leaks. Magnetic boot sweep collects every nail."
+                            },
+                            {
+                                step: "05",
+                                title: "Seamless Gutter Integration & Warranty Walkthrough",
+                                desc: "6\" seamless aluminum gutters properly sloped (1/4\" per 10ft). Attic insulation evaluation included. Joint homeowner walkthrough verifies perfection. 25-year warranty paperwork completed + activated."
                             }
                         ].map((item, i) => (
-                            <div key={i} className="flex gap-6">
-                                <div className="text-5xl font-black text-[#FF9C45]/20 font-mono">
+                            <div key={i} className="flex gap-6 bg-muted/30 p-6 rounded-lg border border-border">
+                                <div className="text-4xl font-black text-[#FF9C45]/20 font-mono shrink-0">
                                     {item.step}
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold mb-1">{item.title}</h3>
-                                    <span className="text-sm font-bold text-[#FF9C45] uppercase tracking-wider mb-2 block">{item.time}</span>
+                                    <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                                     <p className="text-muted-foreground">{item.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Success Stories */}
-            <section className="py-20 bg-background">
-                <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Recent Toronto Replacements</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "Mississauga Executive Home",
-                                img: completedRoof,
-                                problem: "25-year old roof with curling shingles",
-                                result: "GAF Timberline HDZ in Charcoal. 50-year warranty."
-                            },
-                            {
-                                title: "East York Bungalow",
-                                img: roofingBanner,
-                                problem: "Severe ice dams and attic mold",
-                                result: "New ventilation system + full ice shield coverage."
-                            },
-                            {
-                                title: "Vaughan Estate",
-                                img: metalRoof,
-                                problem: "Wind damage on high-pitch roof",
-                                result: "Premium Designer Shingles, high-profile ridge cap."
-                            },
-                            {
-                                title: "Scarborough Semi-Detached",
-                                img: roofInspection,
-                                problem: "Rotten deck from years of leaks",
-                                result: "Valid deck replacement + economy shingle package."
-                            }
-                        ].map((story, i) => (
-                            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-border flex flex-col md:flex-row h-full">
-                                <div className="md:w-1/3 h-48 md:h-auto bg-muted">
-                                    <img src={story.img} alt={story.title} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="p-6 md:w-2/3 flex flex-col justify-center">
-                                    <h3 className="font-bold text-lg mb-2">{story.title}</h3>
-                                    <div className="space-y-1 text-sm">
-                                        <p><span className="font-bold text-red-600">Problem:</span> {story.problem}</p>
-                                        <p><span className="font-bold text-green-600">Result:</span> {story.result}</p>
-                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -322,15 +347,17 @@ export default function RoofReplacement() {
 
                     {/* FAQs */}
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "How much does a new roof cost in Toronto?", a: "Average ranges from $6,000 (small semi) to $15,000+ (large detached). Depends on pitch, access, and material." },
-                                { q: "How long does installation take?", a: "Most residential roofs are completed in 1-2 days. We ensure your property is watertight every night." },
-                                { q: "What warranties do you offer?", a: "We offer 50-year non-prorated material warranties (GAF/Owens Corning) and a 10-year workmanship guarantee." },
-                                { q: "Do I need to be home?", a: "No. We need access to an exterior power outlet and your driveway clear, but you don't need to be present." },
-                                { q: "Do you replace wood if it's rotten?", a: "Yes. We include up to 3 sheets of plywood in our quotes. Additional wood is billed at a fixed per-sheet rate." },
-                                { q: "Can you install over my old shingles?", a: "We strongly recommend against it. Valid warranties require a clean deck. We always do a full tear-off." },
+                                { q: "How much does roof replacement cost in Toronto?", a: "Average 2,000 sq ft home: $18K-$32K installed. Asphalt shingles $450-650/square. Metal $900-1,400/square. Factors: pitch, layers, deck repairs needed." },
+                                { q: "How long does professional installation take?", a: "Asphalt shingles 1-3 days. Metal roofing 3-5 days. Tile 5-7 days. Weather dependent. Commercial flat roofs 5-10 days." },
+                                { q: "Do you offer free roof inspections before replacement?", a: "Yes – FREE drone inspection standard ($350 value). Reveals exact deck condition, ice shield status, ventilation issues before quoting." },
+                                { q: "Will insurance cover my roof replacement?", a: "95% success rate. We provide drone documentation, Xactimate estimates, speak directly to adjusters. Most wind/hail claims approved." },
+                                { q: "Is roof replacement messy for my property?", a: "Zero mess guarantee. Dumpster positioned street-side. Magnetic boots on crews. Continuous magnet sweeps. Final pressure wash + yard magnet sweep before leaving." },
+                                { q: "What warranties come with new roof replacement?", a: "25-year Paradise workmanship warranty + lifetime manufacturer material warranty (pro-rated after year 10). Fully transferable boosts resale value." },
+                                { q: "Do you handle fascia, soffits, and gutters too?", a: "Complete exterior packages available. Roof replacement + fascia/soffit/gutter/insulation – one trusted crew handles everything seamlessly." },
+                                { q: "Are installations Toronto Building Code compliant?", a: "100% compliant. 160km/h wind nailing, 42\" ice barriers, proper flashing specifications per Ontario Building Code roofing standards." }
                             ].map((faq, i) => (
                                 <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                     <h4 className="font-bold text-base mb-2 flex items-start gap-2">
