@@ -20,18 +20,18 @@ export default function Brampton() {
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Roofing Services<br />
-                            Brampton Ontario
+                            Roofing Services in<br />
+                            Brampton, Ontario
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Brampton homeowners face unique roofing challenges from the city's rapid growth, clay-heavy soils, and extreme GTA weather patterns. Whether you live in Mount Pleasant, Fletcher's Meadow, Heart Lake, or near Bramalea City Centre, our roofing services Brampton protect your home from ice dams, wind damage, and foundation erosion common in Peel Region.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Brampton, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Paradise Roofers delivers complete roof replacement, gutter and eavestrough installation, fascia and soffit restoration, emergency leak repairs, free drone inspections, and attic insulation upgrades specifically engineered for Brampton's housing stock.
+                                <p className="text-lg font-bold text-[#FF9C45]">
+                                    Whether you need a minor roof repair, a full roof replacement, or professional renovation services, Paradise Roofers is your trusted partner in Brampton and surrounding areas.
                                 </p>
                             </div>
 
@@ -396,10 +396,10 @@ export default function Brampton() {
                     <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "Average roof replacement cost Brampton?", a: "$22K-$38K typical bungalow/semi. Includes tear-off, ice shield, R50 insulation, 40-year shingles." },
-                            { q: "Brampton building permits required?", a: "Yes, we handle complete Peel Region permitting, inspections scheduled." },
-                            { q: "Ice dams covered by insurance?", a: "No, considered maintenance. Proper soffit/insulation prevents permanent damage." },
-                            { q: "How soon is emergency service in Brampton?", a: "90 minutes Mount Pleasant/Fletcher's, 2 hours balance of city." }
+                            { q: "How much you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                            { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                            { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                            { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
                         ].map((faq, i) => (
                             <div key={i} className="bg-white p-6 rounded-lg border border-border">
                                 <h4 className="font-bold text-base mb-2 flex items-start gap-2">

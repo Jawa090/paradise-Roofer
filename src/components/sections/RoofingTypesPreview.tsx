@@ -8,41 +8,13 @@ import slateRoof from "@/assets/slate-roof.jpg";
 const roofingTypes = [
   {
     id: 1,
-    title: "Asphalt shingle",
-    description: "Affordable, reliable asphalt shingles handle Canadian snow & ice perfectly.",
+    title: "Asphalt Shingle",
+    description: "Affordable, reliable asphalt shingles handle GTA, snow & ice perfectly.",
     image: asphaltShingle,
-    lifespan: "15–30 years",
+    lifespan: "20-30 years",
     price: "$3.50–$5.50/sq.ft. (installed)",
     href: "/roofing-types",
   },
-  {
-    id: 2,
-    title: "Metal Roofing",
-    description: "Rust-proof standing seam metal built for harsh Canadian winters & coastal rain.",
-    image: slateRoof,
-    lifespan: "40–70 years",
-    price: "$7.00–$12.00/sq.ft. (installed)",
-    href: "/roofing-types",
-  },
-  {
-    id: 3,
-    title: "Clay Tile",
-    description: "Timeless elegance, unbeatable heat resistance, extreme durability",
-    image: clayTile,
-    lifespan: "50–100+ years",
-    price: "$10.00 – $18.00 per sq. ft. (installed)",
-    href: "/roofing-types",
-  },
-  {
-    id: 4,
-    title: "Concrete Tile",
-    description: "Durable concrete tiles mimic luxury at practical Canadian prices.",
-    image: slateRoof,
-    lifespan: "40–75 years",
-    price: "$8.00–$12.00/sq.ft. (installed)",
-    href: "/roofing-types",
-  },
-
 ];
 
 interface TiltCardProps {

@@ -31,10 +31,10 @@ export default function RoofReplacement() {
                                     Is your 15+ year old roof failing? We provide professional complete roof replacement for Toronto homes and businesses, handling everything from full tear-off to premium new installation with proper ice dam protection designed specifically for harsh Canadian winters.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Whether you need durable asphalt shingles, long-lasting metal roofing systems, elegant concrete tiles, or commercial flat roof membranes, our licensed Paradise Roofers team delivers exceptional results.
+                                    Whether you need durable asphalt shingles, our licensed Paradise Roofers team delivers exceptional results.
                                 </p>
                                 <p className="text-lg font-bold text-[#FF9C45]">
-                                    Every replacement starts with FREE drone inspection ($350 value) showing exactly what condition your deck and underlayment are in before we begin. Fast 1-3 day installations, 25-year workmanship warranties, zero mess guarantee, proudly serving Toronto, Mississauga, Vaughan, Markham, Richmond Hill, Oakville, and entire GTA region.
+                                    Every replacement starts with FREE drone inspection ($200 value) showing exactly what condition your deck and underlayment are in before we begin. Fast 1-3 day installations, 10-year workmanship warranties, zero mess guarantee, proudly serving Toronto, Mississauga, Brampton, Milton, Oakville and entire GTA region.
                                 </p>
                             </div>
 
@@ -66,7 +66,7 @@ export default function RoofReplacement() {
                         <div className="bg-white border border-border shadow-sm py-6 px-4 md:px-12 mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Shield className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">25-Year Workmanship Warranty</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">10-Year Workmanship Warranty</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Award className="h-6 w-6 text-black fill-current" />
@@ -219,10 +219,10 @@ export default function RoofReplacement() {
                                 <h3 className="font-bold text-xl">3: Precision Flashing & Final Details</h3>
                             </div>
                             <p className="text-muted-foreground mb-4">
-                                Step flashing rebuilt around chimneys, skylights using color-matched metal. New valley liners double thickness prevent cross-flow leaks. Metal ridge caps sealed with butyl tape. Complete fascia inspection – rotten boards replaced before gutters installed.
+                                Step flashing rebuilt around Vents, skylights using color-matched metal. New valley liners double thickness prevent cross-flow leaks. Complete fascia inspection – rotten boards replaced before gutters installed.
                             </p>
                             <p className="text-sm text-[#FF9C45] font-semibold">
-                                Bonus Services Included: Free attic insulation evaluation, soffit ventilation assessment, seamless gutter quote, 25-year transferable warranty registration.
+                                Bonus Services Included: Free attic insulation evaluation, soffit ventilation assessment, seamless gutter quote, 10-year transferable warranty registration.
                             </p>
                         </div>
                     </div>
@@ -233,37 +233,14 @@ export default function RoofReplacement() {
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
                     <h2 className="text-3xl font-bold uppercase mb-8 text-center">Our Premium Roof Replacement Materials</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "Asphalt Architectural Shingles",
-                                desc: "GAF Timberline HDZ or IKO Cambridge: 40-year lifespan, Class 4 impact rating (hail resistant), StainGuard algae protection. $450-$650 per square installed. Perfect North York bungalows, Scarborough semis, Etobicoke two-stories.",
-                                icon: Home
-                            },
-                            {
-                                title: "Standing Seam Metal Roofing",
-                                desc: "24-gauge steel or aluminum with concealed clips. 50-70 year lifespan. Snow slides off preventing ice dams. Energy Star cool roof coating cuts AC bills. $900-$1,400 per square. Ideal Mississauga modern homes, Vaughan executive properties.",
-                                icon: Shield
-                            },
-                            {
-                                title: "Concrete Tile Roofing",
-                                desc: "Lightweight concrete mimicking clay/slate. 50-75 year durability. Class A fire rating, superior freeze-thaw resistance. $900-$1,300 per square. Leaside heritage homes, Lawrence Park estates.",
-                                icon: Award
-                            },
-                            {
-                                title: "TPO Commercial Flat Roofing",
-                                desc: "White reflective membrane reduces urban heat island effect. 20-30 year warranty. Fully adhered prevents ponding. $650-$1,050 per square. Condo buildings, commercial strip plazas, large garages.",
-                                icon: Star
-                            }
-                        ].map((material, i) => (
-                            <div key={i} className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-all">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <material.icon className="h-6 w-6 text-[#FF9C45]" />
-                                    <h3 className="font-bold text-lg">{material.title}</h3>
-                                </div>
-                                <p className="text-sm text-muted-foreground">{material.desc}</p>
+                    <div className="grid md:grid-cols-1 gap-8 max-w-3xl mx-auto">
+                        <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-all">
+                            <div className="flex items-center gap-3 mb-4">
+                                <Home className="h-6 w-6 text-[#FF9C45]" />
+                                <h3 className="font-bold text-lg">Asphalt Architectural Shingles</h3>
                             </div>
-                        ))}
+                            <p className="text-sm text-muted-foreground">GAF Timberline HDZ 50 years lifespan, Class 4 impact rating (hail resistant), StainGuard algae protection.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -292,12 +269,12 @@ export default function RoofReplacement() {
                             {
                                 step: "04",
                                 title: "Flashing Perfection & Quality Control",
-                                desc: "Step flashing rebuilt chimneys/skylights using color-matched aluminum. Double valley liners prevent cross-flow. Metal ridge caps sealed permanently. Final hose testing verifies zero leaks. Magnetic boot sweep collects every nail."
+                                desc: "Step flashing rebuilt Vents/skylights using color-matched aluminum. Double valley liners prevent cross-flow. Metal ridge caps sealed permanently. Final hose testing verifies zero leaks. Magnetic boot sweep collects every nail."
                             },
                             {
                                 step: "05",
                                 title: "Seamless Gutter Integration & Warranty Walkthrough",
-                                desc: "6\" seamless aluminum gutters properly sloped (1/4\" per 10ft). Attic insulation evaluation included. Joint homeowner walkthrough verifies perfection. 25-year warranty paperwork completed + activated."
+                                desc: "6\" seamless aluminum gutters properly sloped (1/4\" per 10ft). Attic insulation evaluation included. Joint homeowner walkthrough verifies perfection. 10-year warranty paperwork completed + activated."
                             }
                         ].map((item, i) => (
                             <div key={i} className="flex gap-6 bg-muted/30 p-6 rounded-lg border border-border">
@@ -352,10 +329,10 @@ export default function RoofReplacement() {
                             {[
                                 { q: "How much does roof replacement cost in Toronto?", a: "Average 2,000 sq ft home: $18K-$32K installed. Asphalt shingles $450-650/square. Metal $900-1,400/square. Factors: pitch, layers, deck repairs needed." },
                                 { q: "How long does professional installation take?", a: "Asphalt shingles 1-3 days. Metal roofing 3-5 days. Tile 5-7 days. Weather dependent. Commercial flat roofs 5-10 days." },
-                                { q: "Do you offer free roof inspections before replacement?", a: "Yes – FREE drone inspection standard ($350 value). Reveals exact deck condition, ice shield status, ventilation issues before quoting." },
-                                { q: "Will insurance cover my roof replacement?", a: "95% success rate. We provide drone documentation, Xactimate estimates, speak directly to adjusters. Most wind/hail claims approved." },
-                                { q: "Is roof replacement messy for my property?", a: "Zero mess guarantee. Dumpster positioned street-side. Magnetic boots on crews. Continuous magnet sweeps. Final pressure wash + yard magnet sweep before leaving." },
-                                { q: "What warranties come with new roof replacement?", a: "25-year Paradise workmanship warranty + lifetime manufacturer material warranty (pro-rated after year 10). Fully transferable boosts resale value." },
+                                { q: "Do you offer free roof inspections before replacement?", a: "Yes – FREE Drone inspection standard $200. Reveals exact deck condition, ice shield status, ventilation issues before quoting." },
+                                { q: "Will insurance cover my roof replacement?", a: "Paradise roofers assist you for the insurance claim process under the STORM CARE PROGRAM, 95% success rate. We provide drone documentation, Xactimate estimates, speak directly to adjusters. Most wind/hail claims approved." },
+                                { q: "Is roof replacement messy for my property?", a: "Zero mess guarantee. Dumpster positioned street-side. Magnetic boots on crews. Continuous magnet sweeps. Final pressure wash + yard magnet sweeps before leaving." },
+                                { q: "What warranties come with new roof replacement?", a: "10 years Paradise workmanship warranty + lifetime manufacturer material warranty (pro-rated after year 10). Fully transferable boosts resale value." },
                                 { q: "Do you handle fascia, soffits, and gutters too?", a: "Complete exterior packages available. Roof replacement + fascia/soffit/gutter/insulation – one trusted crew handles everything seamlessly." },
                                 { q: "Are installations Toronto Building Code compliant?", a: "100% compliant. 160km/h wind nailing, 42\" ice barriers, proper flashing specifications per Ontario Building Code roofing standards." }
                             ].map((faq, i) => (

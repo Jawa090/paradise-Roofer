@@ -31,7 +31,7 @@ export default function RoofInspection() {
                                     Worried about your roof but hate the ladder risk? We fly a professional drone over your house for a complete roof check that finds leaks, bad shingles, and ice dam trouble before they cost you thousands.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    This $350 service is 100% FREE. No obligation. No hard sell. We do this across Toronto, Mississauga, Vaughan, Markham everywhere in the GTA. It takes 15 minutes and you get a digital report the same day with pictures showing exactly what we found.
+                                    $200 service is 100% FREE. No obligation. No hard sell. We do this across Toronto, Mississauga Brampton, Milton, Oakville and everywhere in the GTA. It takes 15 minutes and you get a digital report the same day with pictures showing exactly what we found.
                                 </p>
                                 <p className="text-lg font-bold text-[#FF9C45]">
                                     Book your FREE drone check now, we only have room for 10 houses per week.
@@ -278,7 +278,7 @@ export default function RoofInspection() {
             {/* Comparison Table */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-8 text-center">FREE Drone Check vs Regular $350 Inspection</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-8 text-center">FREE Drone Check vs Regular $200 Inspection</h2>
                     <div className="overflow-x-auto bg-white rounded-xl shadow-sm border border-border">
                         <table className="w-full text-left border-collapse">
                             <thead className="bg-black text-white">
@@ -310,9 +310,9 @@ export default function RoofInspection() {
                                     <td className="px-6 py-4 text-red-600">Misses 40%</td>
                                 </tr>
                                 <tr className="hover:bg-muted/20">
-                                    <td className="px-6 py-4 font-medium">Proof for insurance</td>
-                                    <td className="px-6 py-4 font-bold text-green-600">4K pictures</td>
-                                    <td className="px-6 py-4 text-red-600">Scribbled notes</td>
+                                    <td className="px-6 py-4 font-medium">Personel availability of house owner</td>
+                                    <td className="px-6 py-4 font-bold text-green-600">Nil</td>
+                                    <td className="px-6 py-4 text-red-600">Must</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -356,7 +356,7 @@ export default function RoofInspection() {
                         <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "Why do you do this free?", a: "Honest answer: $350 marketing cost. When you see the pictures yourself, you know exactly what needs fixing. We only get paid when you choose us for repairs." },
+                                { q: "Why do you do this free?", a: "Honest answer: $200 marketing cost. When you see the pictures yourself, you know exactly what needs fixing. We only get paid when you choose us for repairs." },
                                 { q: "How good are drones vs humans?", a: "95% better. Heat vision finds wet spots 2 years early. 4K zoom sees cracks we can't see walking roofs." },
                                 { q: "Nothing wrong? Do I still get the report?", a: "Yes, 100% free. Full picture set + \"your roof is good\" certificate good for a year." },
                                 { q: "Hard sell after?", a: "Nope. Pictures are yours forever. Call us back anytime for quotes." },

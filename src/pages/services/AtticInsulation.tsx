@@ -20,18 +20,18 @@ export default function AtticInsulation() {
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            R50 Attic Insulation<br />
-                            Toronto Building Code
+                            Attic Insulation<br />
+                            Toronto & GTA
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Toronto's new building code requires R50 attic insulation (was R40). Most homes built before 2020 have R12-R20 insulation that wastes thousands yearly on heating bills.
+                                    Sky-high hydro bills? Ice dams every winter? Hot upstairs, cold basement? Professional attic insulation upgrade R60 Toronto code cuts bills 25-40%. Blown-in cellulose, fiberglass, spray foam, we do all types with proper air sealing preventing ice dams permanently.
                                 </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We upgrade your attic to R50+ with premium blown-in insulation. Qualify for EcoHome rebates up to $5,000. Stop ice dams, cut energy bills 30%, make every room comfortable.
+                                <p className="text-lg font-bold text-[#FF9C45]">
+                                    FREE insulation audit ($450 value) measures current R-value, finds air leaks, calculates your savings. Serving Toronto, Mississauga, Brampton, Milton, Oakville and entire GTA region.
                                 </p>
                             </div>
 
@@ -63,7 +63,7 @@ export default function AtticInsulation() {
                         <div className="bg-white border border-border shadow-sm py-6 px-4 md:px-12 mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <Thermometer className="h-6 w-6 text-black fill-current" />
-                                <span className="font-bold text-sm uppercase tracking-wide">R50 Building Code</span>
+                                <span className="font-bold text-sm uppercase tracking-wide">R60 Toronto Code</span>
                             </div>
                             <div className="flex items-center gap-3 justify-center md:justify-start">
                                 <DollarSign className="h-6 w-6 text-black fill-current" />
@@ -78,8 +78,34 @@ export default function AtticInsulation() {
 
                     {/* Intro Extension */}
                     <div className="mt-12 max-w-4xl">
-                        <p className="text-lg text-muted-foreground">
-                            Most older Toronto homes have R12 to R20 insulation (3-5 inches), which is woefully inadequate for our climate. This causes heat to escape into your attic, melting snow on your roof which then refreezes at the eaves as destructive ice dams. Our comprehensive attic tune-up includes air sealing, baffle installation for airflow, and top-up with premium fiberglass or cellulose to R60 depth (22 inches+).
+                        <h3 className="text-2xl font-bold mb-4">Why Toronto Attics Need R60 Insulation NOW</h3>
+                        <p className="text-lg text-muted-foreground mb-4">
+                            Toronto winters demand R60 attic insulation (Ontario Building Code). Most 1970s-90s homes have R20-R30 wasting $1,800/year heating attic air. Results:
+                        </p>
+                        <ul className="space-y-2 text-lg text-muted-foreground">
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Ice dams destroying roofs ($15K damage average)
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Hydro bills 35% too high (Enbridge average $4,200/year)
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Uneven home temperatures (20°F attic-to-main floor difference)
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Summer AC running constantly (hot attic radiates heat down)
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Moisture/mold in attics (poor ventilation + air leaks)
+                            </li>
+                        </ul>
+                        <p className="text-lg font-bold text-[#FF9C45] mt-4">
+                            R30 → R60 upgrade pays back in 3.2 years through bill savings.
                         </p>
                     </div>
                 </div>
@@ -93,8 +119,8 @@ export default function AtticInsulation() {
                             <AlertTriangle className="h-10 w-10 text-white" strokeWidth={4} />
                         </div>
                         <div>
-                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Why Toronto Attics Need R50 Insulation NOW</h2>
-                            <p className="text-lg font-medium text-muted-foreground">New building code requirements and climate realities make upgrades essential</p>
+                            <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Why Toronto Attics Need R60 Insulation NOW</h2>
+                            <p className="text-lg font-medium text-muted-foreground">Toronto roofs face brutal conditions that shorten lifespans significantly</p>
                         </div>
                     </div>
 
@@ -145,7 +171,7 @@ export default function AtticInsulation() {
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
                     <h2 className="text-3xl font-bold uppercase mb-4">Attic Insulation Types</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">We install the two most effective insulation materials for Toronto's climate</p>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">Blown Cellulose and Blown Fiberglass - the two most effective insulation materials for Toronto's climate</p>
 
                     <div className="overflow-x-auto">
                         <table className="w-full bg-white rounded-xl border border-border shadow-sm">
@@ -163,9 +189,9 @@ export default function AtticInsulation() {
                                     <td className="p-6">R3.6</td>
                                 </tr>
                                 <tr className="border-b border-border">
-                                    <td className="p-6 font-medium">Depth for R50</td>
-                                    <td className="p-6">13 inches</td>
-                                    <td className="p-6">14 inches</td>
+                                    <td className="p-6 font-medium">Depth for R60</td>
+                                    <td className="p-6">20-21 inches</td>
+                                    <td className="p-6">20-21 inches</td>
                                 </tr>
                                 <tr className="border-b border-border">
                                     <td className="p-6 font-medium">Fire resistance</td>

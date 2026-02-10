@@ -20,18 +20,15 @@ export default function Mississauga() {
 
                         {/* Title */}
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Roofing Services<br />
-                            Mississauga Ontario
+                            Roofing Services in<br />
+                            Mississauga, Ontario
                         </h1>
 
                         {/* Description & Buttons Row */}
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Mississauga homeowners deal with some of the toughest roofing conditions in the GTA. From Clarkson condo towers facing Lake Ontario wind to Erin Mills bungalows battling ice dams, our roofing services Mississauga handle every challenge.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Paradise Roofers provides complete roof replacement, eavestrough and gutter systems, fascia and soffit restoration, 24/7 emergency repairs, free drone inspections, and attic insulation built for Mississauga's unique weather patterns.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Mississauga, Ontario. From complete roof replacements and emergency repairs to fascia, soffit, gutters, attic insulation, and full interior renovations—we handle it all with precision and care.
                                 </p>
                             </div>
 
@@ -396,10 +393,10 @@ export default function Mississauga() {
                     <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "Roof replacement cost Mississauga?", a: "$24K-$42K bungalow/semi. Includes tear-off, ice shield, R50, 40-year shingles." },
-                            { q: "Mississauga permits needed?", a: "Yes, full Peel Region service, inspections scheduled." },
-                            { q: "Ice dams insurance coverage?", a: "No, maintenance issue. Proper soffit/insulation prevents." },
-                            { q: "Emergency response time?", a: "75 min Clarkson/Port Credit, 2 hours city balance." }
+                            { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                            { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                            { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                            { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
                         ].map((faq, i) => (
                             <div key={i} className="bg-white p-6 rounded-lg border border-border">
                                 <h4 className="font-bold text-base mb-2 flex items-start gap-2">

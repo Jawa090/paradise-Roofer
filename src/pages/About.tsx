@@ -23,14 +23,12 @@ export default function About() {
         <div className="container relative z-10">
           <span className="section-label text-primary mb-4 inline-block">About Paradise Roofers</span>
           <h1 className="headline-xl text-4xl md:text-6xl lg:text-7xl max-w-4xl">
-            20+ Years of Toronto
+            Extensive Industry Expertise
             <br />
-            Roofing Excellence—
-            <br />
-            Come Meet Us!
+            of Toronto Roofing Excellence
           </h1>
           <p className="text-background/80 text-lg mt-6 max-w-3xl">
-            Trusted roofers serving Toronto, Mississauga, Vaughan, Markham & GTA. We install 2,000+ roofs yearly with free drone inspections, seamless gutters, fascia/soffit restoration, and 25-year warranties. Licensed. Insured. 4.9★ reviews.
+            Trusted roofers serving GTA - Toronto, Mississauga, Vaughan, Markham, Brampton, Milton, Oakville & GTA. At Paradise Roofers, we believe a roof is more than just a shelter—it is a critical investment in your property's longevity. Our team is composed of seasoned technical specialists who bring master-level skill to every project. By focusing on structural integrity and meticulous execution, we've built a reputation for delivering roofing systems that stand up to the most demanding environments.
           </p>
         </div>
       </section>
@@ -45,17 +43,7 @@ export default function About() {
             <div className="text-center p-6">
               <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">2,000+</div>
               <h3 className="font-heading font-bold text-lg mb-2">roofs installed</h3>
-              <p className="text-muted-foreground text-sm">Etobicoke bungalows to Vaughan commercial</p>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">98.7%</div>
-              <h3 className="font-heading font-bold text-lg mb-2">satisfaction</h3>
-              <p className="text-muted-foreground text-sm">4.9★ Google/Yelp/BBB combined</p>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">500+</div>
-              <h3 className="font-heading font-bold text-lg mb-2">claims won</h3>
-              <p className="text-muted-foreground text-sm">Toronto storm victims made whole</p>
+              <p className="text-muted-foreground text-sm">From residential homes to major commercial landmarks across GTA and Toronto</p>
             </div>
             <div className="text-center p-6">
               <div className="text-5xl md:text-6xl font-heading font-bold text-primary mb-2">24</div>
@@ -104,7 +92,7 @@ export default function About() {
             <div className="text-center p-6">
               <CheckCircle className="h-12 w-12 mx-auto mb-4 text-primary" />
               <h3 className="font-heading font-bold text-lg mb-2">Free Drone Roof Inspections</h3>
-              <p className="text-muted-foreground text-sm">4K aerial analysis spots leaks invisible from ladders ($350 value, always free)</p>
+              <p className="text-muted-foreground text-sm">4K aerial analysis spots leaks invisible from ladders ($200 value, always free)</p>
             </div>
             <div className="text-center p-6">
               <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
@@ -118,8 +106,8 @@ export default function About() {
             </div>
             <div className="text-center p-6">
               <Target className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <h3 className="font-heading font-bold text-lg mb-2">98% Insurance Success Rate</h3>
-              <p className="text-muted-foreground text-sm">We handle claims, documentation, adjuster negotiations for Toronto homeowners</p>
+              <h3 className="font-heading font-bold text-lg mb-2">Proven Reliability</h3>
+              <p className="text-muted-foreground text-sm">We handle complete roofing solutions with documentation and quality assurance for Toronto homeowners</p>
             </div>
           </div>
         </div>

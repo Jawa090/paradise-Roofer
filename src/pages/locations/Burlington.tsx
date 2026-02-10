@@ -16,17 +16,14 @@ export default function Burlington() {
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Burlington Roofers<br />
-                            Lake Ontario Experts
+                            Roofing Services in<br />
+                            Burlington, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Searching for "roofing Burlington Ontario"? You're in the right place. We proudly serve Aldershot, Brant Hills, Headon Forest, Millcroft, Appleby, and all Burlington neighborhoods with complete roofing solutions. From ice dam emergencies that threaten basements to high wind repairs after lake-effect storms.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We've protected 2,800+ Burlington homes and businesses since 2005. Living in Burlington means dealing with Lake Ontario's brutal weather patterns. Free drone inspections included. 24+ years local experience. Consistent 4.9★ customer reviews.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Burlington, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -324,6 +321,24 @@ export default function Burlington() {
 
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 mb-12">
+                        {[
+                            { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                            { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                            { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                            { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                        ].map((faq, i) => (
+                            <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                    <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                </h4>
+                                <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+
                     <h2 className="text-3xl font-bold uppercase mb-8">Accurate 2026 Burlington Roofing Investment Guide</h2>
                     
                     <div className="grid md:grid-cols-2 gap-8 mb-12">

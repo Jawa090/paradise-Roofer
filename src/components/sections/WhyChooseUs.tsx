@@ -9,12 +9,12 @@ const reasons = [
   {
     icon: Award,
     title: "Certified Roofing Experts",
-    description: "Verified experts with 20+ years experience. We exceed industry standards for quality roof installation, repair, and replacement."
+    description: "Verified experts with Extensive Industry Expertise. We exceed industry standards for quality roof installation, repair, and replacement."
   },
   {
     icon: Package,
     title: "Premium Roofing Materials",
-    description: "Top-grade shingles, metal roofing, tile, and flat roof systems that withstand storms, hail, and harsh weather."
+    description: "Top-grade American shingles that withstand storms, hail, and harsh weather."
   },
   {
     icon: DollarSign,
@@ -30,12 +30,12 @@ export default function WhyChooseUs() {
         <div className="max-w-3xl mx-auto bg-background p-8 md:p-12">
           <div className="text-center mb-10">
             <span className="section-label mb-4 inline-block">Why Choose Paradise Roofers?</span>
-            <h2 className="headline-lg text-2xl md:text-3xl lg:text-4xl font-bold">
-              Because Canadian roofs  
+            <h2 className="headline-lg text-1xl md:text-2xl lg:text-3xl font-bold">
+              Choose Paradise Roofers for their high-end,
               <br />
-              deserve roofing experts
+              weather resilient materials and customer first approach
               <br />
-              you can trust
+              that prioritize transparent pricing spotless job sites.
             </h2>
           </div>
 

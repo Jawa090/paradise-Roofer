@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ChevronRight, ChevronDown, ChevronUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
@@ -8,6 +7,9 @@ import Hero3D from "@/components/sections/Hero3D";
 import SplitRevealSection from "@/components/sections/SplitRevealSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import HowWeWork from "@/components/sections/HowWeWork";
+import BeforeAfterSlider from "@/components/sections/BeforeAfterSlider";
+import ReviewsPreview from "@/components/sections/ReviewsPreview";
+import RoofingTypesPreview from "@/components/sections/RoofingTypesPreview";
 import roofInspection from "@/assets/roof-inspection.jpg";
 import roofInstallation from "@/assets/roof-installation.jpg";
 import roofCoating from "@/assets/roof-coating.jpg";
@@ -16,8 +18,20 @@ import metalRoof from "@/assets/metal-roof.jpg";
 
 const services = [
   {
+    title: "Free Drone Roof Inspection",
+    description: "Our free drone roof inspection provides a safe, high-definition aerial health check of your entire roofing system, capturing hidden damage in minutes without ever setting foot on your shingles.",
+    image: roofInspection,
+    href: "/services/inspection",
+  },
+  {
+    title: "Roof Repair",
+    description: "Fix leaks, Replace shingles, damage fast. Includes leak detection, wind/hail, storm repair.",
+    image: roofInspection,
+    href: "/services/repair",
+  },
+  {
     title: "Roof Installation",
-    description: "New roofs built right: shingle, metal, tile, flat, or asphalt for homes and commercial properties.",
+    description: "New roofs built right: asphalt shingle for homes and commercial properties.",
     image: roofInstallation,
     href: "/services/installation",
   },
@@ -28,46 +42,69 @@ const services = [
     href: "/services/replacement",
   },
   {
-    title: "Roof Repair",
-    description: "Fix leaks, shingles, damage fast. Includes leak detection, wind/hail, storm repair.",
-    image: roofInspection,
-    href: "/services/repair",
-  },
-
-  {
-    title: "Roof Inspections",
-    description: "Spot issues early with detailed checks.",
-    image: roofInspection,
-    href: "/services/inspection",
-  },
-  {
-    title: "Emergency Roof Repair",
-    description: "24/7 emergency roof repair. Fast response for leaks, storm damage, urgent issues.",
-    image: roofCoating,
-    href: "/services/repair",
-  },
-  {
     title: "Gutter Services",
     description: "Installation, repair, cleaning to prevent water damage.",
     image: metalRoof,
     href: "/services/gutters",
   },
   {
-    title: "Skylight & Ventilation",
-    description: "Install/repair skylights, attic ventilation, insulation for energy savings.",
+    title: "Damage Repair",
+    description: "Wind, hail, storm damage restoration.",
+    image: roofCoating,
+    href: "/services/repair",
+  },
+  {
+    title: "Residential Roofing",
+    description: "Tailored for homeowners.",
+    image: completedRoof,
+    href: "/services/residential",
+  },
+  {
+    title: "Commercial Roofing",
+    description: "Large-scale installs and repairs for businesses.",
+    image: metalRoof,
+    href: "/services/commercial",
+  },
+  {
+    title: "Soffit Repair & Replacement",
+    description: "Vented soffits fix attic moisture, ice dams",
+    image: metalRoof,
+    href: "/services/soffit",
+  },
+  {
+    title: "Fascia Repair & Replacement",
+    description: "Durable fascia stops rot, protects gutters",
+    image: metalRoof,
+    href: "/services/fascia",
+  },
+  {
+    title: "Gutters Repair & Replacement",
+    description: "Seamless gutters prevent foundation damage",
+    image: metalRoof,
+    href: "/services/gutters",
+  },
+  {
+    title: "Attic Insulation",
+    description: "R60 insulation cuts bills, stops ice dams",
     image: metalRoof,
     href: "/services/attic-insulation",
+  },
+  {
+    title: "All Interior Renos",
+    description: "Ceiling repair from Roof leak damage services Kitchen, Bathroom renos, windows, drywall paint, tiles, and plumbing services.",
+    image: metalRoof,
+    href: "/services/interior-renos",
   },
 ];
 
 const faqs = [
   {
-    question: "How much does roof repair cost in Canada?",
-    answer: "Roof repair costs $500–$5,000 depending on damage size, materials, and location. Minor shingle fixes start at $300; full leak repair averages $2,000. Free quotes available.",
+    question: "How much does roof repair cost in GTA, Toronto?",
+    answer: "Roof repair costs $299, depending on damage size, materials, and location. Free drone inspection available.",
   },
   {
     question: "How long does a new roof last in Canada?",
-    answer: "Asphalt shingles last 15-30 years; metal roofing 40-70 years; tile 50+ years. Canadian winters shorten lifespan without proper maintenance.",
+    answer: "Asphalt shingles last 20-30 years; metal roofing 40-70 years; tile 50+ years. Canadian winters can shorten lifespan without proper maintenance.",
   },
   {
     question: "What is emergency roof repair?",
@@ -78,20 +115,16 @@ const faqs = [
     answer: "Yes, free on-site inspections for homes and businesses. We check shingles, leaks, ventilation, and gutters using drone tech.",
   },
   {
-    question: "How much does roof replacement cost per square?",
-    answer: "$400-$800/square (100 sq ft) installed. Asphalt shingles cheapest; metal/tile higher. Factors: pitch, access, materials.",
-  },
-  {
     question: "When should I replace my roof?",
-    answer: "Metal roofing for snow/ice; asphalt shingles with ice shield; TPO flat roofs for commercial use. All impact-resistant.",
+    answer: "Signs: curling shingles, granules in gutters, leaks, age 20+ years. Professional inspection confirms the need.",
   },
   {
-    question: "What roofing materials work best for Canadian weather?",
-    answer: "Metal roofing for snow/ice; asphalt shingles with ice shield; TPO flat roofs for commercial use. All impact-resistant.",
+    question: "What roofing materials work best for GTA Toronto weather?",
+    answer: "American asphalt shingles are the top choice for Canada because they are engineered to remain flexible during extreme freeze-thaw cycles and resist heavy snow loads. When installed with a proper ice and water shield, they provide a durable, cost-effective barrier against ice damming and high winds.",
   },
   {
     question: "Do you handle insurance claims for storm damage?",
-    answer: "Yes, we assist with hail, wind, storm claims. Full documentation and direct insurer coordination in Canada.",
+    answer: "Yes, we assist with hail, wind, storm claims under the Storm Care Program. Full documentation and direct insurer coordination in GTA Toronto.",
   },
   {
     question: "How long does roof installation take?",
@@ -99,7 +132,7 @@ const faqs = [
   },
   {
     question: "What warranty do you offer on roofing services?",
-    answer: "10-50 year material warranties; 5-10 year workmanship. Full coverage on installations, repairs, gutters.",
+    answer: "50 years material warranties; 10-year workmanship. Full coverage on replacements and installations.",
   },
 ];
 
@@ -125,7 +158,7 @@ export default function Index() {
             </div>
             {/* Centered H2 */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
-              Heights, Leaving You Safe and Worry-Free.
+              Free Drone Roof Inspection
             </h2>
           </div>
 
@@ -209,6 +242,45 @@ export default function Index() {
 
 
 
+      {/* Before and After Projects Section */}
+      <section className="py-20 bg-muted">
+        <div className="container">
+          {/* Section Header */}
+          <div className="flex flex-col items-center mb-12">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+              <p className="text-sm font-semibold uppercase tracking-wider">Our Recent Roofing Projects</p>
+              <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
+              Before and After
+            </h2>
+          </div>
+
+          {/* Single Before/After Card */}
+          <div className="max-w-5xl mx-auto">
+            <BeforeAfterSlider />
+          </div>
+
+          {/* View All Projects Button */}
+          <div className="flex justify-center mt-10">
+            <Link to="/projects">
+              <button
+                className="inline-flex items-center gap-2 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
+                style={{ backgroundColor: 'rgb(255, 156, 69)', color: 'rgb(0, 0, 0)' }}
+              >
+                <span>View All Projects</span>
+                <div className="flex items-center -space-x-2">
+                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
+                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />
+                  <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-100" strokeWidth={3} />
+                </div>
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <WhyChooseUs />
 
@@ -217,6 +289,12 @@ export default function Index() {
 
       {/* How We Work */}
       <HowWeWork />
+
+      {/* Reviews Preview */}
+      <ReviewsPreview />
+
+      {/* Roofing Types Preview */}
+      <RoofingTypesPreview />
 
       {/* FAQ Section */}
       <section className="py-20 bg-background">

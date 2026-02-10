@@ -28,10 +28,10 @@ export default function InteriorRenos() {
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Ready for dream home interior? Paradise Renovations delivers full interior renovations – kitchens, bathrooms, basements, flooring, painting, electrical, plumbing – one trusted team handles everything.
+                                    Ready for dream home interior? Paradise Renovations delivers full interior renovations – kitchens, bathrooms, basements, flooring, painting, electrical, plumbing, Windows – one trusted team handles everything. Turn dated Toronto Homes into modern masterpieces.
                                 </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Free 3D design consultation ($750 value) shows your new space before hammer swings. Serving Toronto, Mississauga, Vaughan, Markham. Turnkey service – permits, inspections, final cleanup included.
+                                <p className="text-lg font-bold text-[#FF9C45]">
+                                    Free 3D design consultation ($750 value) shows your new space before hammer swings. Serving Toronto, Mississauga, Brampton, Milton, Oakville and entire GTA region. Turnkey service – permits, inspections, final clean up included.
                                 </p>
                             </div>
 
@@ -78,9 +78,36 @@ export default function InteriorRenos() {
 
                     {/* Intro Extension */}
                     <div className="mt-12 max-w-4xl">
-                        <p className="text-lg text-muted-foreground">
-                            Turn dated Toronto bungalows into modern masterpieces. Built 1960-1995? Your house probably has dark oak cabinets, chipped laminate counters, pink/green 70s bathrooms needing full gut, patchwork flooring from multiple owners, insufficient bedrooms for growing family, basement begging for family room/theatre. $85K full reno today = $150K resale value increase (Toronto 2026 average).
+                        <h3 className="text-2xl font-bold mb-4">When Toronto Homes Need Complete Interior Renovations?</h3>
+                        <p className="text-lg text-muted-foreground mb-4">
+                            Built 20 to 30 Years ago? Your house probably has:
                         </p>
+                        <ul className="space-y-2 text-lg text-muted-foreground">
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Dark oak cabinets, chipped laminate counters
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Pink/green 80s bathrooms needing full gut
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Patchwork flooring from multiple owners
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Insufficient bedrooms for growing family
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Basement begging for family room/theatre
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#FF9C45] shrink-0" />
+                                Curb appeal killer: dated exterior/interior mismatch
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -94,7 +121,7 @@ export default function InteriorRenos() {
                         </div>
                         <div>
                             <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">When Toronto Homes Need Complete Interior Renovations?</h2>
-                            <p className="text-lg font-medium text-muted-foreground">Built 1960-1995? Your house probably has:</p>
+                            <p className="text-lg font-medium text-muted-foreground">Built 20 to 30 Years ago? Your house probably has:</p>
                         </div>
                     </div>
 
@@ -474,11 +501,9 @@ export default function InteriorRenos() {
                     <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "Average whole home reno cost Toronto?", a: "Bungalow $85K-$140K. Kitchen/bath combo $55K-$95K. Basement suite $75K-$110K." },
                             { q: "How long complete renovation?", a: "Kitchen/bath: 4-6 weeks. Full home: 8-12 weeks. Fixed timelines guaranteed." },
                             { q: "Free design consultation included?", a: "Yes – 3D renderings + material selection ($750 value). See finished result before starting." },
                             { q: "Do you handle permits/inspections?", a: "Complete permitting service. City of Toronto inspectors scheduled. All trades licensed." },
-                            { q: "Financing available?", a: "Yes – low-interest home improvement loans. 12-60 month terms. Fast pre-approval." },
                             { q: "Warranty on renovations?", a: "2 years full system, 10 years structural, 25 years cabinets/countertops. Tarion registered." },
                             { q: "Exterior work too?", a: "Complete packages – interior + roof + exterior = maximum resale value." }
                         ].map((faq, i) => (

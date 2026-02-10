@@ -75,7 +75,7 @@ export default function Hero3D() {
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-left leading-tight"
             style={{ color: 'rgb(255, 251, 245)' }}
           >
-            Best Roofing Contractor<br />
+            Best Roofing Company<br />
             Free Roof Inspection Today
           </h1>
         </div>
@@ -118,7 +118,8 @@ export default function Hero3D() {
           {/* Subtext Wrapper */}
           <div data-framer-name="Subtext Wrapper">
             <p className="text-white/80 text-sm md:text-base max-w-2xl font-bold">
-              Paradise Roofing services for homes and businesses. Licensed experts handle roof installation, repair, replacement, inspections, and more with free quotes and 20+ years experience in roofing services.          </p>
+              Paradise Roofing services for homes and businesses. Licensed experts handle roof installation, repair, replacement, inspections, and more with free Drone inspection and quotes, A Legacy of Diverse Projects experience in roofing services.
+            </p>
           </div>
         </div>
       </div>

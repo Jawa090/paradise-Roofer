@@ -17,17 +17,14 @@ export default function Oakville() {
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Oakville Roofers<br />
-                            Lake Ontario Experts
+                            Roofing Services in<br />
+                            Oakville, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Oakville homeowners know their roofs face some of the toughest conditions in the GTA. Those brutal Lake Ontario winds blasting Bronte waterfront homes, heavy ice dams crushing Glen Abbey eaves, and clay soil foundation shifts stressing Iona Station roofs demand roofing expertise most companies just don't have.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    We've protected 2,800+ Oakville roofs since 2005 earning 4.9★ Google reviews from real homeowners in West Oak Trails, River Oaks, Clearview, and Bronte. Our free drone roof inspections ($350 value) spot problems before they escalate.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Oakville, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
 
@@ -316,32 +313,22 @@ export default function Oakville() {
                     </div>
 
                     <div className="bg-[#F9F9F9] p-8 rounded-lg border border-border">
-                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions - Oakville Roofing</h3>
+                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions</h3>
                         
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Roof replacement costs Oakville?</h4>
-                                    <p className="text-sm text-muted-foreground">$25K-$45K bungalow/semi average. Includes tear-off, ice shield, R50 insulation, lake wind-rated shingles.</p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                                { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                                { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                                { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                            ].map((faq, i) => (
+                                <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                    <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                        <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                    </h4>
+                                    <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
                                 </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Oakville permits required?</h4>
-                                    <p className="text-sm text-muted-foreground">Complete Halton Region service – inspections scheduled, lakefront compliance verified.</p>
-                                </div>
-                            </div>
-                            
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Lake winds worse for roofs?</h4>
-                                    <p className="text-sm text-muted-foreground">40% higher damage rates. Wind-resistant shingles, proper fastening exceeds code requirements.</p>
-                                </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Emergency response Oakville?</h4>
-                                    <p className="text-sm text-muted-foreground">70 minutes Bronte/Clarkson, 90 minutes balance of town.</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

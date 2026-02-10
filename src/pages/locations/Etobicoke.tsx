@@ -17,17 +17,14 @@ export default function Etobicoke() {
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Etobicoke Roofers<br />
-                            Lake Ontario Specialists
+                            Roofing Services in<br />
+                            Etobicoke, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Etobicoke roofs take punishment from the city's unique mix of high-rise condos along Lake Ontario, older bungalows battling ice dams, and heavy tree cover dropping debris everywhere. Whether you live in Humber Valley, Princess-Rosethorn, Islington, or near Kipling GO Station, our roofing Etobicoke services protect against wind-whipped lake storms.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Paradise Roofers has fixed 2,400+ Etobicoke roofs since 2005, earning 4.9★ reviews from homeowners who know Etobicoke building codes, Toronto hydro requirements, and tree debris challenges. Free drone inspections ($350 value) spot problems costing thousands if ignored.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Etobicoke, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
 
@@ -314,32 +311,22 @@ export default function Etobicoke() {
                     </div>
 
                     <div className="bg-[#F9F9F9] p-8 rounded-lg border border-border">
-                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions - Etobicoke Roofing</h3>
+                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions</h3>
                         
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Roof replacement cost Etobicoke?</h4>
-                                    <p className="text-sm text-muted-foreground">$23K-$42K bungalow/semi. Full tear-off, ice shield, R50, wind-rated shingles.</p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                                { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                                { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                                { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                            ].map((faq, i) => (
+                                <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                    <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                        <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                    </h4>
+                                    <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
                                 </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Etobicoke permits needed?</h4>
-                                    <p className="text-sm text-muted-foreground">Complete Toronto service, inspections scheduled.</p>
-                                </div>
-                            </div>
-                            
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Why do Etobicoke roofs fail faster?</h4>
-                                    <p className="text-sm text-muted-foreground">Lake Ontario winds 20km/h stronger than central Toronto, heavy tree debris, urban heat island effects.</p>
-                                </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Emergency response times?</h4>
-                                    <p className="text-sm text-muted-foreground">60 minutes Humber Valley priority zones, 90 minutes city-wide coverage.</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

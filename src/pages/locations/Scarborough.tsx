@@ -16,17 +16,14 @@ export default function Scarborough() {
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Scarborough Roofers<br />
-                            Rouge Valley Experts
+                            Roofing Services in<br />
+                            Scarborough, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Imagine waking up to water dripping through your Guildwood ceiling after a brutal Rouge Valley wind storm, or discovering black mold in your Woburn attic because neglected flat roof ponding finally broke through. Scarborough homeowners live with these harsh realities every winter.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Paradise Roofers stands as Scarborough's most trusted roofing authority, having meticulously protected over 3,200 local properties since 2005. Our impeccable 4.9★ rating reflects genuine testimonials from residents who've endured hail-pocked roofs in Malvern and ice dam disasters flooding Birch Cliff basements.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Scarborough, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -336,32 +333,22 @@ export default function Scarborough() {
                     </div>
 
                     <div className="bg-white p-8 rounded-lg border border-border">
-                        <h3 className="text-2xl font-bold uppercase mb-6">Essential Scarborough Roofing Intelligence</h3>
+                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions</h3>
                         
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Bungalow replacement costs?</h4>
-                                    <p className="text-sm text-muted-foreground">$27K-$52K premium installations with GAF Timberline HDZ, R50 insulation, wildlife exclusion.</p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                                { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                                { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                                { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                            ].map((faq, i) => (
+                                <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                    <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                        <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                    </h4>
+                                    <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
                                 </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Multi-family TPO systems?</h4>
-                                    <p className="text-sm text-muted-foreground">35-year FM-certified commercial grade systems with ponding solutions and HVAC integration.</p>
-                                </div>
-                            </div>
-                            
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Hail claims success rate?</h4>
-                                    <p className="text-sm text-muted-foreground">96% drone-documented success vs industry 61%. Forensic thermal imaging provides insurance proof.</p>
-                                </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Toronto Green Rebates available?</h4>
-                                    <p className="text-sm text-muted-foreground">$1,800 instant qualification for R50 insulation upgrades and energy-efficient installations.</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

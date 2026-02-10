@@ -171,12 +171,15 @@ export default function RoofRepair() {
             {/* Complete Services Grid */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Complete Roof Repair Services</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">We don't just patch roofs. We provide complete exterior restoration protecting your Toronto home from top to bottom.</p>
+                    <h2 className="text-3xl font-bold uppercase mb-4">Complete Roof Repair Services – GTA & Toronto</h2>
+                    <p className="text-muted-foreground mb-12 max-w-3xl">We don't just patch roofs. We provide complete exterior restoration protecting your Toronto home from top to bottom:</p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { title: "Free Roof Drone Inspection", desc: "4K video tour, detailed PDF report, repair cost breakdown, and insurance-ready documentation—all FREE." },
+                            { 
+                                title: "Free Roof Drone Inspection", 
+                                desc: "What Our Drones Find: Shingle granule loss patterns indicating UV damage, Soft spots signaling deck rot, Tree branch overhang risks, Ice dam formation zones, Flashing deterioration around chimneys/vents/skylights. What You Receive: 4K video tour, detailed PDF report, repair cost breakdown, insurance-ready documentation – all FREE" 
+                            },
                             { title: "Precision Leak Detection", desc: "Thermal imaging and moisture meters identify water migration and pinpoint entry points for permanent repair." },
                             { title: "Shingle Repair & Replacement", desc: "Wind damage fix with color-matched materials, granule loss repair, and ridge cap replacement." },
                             { title: "24/7 Emergency Service", desc: "Active leak response (2-hr arrival), tarping, storm damage board-up, and insurance documentation." },
@@ -376,13 +379,13 @@ export default function RoofRepair() {
                         <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
+                                { q: "Do you offer free roof inspections in Toronto?", a: "YES, Free drone inspections valued at $200 for all Toronto/GTA properties regardless of condition." },
+                                { q: "How long does professional roof installation take?", a: "Asphalt shingles: 1-2 days." },
+                                { q: "What Toronto building code requirements do you follow?", a: "Full compliance including ice barrier (36\" from eaves), high wind nailing (160km/h), proper flashing at all penetrations." },
+                                { q: "Do you handle insurance storm damage claims?", a: "Yes, Paradise Roofers assist insurance cases under storm care program" },
+                                { q: "Can you repair interior water damage too?", a: "Yes, full interior renovations including drywall, ceilings, painting, insulation replacement." },
                                 { q: "How much does roof repair cost in Toronto 2026?", a: "$500-$15,000 typical range. Single shingle: $300. Leak repair: $800-$3,500. Fascia/Soffit: $8K-$15K." },
-                                { q: "Do you offer emergency roof repair in Toronto?", a: "YES – 24/7 service. 2-hour response for active leaks. Tarping and temporary sealing included." },
-                                { q: "How do I know if I need repair or replacement?", a: "Free drone inspection reveals truth instantly. Under 25% damage + roof <15 years usually means repair." },
-                                { q: "Do you work directly with insurance adjusters?", a: "We handle complete claims: Xactimate estimates, damage documentation, and direct negotiation." },
-                                { q: "How long does professional roof repair take?", a: "Same day for shingles/leaks. 1-2 days fascia/soffit. 2-3 days complete exterior packages." },
-                                { q: "What if leaks damaged my interior ceilings?", a: "Complete renovation services included – drywall replacement, painting, and insulation restoration." },
-                                { q: "Do you leave my property clean after repairs?", a: "Zero mess guarantee. Magnetic booties, dumpster service, final magnet sweep, and pressure washing." }
+                                { q: "Do you offer emergency roof repair in Toronto?", a: "YES – 24/7 service. 2-hour response for active leaks. Tarping and temporary sealing included." }
                             ].map((faq, i) => (
                                 <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                     <h4 className="font-bold text-base mb-2 flex items-start gap-2">

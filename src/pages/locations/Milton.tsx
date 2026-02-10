@@ -17,17 +17,14 @@ export default function Milton() {
                         </div>
 
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Milton Roofers<br />
-                            Niagara Escarpment Experts
+                            Roofing Services in<br />
+                            Milton, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Milton roofs battle Niagara Escarpment winds (120km/h gusts), extreme snowfall (120cm annually), and clay soil foundation shifts. Paradise Roofers Milton specializes in escarpment-grade roofing systems built for these unique challenges.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    1,900+ Milton roofs installed since 2008. From Derry Green heritage homes to new Willmott subdivisions, we deliver roofing solutions engineered for Milton's demanding climate.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Milton, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
 
@@ -301,32 +298,22 @@ export default function Milton() {
                     </div>
 
                     <div className="bg-[#F9F9F9] p-8 rounded-lg border border-border">
-                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions - Milton Roofing</h3>
+                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions</h3>
                         
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Why do Milton roofs fail faster than other GTA areas?</h4>
-                                    <p className="text-sm text-muted-foreground">Milton's Niagara Escarpment location creates unique challenges: 120km/h wind gusts, 120cm annual snowfall, extreme temperature swings, and clay soil foundation movement. These factors stress roofing systems beyond typical GTA conditions, requiring specialized installation techniques and materials.</p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                                { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                                { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                                { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                            ].map((faq, i) => (
+                                <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                    <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                        <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                    </h4>
+                                    <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
                                 </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">What makes Paradise Roofers different in Milton?</h4>
-                                    <p className="text-sm text-muted-foreground">We're Milton's only escarpment-specialized roofing contractor. 1,900+ local installations since 2008, understanding clay soil challenges, wind patterns, and municipal requirements. Our systems are engineered specifically for Milton's demanding climate conditions.</p>
-                                </div>
-                            </div>
-                            
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">How long do roofs last in Milton's climate?</h4>
-                                    <p className="text-sm text-muted-foreground">Standard installations: 15-20 years. Our escarpment-engineered systems: 25-30 years. Key factors include proper ice/water shield coverage (42" minimum), 6-nail fastening for wind resistance, and R50 attic insulation preventing ice dams.</p>
-                                </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Do you handle Milton building permits and inspections?</h4>
-                                    <p className="text-sm text-muted-foreground">Yes - complete permit service included. We handle Town of Milton building permits, Halton Region requirements, TRCA approvals for escarpment properties, and coordinate all required inspections. Licensed contractors familiar with local codes and requirements.</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -16,17 +16,14 @@ export default function Markham() {
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Markham Roofers<br />
-                            Heritage & Modern Experts
+                            Roofing Services in<br />
+                            Markham, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Searching for "roofing Markham"? We've got you covered. Markham's brutal winters hit Unionville, Wismer, Thornhill, Milliken hard with ice dams, wind damage, flat roof leaks, and skylight failures. Free drone inspections. 24 years experience. 4.9★ reviews.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    2,800+ Markham families trust us since 2005. Unionville's historic homes get ice dams. Thornhill two-stories lose shingles in wind. Markham Village bungalows battle attic mold. Milliken commercial strips fight flat roof ponding. Wismer Commons sees hail damage.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Markham, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -324,6 +321,24 @@ export default function Markham() {
 
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 mb-12">
+                        {[
+                            { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                            { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                            { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                            { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                        ].map((faq, i) => (
+                            <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                    <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                </h4>
+                                <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+
                     <h2 className="text-3xl font-bold uppercase mb-8">2026 Markham Roofing Costs & Insurance Claims</h2>
                     
                     <div className="grid md:grid-cols-2 gap-8 mb-12">

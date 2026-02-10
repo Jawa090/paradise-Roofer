@@ -11,22 +11,27 @@ const testimonials = [
   {
     quote: "I thought I’d have buckets everywhere in our Toronto home. Instead, the team fixed our shingle roof leak fast and cleaned up perfectly. Roof and sanity saved!",
     author: "Mark T.",
-    role: "Homeowner, Toronto, ON",
+    role: "Homeowner, Brampton, ON",
   },
   {
-    quote: "Expected mess and delays for metal roof replacement. Got clean work, friendly Canadian crew, and my yard looking better. Roofing made it easy!",
+    quote: "Expected mess and delays for Shingle roof replacement. Got clean work, friendly Canadian crew, and my yard looking better. Roofing made it easy!",
     author: "Jennifer L.",
-    role: "Homeowner, Vancouver, BC",
+    role: "Homeowner, Mississauga, ON",
   },
   {
-    quote: "The pro team showed up with top tools for emergency storm repair. Even sent drone photos after now I recommend them across Canada!",
+    quote: "The pro team showed up with top tools for emergency storm repair. I even sent drone photos after now I recommend them across GTA!",
     author: "Robert K.",
-    role: "Homeowner, Calgary, AB",
+    role: "Homeowner, Milton, ON",
   },
   {
-    quote: "Free roof inspection caught skylight leaks early. Honest local pros saved us thousands on our Ottawa home.",
+    quote: "Called three roofers—one ghosted, one overpriced. Paradise Roofers experts did the Shingle roof install fast, fair, and flawlessly.",
+    author: "Sarah M.",
+    role: "Business Owner, Scarborough ON",
+  },
+  {
+    quote: "Free roof inspection caught skylight leaks early. Honest local pros saved us thousands on our Oakville home.",
     author: "David S.",
-    role: "Homeowner, Ottawa, ON",
+    role: "Homeowner, Oakville, ON",
   },
 ];
 

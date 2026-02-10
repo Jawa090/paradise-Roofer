@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
-import { Phone, ArrowRight, Shield, Award, MapPin, Ruler, CloudRain, Droplets, ArrowDownToLine, CheckCircle2, Factory, Snowflake, AlertTriangle, Home, FileText, Wrench, Zap } from "lucide-react";
+import { Phone, ArrowRight, Shield, Award, MapPin, Ruler, CloudRain, Droplets, ArrowDownToLine, Factory, Snowflake, AlertTriangle, Home, FileText, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
 import completedRoof from "@/assets/completed-roof.jpg";
 import roofCoating from "@/assets/roof-coating.jpg"; // Placeholder
@@ -30,7 +30,7 @@ export default function GuttersRepair() {
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Leaking eavesdrops flooding your Toronto foundation? Clogged gutters causing ice dams and fascia rot? Our licensed gutter specialists provide complete eavestrough repair and replacement across Toronto, Mississauga, Vaughan, Markham with seamless aluminum gutters, leaf guard systems, proper fascia integration, and 24/7 emergency response.
+                                    Leaking eavesdrops flooding your Toronto foundation? Clogged gutters causing ice dams and fascia rot? Our licensed gutter specialists provide complete eavestrough repair and replacement across Toronto, Mississauga, Brampton, Milton, Oakville and entire GTA with seamless aluminum gutters, leaf guard systems, proper fascia integration, and 24/7 emergency response.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
                                     Don't let failing gutters destroy your home's exterior, foundation, and landscaping. We serve all GTA with custom seamless fabrication, gutter cleaning, downspout replacement, heated gutter guards, and complete fascia/soffit/gutter packages that work together perfectly.
@@ -414,25 +414,25 @@ export default function GuttersRepair() {
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
                             {
-                                title: "Etobicoke Bungalow Complete Exterior Restoration",
+                                title: "Complete Exterior Restoration Project",
                                 img: completedRoof,
                                 problem: "Leaking seams, rotten fascia, undersized 4\" gutters causing foundation washout",
                                 result: "6\" seamless aluminum + PVC fascia + micro-mesh leaf guards. Foundation saved, zero ice dams, property value increased 6%"
                             },
                             {
-                                title: "North York Ice Dam Disaster Recovery",
+                                title: "Ice Dam Disaster Recovery",
                                 img: roofCoating,
                                 problem: "Frozen gutters caused $18K attic flood, icicles 4ft long",
                                 result: "Heated gutter system + continuous soffit vents + R50 attic insulation. Zero ice dams next winter, 29% hydro bill reduction verified"
                             },
                             {
-                                title: "Mississauga Commercial Plaza Emergency",
+                                title: "Commercial Plaza Emergency",
                                 img: roofingBanner,
                                 problem: "18 downspouts crushed by fallen tree during storm",
                                 result: "Underground leader system + commercial-grade leaf guards + 24-hour completion. Zero business interruption, insurance covered 100%"
                             },
                             {
-                                title: "Leaside Heritage Home Luxury Upgrade",
+                                title: "Heritage Home Luxury Upgrade",
                                 img: completedRoof,
                                 problem: "Original 1960s galvanized gutters rusted through completely",
                                 result: "Custom copper half-round gutters + copper downspouts + period-perfect fascia. 75-year system, maintains heritage architectural integrity"
@@ -482,11 +482,14 @@ export default function GuttersRepair() {
                                     GTA Cities & Regions
                                 </h3>
                                 <div className="grid grid-cols-1 gap-2 text-sm text-muted-foreground">
-                                    <span>• Mississauga (Erin Mills, Port Credit, Streetsville)</span>
-                                    <span>• Vaughan (Woodbridge, Maple, Thornhill)</span>
-                                    <span>• Markham (Unionville, Wismer, Cornell)</span>
-                                    <span>• Richmond Hill & Oakville (24/7 Emergency Service)</span>
-                                    <span>• Brampton, Ajax, Pickering (Extended Coverage)</span>
+                                    <span>• Mississauga: Erin Mills, Clarkson, Lorne Park, Port Credit</span>
+                                    <span>• Brampton: Heart Lake, Fletcher's Meadow, Mount Pleasant</span>
+                                    <span>• Milton: Scott, Harrison, Timberlea, Victoria Street, Charles Street</span>
+                                    <span>• Oakville: Bronte, Clearview, Glen Abbey</span>
+                                    <span>• Vaughan: Maple, Woodbridge, Concord, Kleinburg</span>
+                                    <span>• Markham: Unionville, Wismer, Centennial, Box Grove</span>
+                                    <span>• Richmond Hill: Jefferson, Oak Ridges, Mill Pond</span>
+                                    <span>• Ajax, Pickering, Whitby (Extended Coverage)</span>
                                 </div>
                             </div>
                         </div>

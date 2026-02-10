@@ -16,17 +16,14 @@ export default function Vaughan() {
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Vaughan Roofers<br />
-                            York Region Experts
+                            Roofing Services in<br />
+                            Vaughan, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Hey Vaughan homeowners, imagine a bad winter storm hitting Concord's tree-lined streets, with big branches smashing your shingles. Or ice dams filling up along Maple bungalow roofs, making your attic drip. In Woodbridge, flat commercial roofs get water pooling. Kleinburg homes deal with skylight leaks, and raccoons from conservation areas chew into soffits.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Paradise Roofers has helped over 2,800 homes in York Region since 2005. We have 4.9★ ratings on Google and HomeStars from real customers in Vellore, Elder Mills, Patterson, and Thornhill. Our free drone checks (worth $400) spot leaks early, stopping $21K water damage claims.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Vaughan, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -353,32 +350,22 @@ export default function Vaughan() {
                     </div>
 
                     <div className="bg-[#F9F9F9] p-8 rounded-lg border border-border">
-                        <h3 className="text-2xl font-bold uppercase mb-6">Typical Costs & Success Rates</h3>
+                        <h3 className="text-2xl font-bold uppercase mb-6">Frequently Asked Questions</h3>
                         
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Bungalow roof replacement?</h4>
-                                    <p className="text-sm text-muted-foreground">$28K-$55K with Owens Corning Duration shingles, R60 insulation, and full warranty coverage.</p>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                                { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                                { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                                { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                            ].map((faq, i) => (
+                                <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                    <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                        <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                    </h4>
+                                    <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
                                 </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Hail claims success rate?</h4>
-                                    <p className="text-sm text-muted-foreground">97% success rate with drone documentation and insurance advocacy support.</p>
-                                </div>
-                            </div>
-                            
-                            <div className="space-y-6">
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Wildlife proofing effectiveness?</h4>
-                                    <p className="text-sm text-muted-foreground">91% effective long-term with our comprehensive animal exclusion systems.</p>
-                                </div>
-                                
-                                <div>
-                                    <h4 className="font-bold text-lg mb-2">Energy savings with new roof?</h4>
-                                    <p className="text-sm text-muted-foreground">Average 29% reduction in energy bills with R60 insulation and proper ventilation.</p>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

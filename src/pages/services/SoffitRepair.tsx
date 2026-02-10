@@ -28,10 +28,10 @@ export default function SoffitRepair() {
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Soffit problems causing ice dams and poor attic ventilation? We provide professional soffit repair and complete replacement for Toronto homes where clogged vents, rotten wood, and failing soffits create moisture buildup, ice dams, and skyrocketing hydro bills. Licensed Paradise Roofers serve Toronto, Mississauga, Vaughan, Markham with continuous ventilation soffits, proper fascia integration, and complete exterior packages.
+                                    Soffit problems causing ice dams and poor attic ventilation? We provide professional soffit repair and complete replacement for Toronto homes where clogged vents, rotten wood, and failing soffits create moisture buildup, ice dams, and skyrocketing hydro bills. Licensed Paradise Roofers serve Toronto, Mississauga, Brampton, Milton, Oakville and entire GTA region with continuous ventilation soffits, proper fascia integration, and complete exterior packages.
                                 </p>
                                 <p className="text-lg font-bold text-[#FF9C45]">
-                                    Every soffit job starts with FREE drone inspection ($350 value) revealing hidden rot, ventilation blockages, and moisture patterns before work begins. Fast 1-2 day installations, 25-year warranties, zero mess guarantee across entire GTA region.
+                                    Every soffit job starts with FREE drone inspection $200 revealing hidden rot, ventilation blockages, and moisture patterns before work begins. Fast 1-2 day installations, 25-year warranties, zero mess guarantee across entire GTA region.
                                 </p>
                             </div>
 
@@ -126,12 +126,12 @@ export default function SoffitRepair() {
                         {[
                             {
                                 title: "Aluminum Soffit – Most Popular (80% of Jobs)",
-                                desc: "0.027 gauge seamless aluminum, continuous vent strips, 35-50 year lifespan. No rot, no paint, perfect ventilation. $15-$22 per linear foot installed. North York bungalows, Scarborough semis.",
+                                desc: "0.027 gauge seamless aluminum, continuous vent strips, 35-50 year lifespan. No rot, no paint, perfect ventilation.",
                                 icon: Shield
                             },
                             {
                                 title: "Vinyl Soffit – Budget Maintenance Free",
-                                desc: "Heavy-duty 0.040 gauge PVC, interlocking panels, 30-45 year lifespan. No dents, no rot, good ventilation. $12-$18 per linear foot. Mississauga family homes, Etobicoke two-stories.",
+                                desc: "Heavy-duty 0.040 gauge PVC, interlocking panels, 30-45 year lifespan. No dents, no rot, good ventilation.",
                                 icon: Award
                             }
                         ].map((material, i) => (
@@ -189,11 +189,9 @@ export default function SoffitRepair() {
                     <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "Average cost for soffit replacement Toronto?", a: "1,500 linear ft average home: $18K-$28K complete system. Soffit only $12-22/ft. Complete soffit/fascia/gutter $28-38/ft installed." },
                             { q: "How long does soffit installation take?", a: "Single story: 1 day. Two-story homes: 1.5-2 days. Weather dependent." },
-                            { q: "Free inspection before quoting?", a: "FREE drone inspection standard ($350 value). Reveals exact rot, ventilation issues before work starts." },
+                            { q: "Free inspection before quoting?", a: "FREE drone inspection standard $200. Reveals exact rot, ventilation issues before work starts." },
                             { q: "Do soffits affect ice dams?", a: "80% of ice dams caused by poor soffit ventilation. Proper continuous vents eliminate permanently." },
-                            { q: "Insurance cover soffit damage?", a: "Yes for wind/storm damage. We provide drone photos + documentation. 92% claims approved." },
                             { q: "Mess during soffit replacement?", a: "Zero mess. Drop cloths everywhere. Magnetic boots. Continuous cleanup. Final magnet sweep." },
                             { q: "What warranty on new soffits?", a: "25-year Paradise workmanship + lifetime manufacturer warranty on aluminum panels. Transferable." },
                             { q: "Do gutters need fixing too?", a: "95% need new gutters during soffit work. We reinstall seamless gutters properly sloped." }

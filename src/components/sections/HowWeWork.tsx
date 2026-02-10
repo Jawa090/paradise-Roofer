@@ -7,21 +7,21 @@ const steps = [
     label: "Step 1",
     icon: MessageSquare,
     title: "Free On-Site Inspection",
-    description: "We assess your roof, spot leaks, damage, or wear. Detailed report provided. ",
+    description: "We assess your roof, spot leaks, damage, or wear. Detailed report provided.",
   },
   {
     id: 2,
     label: "Step 2",
     icon: Search,
     title: "Custom Quote & Plan",
-    description: "Transparent pricing for repair, replacement, or install. Tailored to your Canadian home. ",
+    description: "Transparent pricing for repair, replacement, or install. Tailored to your Canadian home.",
   },
   {
     id: 3,
     label: "Step 3",
     icon: ListChecks,
     title: "Professional Installation",
-    description: "The expert team uses premium shingles, metal, or tile. Fast, clean work with daily updates.",
+    description: "Utilizing top-tier materials and refined techniques, our team ensures a swift, meticulous build. We guarantee a debris-free environment and keep you fully informed with daily project milestones.",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export default function HowWeWork() {
           </div>
           {/* H2 */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading">
-            Here's how we make roofing Easy-Peasy
+            Our 4-Step Roofing Process
           </h2>
         </div>
 

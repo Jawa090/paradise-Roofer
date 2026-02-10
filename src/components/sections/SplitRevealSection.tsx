@@ -9,40 +9,28 @@ const leftStats = [
     number: "1000",
     suffix: "+",
     label: "Roofs Installed",
-    description: "From homes to commercial buildings of Canada expert installation of shingles, metal, tile, and flat roofs"
+    description: "More than decade of proven Excellence from residential Home to major Commercial landmarks across GTA And Toronto"
   },
   {
     number: "500",
     suffix: "+",
-    label: "Repairs Completed",
-    description: "Fast leak detection, storm damage, and emergency roof repairs – reliable every time"
-  },
-  {
-    number: "25",
-    suffix: "+",
-    label: "Certified roofers",
-    description: "Licensed pros handling roof replacement, gutters, skylights, insulation, and maintenance"
-  },
-  {
-    number: "4.9",
-    suffix: "star",
-    label: "Best ratings",
-    description: "Trusted by Canada homeowners on Google and Yelp for roofing services."
+    label: "Proven Repair Specialist",
+    description: "Proven Repair Specialist from rapid leak direction to comprehensive storm restoration and 24/7 emergency support reliable solutions for every roofing channel."
   },
 ];
 
 const rightStats = [
   {
-    number: "42",
+    number: "25",
     suffix: "+",
-    label: "expert roofers",
-    description: "Skilled, certified, and always up for the climb."
+    label: "Certified roofers",
+    description: "Team of Certified licensed roof professionals handling roof, gutters, fascia, soffit, skylights, vents, repair and replacements."
   },
   {
     number: "4.9",
     suffix: "-star",
-    label: "average rating",
-    description: "Across Google, Facebook, and Yelp — customers love us"
+    label: "Best ratings",
+    description: "Consistently Top Rated by Clients Our Reputation is built on a near perfect track record of customer satisfaction on quality craftsmanship"
   },
 ];
 
@@ -339,7 +327,7 @@ export default function SplitRevealSection() {
                 <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-center">
-                Roofing Since 2004
+                "Proven Reliability & Performance"
               </h2>
             </div>
 
@@ -351,7 +339,7 @@ export default function SplitRevealSection() {
                 transform: `translateY(${descTranslateY}px)`,
               }}
             >
-              Serving Canada for 20+ years, we're licensed roofers specializing in installation, repair, replacement, inspections, gutters, skylights, and maintenance. From residential shingle roofs to commercial flat systems, our 25+ pros deliver premium materials, fair prices, and full warranties. We treat every home like our own with honest service, 24/7 emergency response, and 4.9-star reviews from locals. Free quotes and inspections get your project started right.
+              We have built our reputation on a history of successful installations and high-stakes repairs. Our expertise goes beyond the surface; we specialize in comprehensive system health, including advanced leak detection and structural restoration, providing peace of mind through seasoned technical skill.
             </p>
 
             {/* Video and Benefits Wrapper - Phase 2: appears later, stays visible */}

@@ -16,17 +16,14 @@ export default function Ajax() {
                             <div className="h-4 w-4 bg-[#FF9C45]"></div>
                         </div>
                         <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
-                            Ajax Roofing<br />
-                            Services
+                            Roofing Services in<br />
+                            Ajax, Ontario
                         </h1>
 
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Searching "roofing Ajax Ontario"? We cover Ajax North, McLean, Southwood, Hermitage with complete solutions for ice dams, wind damage, flat roof leaks, skylight repairs. Free drone inspections. 24 years experience. 4.9★ reviews.
-                                </p>
-                                <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Ajax homeowners deal with Lake Ontario lake-effect snow that creates massive problems. Ajax North mature neighborhoods suffer ice dams from heavy moisture. McLean bungalows lose shingles in 100km/h winds. Southwood families find attic mold from poor ventilation. Hermitage commercial plazas battle flat roof ponding.
+                                    Paradise Roofers proudly offers reliable roofing and renovation services in Ajax, Ontario, delivering high-quality workmanship for residential and commercial properties. With years of hands-on experience, our team is committed to protecting, improving, and enhancing your property from the roof down.
                                 </p>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-4">
@@ -450,6 +447,24 @@ export default function Ajax() {
 
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl">
+                    <h2 className="text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
+                    
+                    <div className="grid md:grid-cols-2 gap-6 mb-12">
+                        {[
+                            { q: "How much do you charge for Roof Inspection?", a: "It's totally free of cost and through 4K Drone." },
+                            { q: "How often should I inspect my roof?", a: "Twice a year—spring and fall are best. Or after major storms." },
+                            { q: "What's the difference between inspection and maintenance?", a: "Inspections find issues. Maintenance fixes the little stuff on the spot." },
+                            { q: "Can this extend my roof's life?", a: "Absolutely—routine care can add 5–10 years or more." }
+                        ].map((faq, i) => (
+                            <div key={i} className="bg-white p-6 rounded-lg border border-border">
+                                <h4 className="font-bold text-base mb-2 flex items-start gap-2">
+                                    <span className="text-[#FF9C45]">Q.</span> {faq.q}
+                                </h4>
+                                <p className="text-sm text-muted-foreground pl-6">{faq.a}</p>
+                            </div>
+                        ))}
+                    </div>
+
                     <div className="flex items-start gap-6 mb-12">
                         <div className="bg-red-500 rounded-xl p-4 shadow-[0_4px_0_0_rgba(180,83,9,1)] shrink-0">
                             <Snowflake className="h-10 w-10 text-white" strokeWidth={4} />

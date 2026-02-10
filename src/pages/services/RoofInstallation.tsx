@@ -32,7 +32,7 @@ export default function RoofInstallation() {
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Looking for expert roof installation in Toronto and the GTA? We specialize in complete new roof installations for residential homes and commercial properties across Toronto, Mississauga, Vaughan, Markham, and surrounding areas.
+                                    Looking for expert roof installation in Toronto and the GTA? We specialize in complete new roof installations for residential homes and commercial properties across Mississauga, Brampton, Milton, Oakville and the entire GTA, Toronto.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
                                     Our licensed roofing contractors handle everything from asphalt shingles to premium metal roofing systems, all built to withstand harsh Canadian winters, ice dams, heavy snow loads, and summer storms.
@@ -83,7 +83,7 @@ export default function RoofInstallation() {
                     {/* Intro Extension */}
                     <div className="mt-12 max-w-4xl">
                         <p className="text-lg text-muted-foreground">
-                            With 20+ years serving Toronto homeowners and businesses, we offer FREE roof drone inspections, transparent pricing, 1-3 day installations, and lifetime warranties on materials. Whether you need shingle roof installation, metal roofing for snow country, or flat roof systems for commercial buildings, our process guarantees zero mess, maximum durability, and energy savings through proper attic ventilation and insulation.
+                            With a legacy of diverse projects serving Toronto homeowners and businesses, we offer FREE roof drone inspections, transparent pricing, 1–3-day installations, and lifetime warranties on materials. Whether you need shingle roof installation, metal roofing for snow country, or flat roof systems for commercial buildings, our process guarantees zero mess, maximum durability, and energy savings through proper attic ventilation and insulation.
                         </p>
                     </div>
                 </div>
@@ -101,19 +101,19 @@ export default function RoofInstallation() {
                                     <Check className="h-10 w-10 text-white" strokeWidth={4} />
                                 </div>
                                 <div>
-                                    <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Why Choose Us?</h2>
-                                    <p className="text-lg font-medium text-muted-foreground">We treat every roof like it's our own family home.</p>
+                                    <h2 className="text-4xl md:text-5xl font-bold uppercase mb-4 tracking-tight">Why Toronto Homeowners Choose Us for Roof Installation?</h2>
+                                    <p className="text-lg font-medium text-muted-foreground">We stand out from other GTA roofing companies because we treat every roof like it's our own family home in entire GTA, Toronto. Here's what makes our roof installation services different:</p>
                                 </div>
                             </div>
 
                             <ul className="grid md:grid-cols-2 gap-y-6 gap-x-8 pl-[88px]">
                                 {[
-                                    { title: "Free Roof Drone Inspection", desc: "Advanced drone technology reveals shingle wear, ice dam risks, and hidden damage invisible from ground level." },
+                                    { title: "Free Roof Drone Inspection", desc: "Advanced drone technology reveals shingle wear, ice dam risks, and hidden damage invisible from ground level" },
                                     { title: "Complete Roof Replacement Packages", desc: "Old roof removal, new installation, fascia repair, soffit upgrades, and seamless gutters included." },
-                                    { title: "GAF Master Elite Certified Installers", desc: "Top 3% of Canadian roofers with specialized training in ice & water shield applications." },
-                                    { title: "25-Year Workmanship Warranty", desc: "Plus manufacturer lifetime warranties on premium shingles and metal roofing systems." },
-                                    { title: "Licensed & Insured Toronto Roofers", desc: "Fully compliant with Toronto Building Code and Ontario regulations." },
-                                    { title: "Zero Mess Guarantee", desc: "Magnetic booties, dumpster service, and final yard cleanup after every job." }
+                                    { title: "Professional Installation Team", desc: "Top listed roofers of GTA with specialized training in ice & water shield applications" },
+                                    { title: "10-Year Workmanship Warranty", desc: "Plus, manufacturer lifetime warranties on premium shingles" },
+                                    { title: "Licensed & Insured Toronto Roofers", desc: "Fully compliant with Toronto Building Code and Ontario regulations" },
+                                    { title: "Zero Mess Guarantee", desc: "Magnetic booties, dumpster service, and final yard clean up after every job" }
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3">
                                         <div className="mt-1">
@@ -153,42 +153,43 @@ export default function RoofInstallation() {
             {/* Services Offered */}
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12">Comprehensive Roof Installation Services</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-12">Comprehensive Roof Installation Services We Offer</h2>
+                    <p className="mb-12 text-muted-foreground">Our roof installation process goes far beyond simply laying new shingles. We provide complete exterior protection packages tailored for Toronto and GTA properties:</p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            {
-                                title: "1. Free Roof Drone Inspection",
-                                desc: "Every project starts with our complimentary drone inspection service. We capture 4K aerial footage of your entire roof surface, chimney flashing, skylights, vents, and valleys to spot issues like crack shingles and ice dam risks."
-                            },
-                            {
-                                title: "2. Roof Repair Before Replacement",
-                                desc: "Not every roof needs full replacement. Our experts assess if strategic repairs can extend your roof's life 5-10 years, including leak detection, shingle replacement, and ventilation improvements."
-                            },
-                            {
-                                title: "3. Complete Roof Replacement",
-                                desc: "For roofs over 15 years old. We handle complete tear-off, ice & water shield installation, underlayment, and premium shingle application with proper nailing patterns for 160 km/h wind resistance."
-                            },
-                            {
-                                title: "4. Fascia Repair & Replacement",
-                                desc: "We replace damaged fascia with pressure-treated wood or durable PVC boards, properly flashed to prevent future rot common in humid Toronto summers."
-                            },
-                            {
-                                title: "5. Soffit Repair & Replacement",
-                                desc: "We install aluminum or vinyl soffits with built-in vents providing 50% net free area for proper attic breathing, preventing moisture buildup and ice dams."
-                            },
-                            {
-                                title: "6. Gutters Repair & Replacement",
-                                desc: "Seamless aluminum gutters in 5\" or 6\" profiles with leaf guards. Properly sloped systems handle Toronto's heavy spring melt and summer downpours without overflow."
-                            },
-                            {
-                                title: "7. Attic Insulation Services",
-                                desc: "We install R50 blown-in cellulose or fiberglass, properly baffling intake vents to maintain airflow while maximizing energy efficiency and preventing ice dams."
-                            },
-                            {
-                                title: "8. All Interior Renovations",
-                                desc: "Our team handles complete interior restoration including drywall replacement, tape and mud, premium painting, and vapor barrier repairs for damage caused by leaks."
-                            }
-                        ].map((service, i) => (
+                            {[
+                                {
+                                    title: "1. Free Roof Drone Inspection",
+                                    desc: "Every project starts with our complimentary drone inspection service. We capture 4K aerial footage of your entire roof surface, chimney flashing, skylights, vents, and valleys. This technology spots issues like cracked shingles, granule loss, soft spots, and ice dam formation risks before we even climb ladders. You'll receive a detailed digital report with photos, repair recommendations, and accurate square footage measurements for precise quoting."
+                                },
+                                {
+                                    title: "2. Roof Repair Before Replacement",
+                                    desc: "Not every roof needs full replacement. Our experts assess if strategic repairs can extend your roof's life 5-10 years. Common Toronto roof repairs include: Leak detection and sealant application around penetrations, Shingle replacement in wind-damaged areas, Ridge vent and soffit ventilation improvements, Temporary ice dam mitigation for emergency situations"
+                                },
+                                {
+                                    title: "3. Complete Roof Replacement",
+                                    desc: "For roofs over 15 years old or showing multiple failure signs (curling shingles, valley cracks, interior leaks), full replacement delivers best value. We handle complete tear-off to the deck, ice & water shield installation, synthetic underlayment, and premium shingle application with proper nailing patterns for 160 km/h wind resistance."
+                                },
+                                {
+                                    title: "4. Fascia Repair & Replacement",
+                                    desc: "Rotten fascia boards compromise gutter performance and allow pest entry. We replace damaged fascia with pressure-treated wood or durable PVC boards, properly flashed to prevent future rot common in humid Toronto summers."
+                                },
+                                {
+                                    title: "5. Soffit Repair & Replacement",
+                                    desc: "Continuous soffit ventilation prevents attic moisture build up and ice dams. We install aluminium or vinyl soffits with built-in vents providing 50% net free area for proper attic breathing."
+                                },
+                                {
+                                    title: "6. Gutters Repair & Replacement",
+                                    desc: "Seamless aluminium gutters in 5\" or 6\" profiles with leaf guards. Properly sloped systems handle Toronto's heavy spring melt and summer downpours without overflow."
+                                },
+                                {
+                                    title: "7. Attic Insulation Services",
+                                    desc: "Insufficient insulation causes ice dams and high hydro bills. We install R50 blown-in cellulose or fiberglass, properly baffling intake vents to maintain airflow while maximizing energy efficiency."
+                                },
+                                {
+                                    title: "8. All Interior Renovations",
+                                    desc: "Roof leaks damages, ceilings, walls, and insulation. Our team handles complete interior restoration including drywall replacement, tape and mud, premium painting, and vapor barrier repairs so your home looks better than before the leak."
+                                }
+                            ].map((service, i) => (
                             <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border hover:border-[#FF9C45] transition-colors">
                                 <h3 className="font-bold text-lg mb-3">{service.title}</h3>
                                 <p className="text-sm text-muted-foreground">{service.desc}</p>
@@ -201,20 +202,19 @@ export default function RoofInstallation() {
             {/* Residential Options */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Residential Material Options</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-4">Residential Roof Installation Options for GTA Toronto Homes</h2>
                     <p className="mb-12 text-muted-foreground">Choosing the right roofing material depends on your home's architecture. Here's what works best across GTA neighborhoods:</p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow">
                             <Home className="h-8 w-8 text-[#FF9C45] mb-4" />
                             <h3 className="font-bold text-xl mb-4">Asphalt Shingles</h3>
-                            <p className="text-xs font-bold uppercase text-muted-foreground mb-2">Single-family, semis, towns</p>
+                            <p className="text-xs font-bold uppercase text-muted-foreground mb-2">Perfect for: Single-family homes, semis, townhouses</p>
                             <ul className="text-sm space-y-2 text-muted-foreground mb-4">
-                                <li>• 25-40 years durability</li>
-                                <li>• $450-$650/sq installed</li>
-                                <li>• Impact & algae resistant</li>
+                                <li>• Durability: 50 years American architectural shingles, 15-25 years 3-tab</li>
+                                <li>• Toronto Advantages: Impact-resistant for hail, algae-resistant for humid summers, thousands of color options</li>
+                                <li>• Best Brands: GAF Timberline HDZ</li>
                             </ul>
-                            <p className="text-xs text-muted-foreground italic">GAF Timberline HDZ, IKO Cambridge</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow">
@@ -260,15 +260,15 @@ export default function RoofInstallation() {
             <section className="py-20 bg-background">
                 <div className="container max-w-6xl">
                     <div className="bg-muted p-8 rounded-2xl">
-                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-6">Commercial Roof Installation</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-6">Commercial Roof Installation Across GTA</h2>
                         <p className="mb-6 text-muted-foreground">
-                            Business owners from Mississauga industrial parks to Vaughan retail plazas trust us for:
+                            Business owners from entire GTA industrial parks to Vaughan retail plazas trust us for:
                         </p>
                         <ul className="grid md:grid-cols-2 gap-4 mb-6">
                             {[
-                                "TPO Single-Ply Membranes: 20-30 year warranties, energy-efficient",
-                                "EPDM Rubber Roofing: Ballasted or fully adhered, 30-50 year life",
-                                "Modified Bitumen: Multi-layer torch-down systems for high-traffic",
+                                "TPO Single-Ply Membranes: 20–30-year warranties, energy-efficient white finish",
+                                "EPDM Rubber Roofing: Ballasted or fully adhered, 30–50-years lifespan",
+                                "Modified Bitumen: Multi-layer torch-down systems for high-traffic roofs",
                                 "Metal Deck Recovery: Overlay existing metal without tear-off"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-center gap-2">
@@ -278,7 +278,7 @@ export default function RoofInstallation() {
                             ))}
                         </ul>
                         <p className="text-sm text-muted-foreground">
-                            We coordinate with property managers for minimal business disruption and provide detailed warranty documentation.
+                            We coordinate with property managers for minimal business disruption and provide detailed warranty documentation for corporate ownership groups.
                         </p>
                     </div>
                 </div>
@@ -287,32 +287,32 @@ export default function RoofInstallation() {
             {/* Process */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our Proven 4-Step Process</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our Proven 4-Step Roof Installation Process</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         {[
                             {
                                 step: "01",
                                 title: "FREE Drone Inspection & Assessment",
                                 time: "(Day 1)",
-                                desc: "A licensed technician arrives with a drone, moisture meter, and thermal camera. We document shingle condition, ice dam risks, and flashing integrity. You get a PDF report within 24 hours."
+                                desc: "A licensed technician arrives with a drone, moisture meter, and thermal camera. We document: Shingle condition and granule loss patterns, Ice dam risk areas and attic ventilation issues, Chimney flashing, step flashing, and valley integrity, Interior ceiling stains indicating leak locations. You'll receive a PDF report with photos, square footage calculations, and repair vs. replacement recommendations within 24 hours."
                             },
                             {
                                 step: "02",
                                 title: "Custom Quote & Material Selection",
                                 time: "(Same Day)",
-                                desc: "No pushy sales. We present three options: Budget-friendly (3-tab), Best value (Architectural), and Premium. Financing options and grants available."
+                                desc: "No pushy sales. We present three options: Budget-friendly: 3-tab shingles, Best value: Architectural shingles, Premium: Luxury laminated shingles. Financing options, RRSP Home Efficiency grants, and insurance claim assistance available."
                             },
                             {
                                 step: "03",
                                 title: "Professional Installation",
                                 time: "(Days 2-4)",
-                                desc: "6-man licensed crew arrives with dumpster & magnet sweepers. We use custom brackets, valley pans, and proper starter strips. Daily progress photos sent via text."
+                                desc: "6-man licensed crew arrives with: Dumpster + magnet sweepers for zero nail clean up, Custom roof brackets preventing gutter damage, Valley pans, ice & water shield, synthetic underlayment, Proper starter strip and ridge cap installation. Daily progress photos sent via text/email so you see exactly what's happening."
                             },
                             {
                                 step: "04",
-                                title: "Final Walkthrough & Warranty",
+                                title: "Final Walkthrough & Warranty Activation",
                                 time: "(Day 4)",
-                                desc: "Joint inspection confirming no popped nails and gutters flow. Warranty package includes manufacturer lifetime limited warranty + 20-year workmanship warranty."
+                                desc: "Joint inspection confirming: No popped nails or loose shingles, Perfect ridge cap and flashing alignment, Gutter flow test and fascia alignment, Attic ventilation verification. Warranty package includes manufacturer lifetime limited warranty, our 20-year workmanship warranty, and seasonal maintenance checklist."
                             }
                         ].map((item, i) => (
                             <div key={i} className="flex gap-6">
@@ -335,30 +335,71 @@ export default function RoofInstallation() {
                 <div className="container max-w-6xl space-y-20">
 
                     {/* Coverage */}
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                Core Toronto Neighborhoods
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• North York (Bayview, Don Mills)</span>
-                                <span>• Scarborough (Agincourt, Rouge)</span>
-                                <span>• Etobicoke (Islington, Mimico)</span>
-                                <span>• East York (Leaside, Broadview)</span>
+                    <div>
+                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Extensive Toronto & GTA Service Coverage</h2>
+                        <div className="grid md:grid-cols-3 gap-8 mb-8">
+                            <div>
+                                <h3 className="font-bold text-lg mb-4">Mississauga</h3>
+                                <div className="text-sm text-muted-foreground space-y-1">
+                                    <p>• Erin Mills</p>
+                                    <p>• Clarkson</p>
+                                    <p>• Lorne Park</p>
+                                    <p>• Port Credit</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 className="font-bold text-lg mb-4">Brampton</h3>
+                                <div className="text-sm text-muted-foreground space-y-1">
+                                    <p>• Heart Lake</p>
+                                    <p>• Fletcher's Meadow</p>
+                                    <p>• Mount Pleasant</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 className="font-bold text-lg mb-4">Milton</h3>
+                                <div className="text-sm text-muted-foreground space-y-1">
+                                    <p>• Scott</p>
+                                    <p>• Harrison</p>
+                                    <p>• Timberlea</p>
+                                    <p>• Victoria Street</p>
+                                    <p>• Charles Street</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 className="font-bold text-lg mb-4">Oakville</h3>
+                                <div className="text-sm text-muted-foreground space-y-1">
+                                    <p>• Bronte</p>
+                                    <p>• Clearview</p>
+                                    <p>• Glen Abbey</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 className="font-bold text-lg mb-4">Vaughan</h3>
+                                <div className="text-sm text-muted-foreground space-y-1">
+                                    <p>• Maple</p>
+                                    <p>• Woodbridge</p>
+                                    <p>• Concord</p>
+                                    <p>• Kleinburg</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 className="font-bold text-lg mb-4">Markham & Richmond Hill</h3>
+                                <div className="text-sm text-muted-foreground space-y-1">
+                                    <p>• Unionville</p>
+                                    <p>• Wismer</p>
+                                    <p>• Centennial</p>
+                                    <p>• Box Grove</p>
+                                    <p>• Jefferson</p>
+                                    <p>• Oak Ridges</p>
+                                    <p>• Mill Pond</p>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                GTA Cities We Serve
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• Mississauga & Oakville</span>
-                                <span>• Vaughan & Richmond Hill</span>
-                                <span>• Markham & Brampton</span>
-                                <span>• Milton & Halton Hills</span>
-                            </div>
+                    </div>
+
+                    {/* Old Coverage Section - Remove */}
+                    <div className="hidden">
+                        <div className="grid md:grid-cols-2 gap-12">
                         </div>
                     </div>
 

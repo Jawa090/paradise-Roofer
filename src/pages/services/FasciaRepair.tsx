@@ -28,7 +28,7 @@ export default function FasciaRepair() {
                         <div className="grid md:grid-cols-2 gap-8 items-start">
                             <div className="space-y-4">
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Rotten fascia boards causing gutter problems? We specialize in fascia repair and complete replacement for Toronto homes where wood rot has compromised roof edges, gutters, and exterior appearance. Licensed Paradise Roofers fix sagging gutters, leaking fascia joints, and deteriorated boards across Toronto, Mississauga, Vaughan, Markham.
+                                    Rotten fascia boards causing gutter problems? We specialize in fascia repair and complete replacement for Toronto homes where wood rot has compromised roof edges, gutters, and exterior appearance. Licensed Paradise Roofers fix sagging gutters, leaking fascia joints, and deteriorated boards across Toronto, Mississauga, Brampton, Milton, Oakville and entire GTA.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
                                     Free drone inspection reveals hidden rot before it spreads. Same-day repairs for minor damage. Full replacement packages include soffit ventilation + seamless gutters. 20-year warranty on aluminum/PVC fascia systems.
@@ -186,7 +186,7 @@ export default function FasciaRepair() {
                         <div className="bg-muted/30 p-8 rounded-lg border border-border">
                             <div className="flex items-center gap-3 mb-4">
                                 <FileText className="h-8 w-8 text-[#FF9C45]" />
-                                <h3 className="font-bold text-xl">Free Drone Fascia Assessment ($250 Value)</h3>
+                                <h3 className="font-bold text-xl">Free Drone Fascia Assessment $200</h3>
                             </div>
                             <p className="text-muted-foreground mb-4">
                                 4K aerial reveals rot patterns, gutter attachment failures, soffit ventilation blockages. Thermal scan shows moisture trapped behind boards.
@@ -247,7 +247,6 @@ export default function FasciaRepair() {
                                     <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Material</th>
                                     <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Rot Proof</th>
                                     <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Toronto Lifespan</th>
-                                    <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Cost per Linear Ft</th>
                                     <th className="px-6 py-4 font-bold uppercase text-sm tracking-wider">Maintenance</th>
                                 </tr>
                             </thead>
@@ -256,28 +255,24 @@ export default function FasciaRepair() {
                                     <td className="px-6 py-4 font-medium">Aluminum Fascia</td>
                                     <td className="px-6 py-4 font-bold text-green-600">Yes</td>
                                     <td className="px-6 py-4">35-50 years</td>
-                                    <td className="px-6 py-4">$12-$18</td>
                                     <td className="px-6 py-4 font-bold text-green-600">None</td>
                                 </tr>
                                 <tr className="hover:bg-muted/20">
                                     <td className="px-6 py-4 font-medium">PVC Fascia</td>
                                     <td className="px-6 py-4 font-bold text-green-600">Yes</td>
                                     <td className="px-6 py-4">40-60 years</td>
-                                    <td className="px-6 py-4">$15-$22</td>
                                     <td className="px-6 py-4 font-bold text-green-600">None</td>
                                 </tr>
                                 <tr className="hover:bg-muted/20">
                                     <td className="px-6 py-4 font-medium">Pressure Treated Wood</td>
                                     <td className="px-6 py-4 font-bold text-red-600">No</td>
                                     <td className="px-6 py-4">7-12 years</td>
-                                    <td className="px-6 py-4">$8-$12</td>
                                     <td className="px-6 py-4 text-red-600">Annual paint</td>
                                 </tr>
                                 <tr className="hover:bg-muted/20">
                                     <td className="px-6 py-4 font-medium">Cedar (Premium)</td>
                                     <td className="px-6 py-4 font-bold text-red-600">No</td>
                                     <td className="px-6 py-4">10-15 years</td>
-                                    <td className="px-6 py-4">$18-$25</td>
                                     <td className="px-6 py-4 text-red-600">Annual seal</td>
                                 </tr>
                             </tbody>
@@ -338,7 +333,6 @@ export default function FasciaRepair() {
                     <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         {[
-                            { q: "Cost per linear foot?", a: "Aluminum fascia $12-18/ft installed. Complete fascia/soffit/gutter packages $28-35/ft." },
                             { q: "How long does installation take?", a: "Single story average home: 1 day. Two-story or complex 1.5 days." },
                             { q: "Free inspection included?", a: "Yes – drone assessment standard. Reveals rot you can't see." },
                             { q: "Warranty on fascia replacement?", a: "20 years aluminum/PVC. Lifetime against rot." },
