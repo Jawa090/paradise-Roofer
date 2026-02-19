@@ -291,44 +291,16 @@ export default function RoofReplacement() {
                 </div>
             </section>
 
-            {/* Coverage & FAQs */}
+            {/* FAQs */}
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl space-y-20">
-
-                    {/* Coverage */}
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                Service Areas
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• Toronto (All Districts)</span>
-                                <span>• Mississauga & Brampton</span>
-                                <span>• Vaughan & Richmond Hill</span>
-                                <span>• Markham & Scarborough</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <DollarSign className="h-5 w-5 text-[#FF9C45]" />
-                                Financing Options
-                            </h3>
-                            <div className="grid grid-cols-1 gap-2 text-sm text-muted-foreground">
-                                <span>• 0% Interest for 12 Months Available</span>
-                                <span>• Low Monthly Payments starting at $99/mo</span>
-                                <span>• No Payments for 6 Months O.A.C.</span>
-                            </div>
-                        </div>
-                    </div>
 
                     {/* FAQs */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "How much does roof replacement cost in Toronto?", a: "Average 2,000 sq ft home: $18K-$32K installed. Asphalt shingles $450-650/square. Metal $900-1,400/square. Factors: pitch, layers, deck repairs needed." },
-                                { q: "How long does professional installation take?", a: "Asphalt shingles 1-3 days. Metal roofing 3-5 days. Tile 5-7 days. Weather dependent. Commercial flat roofs 5-10 days." },
+                                { q: "How long does professional installation take?", a: "Asphalt shingles 1-3 days. Weather dependent. Commercial flat roofs 5-10 days." },
                                 { q: "Do you offer free roof inspections before replacement?", a: "Yes – FREE Drone inspection standard $200. Reveals exact deck condition, ice shield status, ventilation issues before quoting." },
                                 { q: "Will insurance cover my roof replacement?", a: "Paradise roofers assist you for the insurance claim process under the STORM CARE PROGRAM, 95% success rate. We provide drone documentation, Xactimate estimates, speak directly to adjusters. Most wind/hail claims approved." },
                                 { q: "Is roof replacement messy for my property?", a: "Zero mess guarantee. Dumpster positioned street-side. Magnetic boots on crews. Continuous magnet sweeps. Final pressure wash + yard magnet sweeps before leaving." },

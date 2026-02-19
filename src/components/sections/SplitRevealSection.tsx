@@ -6,14 +6,14 @@ import splitRight from "@/assets/split-right.png";
 
 const leftStats = [
   {
-    number: "1000",
-    suffix: "+",
-    label: "Roofs Installed",
+    number: "",
+    suffix: "",
+    label: "Decades of Roofing Excellence",
     description: "More than decade of proven Excellence from residential Home to major Commercial landmarks across GTA And Toronto"
   },
   {
-    number: "500",
-    suffix: "+",
+    number: "",
+    suffix: "",
     label: "Proven Repair Specialist",
     description: "Proven Repair Specialist from rapid leak direction to comprehensive storm restoration and 24/7 emergency support reliable solutions for every roofing channel."
   },
@@ -21,14 +21,14 @@ const leftStats = [
 
 const rightStats = [
   {
-    number: "25",
-    suffix: "+",
+    number: "",
+    suffix: "",
     label: "Certified roofers",
     description: "Team of Certified licensed roof professionals handling roof, gutters, fascia, soffit, skylights, vents, repair and replacements."
   },
   {
-    number: "4.9",
-    suffix: "-star",
+    number: "",
+    suffix: "",
     label: "Best ratings",
     description: "Consistently Top Rated by Clients Our Reputation is built on a near perfect track record of customer satisfaction on quality craftsmanship"
   },
@@ -217,16 +217,18 @@ export default function SplitRevealSection() {
             </div>
             {/* Left Stats Overlay - Right Aligned */}
             <div className="absolute inset-0 flex flex-col justify-between p-8 md:p-12">
-              <div className="ml-auto text-right max-w-[300px]">
-                <AnimatedNumber value={leftStats[0].number} suffix={leftStats[0].suffix} />
+              <div className="ml-auto max-w-[300px]">
+                <div className="text-right">
+                  <AnimatedNumber value={leftStats[0].number} suffix={leftStats[0].suffix} />
+                </div>
                 <h3
-                  className="font-heading font-bold text-xl uppercase mt-2"
+                  className="font-heading font-bold text-xl uppercase mt-2 text-left"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {leftStats[0].label}
                 </h3>
                 <p
-                  className="text-sm mt-2"
+                  className="text-sm mt-2 text-left"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {leftStats[0].description}
@@ -269,9 +271,8 @@ export default function SplitRevealSection() {
             {/* Right Stats Overlay - Left Aligned */}
             <div className="absolute inset-0 flex flex-col justify-between p-8 md:p-12">
               <div className="mr-auto text-left max-w-[300px]">
-                <AnimatedNumber value={rightStats[0].number} suffix={rightStats[0].suffix} />
                 <h3
-                  className="font-heading font-bold text-xl uppercase mt-2"
+                  className="font-heading font-bold text-xl uppercase"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {rightStats[0].label}
@@ -284,9 +285,8 @@ export default function SplitRevealSection() {
                 </p>
               </div>
               <div className="mr-auto text-left max-w-[300px]">
-                <AnimatedNumber value={rightStats[1].number} suffix={rightStats[1].suffix} />
                 <h3
-                  className="font-heading font-bold text-xl uppercase mt-2"
+                  className="font-heading font-bold text-xl uppercase"
                   style={{ color: 'rgb(255, 251, 245)' }}
                 >
                   {rightStats[1].label}

@@ -398,7 +398,7 @@ export default function AtticInsulation() {
             {/* Process */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our R50 Upgrade Process</h2>
+                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Our R60 Upgrade Process</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         {[
                             {
@@ -441,53 +441,20 @@ export default function AtticInsulation() {
                 </div>
             </section>
 
-            {/* Coverage & FAQs */}
+            {/* FAQs */}
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl space-y-20">
-
-                    {/* Coverage */}
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                Coverage Areas
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• Toronto (All Districts)</span>
-                                <span>• Mississauga & Brampton</span>
-                                <span>• Vaughan & Richmond Hill</span>
-                                <span>• Markham & Scarborough</span>
-                                <span>• Oakville & Burlington</span>
-                                <span>• Ajax & Pickering</span>
-                                <span>• Etobicoke & North York</span>
-                                <span>• Newmarket & Aurora</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <DollarSign className="h-5 w-5 text-[#FF9C45]" />
-                                EcoHome Rebates Available
-                            </h3>
-                            <div className="grid grid-cols-1 gap-2 text-sm text-muted-foreground">
-                                <span>• Up to $5,000 for R50 upgrades</span>
-                                <span>• We handle all rebate paperwork</span>
-                                <span>• Pre-approval available</span>
-                                <span>• Combines with utility rebates</span>
-                            </div>
-                        </div>
-                    </div>
 
                     {/* FAQs */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "How much does R50 insulation cost?", a: "Typical 1,500 sq ft attic costs $2,800-$3,500 for R50 upgrade. Price depends on current insulation level and access difficulty. EcoHome rebates reduce net cost significantly." },
-                                { q: "Can you blow insulation over existing?", a: "Yes, as long as existing insulation isn't wet, moldy, or contaminated. We add the exact amount needed to reach R50 total." },
-                                { q: "How long does installation take?", a: "Complete R50 upgrade takes 4-6 hours: 2-3 hours prep/air sealing, 1-2 hours blowing, 30 minutes cleanup. Most jobs done in one day." },
-                                { q: "Will this stop ice dams completely?", a: "R50 insulation combined with proper air sealing eliminates 95% of ice dam problems. Remaining issues usually involve ventilation or roof design." },
-                                { q: "Fiberglass or cellulose - which is better?", a: "Both reach R50 effectively. Fiberglass is cleaner, settles less. Cellulose is eco-friendly, better sound dampening. We install both based on your priorities." },
-                                { q: "Do you guarantee the R-value?", a: "Yes. We measure depth with rulers and guarantee R50 performance. If settling occurs within 5 years, we top up free." },
+                                { q: "Can you blow insulation over existing?", a: "Yes, as long as existing insulation isn't wet, moldy, or contaminated. We add the exact amount needed to reach R60 total." },
+                                { q: "How long does installation take?", a: "Complete R60 upgrade takes 4-6 hours: 2-3 hours prep/air sealing, 1-2 hours blowing, 30 minutes cleanup. Most jobs done in one day." },
+                                { q: "Will this stop ice dams completely?", a: "R60 insulation combined with proper air sealing eliminates 95% of ice dam problems. Remaining issues usually involve ventilation or roof design." },
+                                { q: "Fiberglass or cellulose - which is better?", a: "Both reach R60 effectively. Fiberglass is cleaner, settles less. Cellulose is eco-friendly, better sound dampening. We install both based on your priorities." },
+                                { q: "Do you guarantee the R-value?", a: "Yes. We measure depth with rulers and guarantee R60 performance. If settling occurs within 5 years, we top up free." },
                                 { q: "How messy is the installation?", a: "Very clean process. Blower truck stays outside, hose runs through door/window. We use drop cloths and vacuum thoroughly before leaving." },
                                 { q: "When will I see energy savings?", a: "Immediately. Most customers notice more even temperatures within 24 hours. Full energy savings show on next month's utility bill." }
                             ].map((faq, i) => (

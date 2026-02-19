@@ -12,7 +12,7 @@ const roofingTypes = [
     description: "Affordable, reliable asphalt shingles handle GTA, snow & ice perfectly.",
     image: asphaltShingle,
     lifespan: "20-30 years",
-    price: "$3.50–$5.50/sq.ft. (installed)",
+    
     href: "/roofing-types",
   },
 ];
@@ -24,47 +24,60 @@ interface TiltCardProps {
 
 function TiltCard({ image, title }: TiltCardProps) {
   const [transform, setTransform] = useState("perspective(800px) rotateX(0deg) rotateY(0deg)");
+  const [isFlipped, setIsFlipped] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return;
+    if (!cardRef.current || isFlipped) return;
     const rect = cardRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    const rotateX = ((y - centerY) / centerY) * -10;
-    const rotateY = ((x - centerX) / centerX) * 10;
+    const rotateX = ((y - centerY) / centerY) * -35; // Increased from -20 to -35
+    const rotateY = ((x - centerX) / centerX) * 35; // Increased from 20 to 35
     setTransform(`perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
   };
 
   const handleMouseLeave = () => {
-    setTransform("perspective(800px) rotateX(0deg) rotateY(0deg)");
+    if (!isFlipped) {
+      setTransform("perspective(800px) rotateX(0deg) rotateY(0deg)");
+    }
+  };
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+    if (!isFlipped) {
+      setTransform("perspective(800px) rotateY(180deg)");
+    } else {
+      setTransform("perspective(800px) rotateX(0deg) rotateY(0deg)");
+    }
   };
 
   return (
     <div
       ref={cardRef}
-      className="w-full h-full"
+      className="w-full h-full cursor-pointer"
       style={{
         willChange: "transform",
-        transition: "transform 0.18s cubic-bezier(0.22, 1, 0.36, 1)",
-        overflow: "hidden",
-        background: "transparent",
+        transition: "transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)",
+        transformStyle: "preserve-3d",
         position: "relative",
         transform,
       }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
       tabIndex={0}
-      aria-label="3D Tilt Card"
+      aria-label="3D Tilt Card - Click to flip"
     >
+      {/* Front Side */}
       <div
         style={{
           width: "100%",
           height: "100%",
-          pointerEvents: "none",
-          userSelect: "none",
+          position: "absolute",
+          backfaceVisibility: "hidden",
           backgroundColor: "transparent",
           backgroundImage: `url(${image})`,
           backgroundRepeat: "no-repeat",
@@ -74,6 +87,28 @@ function TiltCard({ image, title }: TiltCardProps) {
         }}
         aria-label={title}
       />
+      
+      {/* Back Side */}
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "absolute",
+          backfaceVisibility: "hidden",
+          transform: "rotateY(180deg)",
+          backgroundColor: "rgb(255, 131, 59)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "20px",
+          color: "white",
+        }}
+      >
+        <div className="text-center">
+          <h4 className="font-bold text-lg mb-2">{title}</h4>
+          <p className="text-sm">Click to see front</p>
+        </div>
+      </div>
     </div>
   );
 }
@@ -100,7 +135,7 @@ export default function RoofingTypesPreview() {
           </div>
           {/* Centered H2 */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center font-heading">
-            Shingle? Metal? Tile? Let's find your match
+            Shingle? Let's find your match
           </h2>
         </div>
 
@@ -125,8 +160,11 @@ export default function RoofingTypesPreview() {
 
               {/* Image Container with 3D Tilt */}
               <div 
-                className="relative h-48 mx-4 overflow-visible"
-                style={{ backgroundColor: 'rgb(245, 245, 245)' }}
+                className="relative h-48 mx-4"
+                style={{ 
+                  backgroundColor: 'rgb(245, 245, 245)',
+                  overflow: 'visible'
+                }}
               >
                 <div 
                   className="absolute inset-0 w-full"
@@ -152,11 +190,7 @@ export default function RoofingTypesPreview() {
                   <p className="text-sm text-muted-foreground">Lifespan</p>
                   <p className="text-sm text-right">{type.lifespan}</p>
                 </div>
-                {/* Price */}
-                <div className="flex justify-between items-center py-3">
-                  <p className="text-sm text-muted-foreground">Price</p>
-                  <p className="text-sm text-right">{type.price}</p>
-                </div>
+              
               </div>
             </Link>
           ))}

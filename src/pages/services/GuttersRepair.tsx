@@ -500,7 +500,6 @@ export default function GuttersRepair() {
                         <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { q: "How much does gutter repair cost in Toronto?", a: "$300-$3,500 typical range. Single seam: $300. Section replacement: $800-$1,200. Full system: $5K-$15K." },
                                 { q: "Do you offer emergency eavestrough service?", a: "YES – 24/7 GTA response. Leaking gutters, ice dams, storm damage handled immediately." },
                                 { q: "Seamless vs sectional gutters – Toronto recommendation?", a: "Seamless 100% better. 3x stronger seams, lifetime warranty, custom fit every home." },
                                 { q: "Are leaf guards worth the investment?", a: "Absolutely. 95% debris reduction, 5-year warranty, saves $500+/year cleaning costs." },

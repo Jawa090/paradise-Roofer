@@ -113,30 +113,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="text-center mb-12">
-            <span className="section-label mb-4 inline-block">Our Team</span>
-            <h2 className="headline-lg text-3xl md:text-4xl">
-              Meet Your Roofers
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {team.map((member, i) => (
-              <div key={i} className="text-center">
-                <div className="aspect-square mb-4 overflow-hidden bg-muted">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
-                </div>
-                <h3 className="font-heading font-bold text-lg">{member.name}</h3>
-                <p className="text-primary text-sm font-semibold mb-2">{member.role}</p>
-                <p className="text-muted-foreground text-sm">{member.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact Form */}
       <ContactForm />
     </Layout>

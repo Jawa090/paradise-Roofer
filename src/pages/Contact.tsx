@@ -16,7 +16,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    items: ["254 Eastern Street, Behind Taj Bridge, Centerburg, Texas, 4134"],
+    items: ["73 Richmond ST.W Suit No. 6, Financial District, Toronto, ON. Canada"],
   },
 ];
 
@@ -59,24 +59,23 @@ export default function Contact() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF9C45] mb-4">Hotline</h3>
                 <div className="space-y-2">
-                  <a href="tel:5551234567" className="block text-3xl font-bold hover:text-[#FF9C45] transition-colors">(555) 123-4567</a>
-                  <a href="tel:55512427834" className="block text-3xl font-bold hover:text-[#FF9C45] transition-colors text-muted-foreground">(555) 124-27834</a>
+                  <a href="tel:5551234567" className="block text-3xl font-bold hover:text-[#FF9C45] transition-colors">(437) 564-2790</a>
                 </div>
               </div>
 
               {/* Email */}
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF9C45] mb-4">Email</h3>
-                <a href="mailto:sales@roofingestimators.com" className="text-2xl font-bold uppercase hover:text-[#FF9C45] transition-colors">sales@roofingestimators.com</a>
+                <a href="mailto:info@paradiseroofers.com" className="text-2xl font-bold uppercase hover:text-[#FF9C45] transition-colors">info@paradiseroofers.com</a>
               </div>
 
               {/* Address */}
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF9C45] mb-4">Headquarters</h3>
                 <p className="text-xl font-medium leading-relaxed max-w-xs">
-                  254 Eastern Street,
-                  Behind Taj Bridge,
-                  Centerburg, Texas, 4134
+                  73 Richmond ST.W Suit No. 6,
+                  Financial District,
+                  Toronto, ON. Canada
                 </p>
               </div>
 

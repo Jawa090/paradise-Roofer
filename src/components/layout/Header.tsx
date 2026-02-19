@@ -3,8 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import logo from "@/assets/logo.png";
-
 const navigation = [
   { name: "HOME", href: "/" },
   { name: "ABOUT", href: "/about" },
@@ -40,7 +38,11 @@ export default function Header() {
       <nav className="container flex items-center justify-between py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Paradise Roofer" className="h-16 w-auto object-contain" />
+          <img 
+            src="https://framerusercontent.com/images/mt4YaqJEISV56hIFowhVDkDidw.png?width=469&height=469" 
+            alt="Paradise Roofer" 
+            className="h-24 w-24 object-contain"
+          />
         </Link>
 
 

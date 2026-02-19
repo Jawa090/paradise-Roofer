@@ -28,18 +28,42 @@ import CommercialRoofing from "./pages/services/CommercialRoofing";
 import RoofCoating from "./pages/services/RoofCoating";
 
 // Location Pages
-import Brampton from "./pages/locations/Brampton";
-import Mississauga from "./pages/locations/Mississauga";
-import Milton from "./pages/locations/Milton";
-import Oakville from "./pages/locations/Oakville";
-import Etobicoke from "./pages/locations/Etobicoke";
-import Scarborough from "./pages/locations/Scarborough";
-import Vaughan from "./pages/locations/Vaughan";
-import Markham from "./pages/locations/Markham";
-import RichmondHill from "./pages/locations/RichmondHill";
-import Aurora from "./pages/locations/Aurora";
-import Burlington from "./pages/locations/Burlington";
-import Ajax from "./pages/locations/Ajax";
+import BramptonSimple from "./pages/locations/BramptonSimple";
+import BramptonRoofing from "./pages/locations/BramptonRoofing";
+import BramptonRenovation from "./pages/locations/BramptonRenovation";
+import MississaugaSimple from "./pages/locations/MississaugaSimple";
+import MississaugaRoofing from "./pages/locations/MississaugaRoofing";
+import MississaugaRenovation from "./pages/locations/MississaugaRenovation";
+import MiltonSimple from "./pages/locations/MiltonSimple";
+import MiltonRoofing from "./pages/locations/MiltonRoofing";
+import MiltonRenovation from "./pages/locations/MiltonRenovation";
+import OakvilleSimple from "./pages/locations/OakvilleSimple";
+import OakvilleRoofing from "./pages/locations/OakvilleRoofing";
+import OakvilleRenovation from "./pages/locations/OakvilleRenovation";
+import EtobicokeSimple from "./pages/locations/EtobicokeSimple";
+import EtobicokeRoofing from "./pages/locations/EtobicokeRoofing";
+import EtobicokeRenovation from "./pages/locations/EtobicokeRenovation";
+import ScarboroughSimple from "./pages/locations/ScarboroughSimple";
+import ScarboroughRoofing from "./pages/locations/ScarboroughRoofing";
+import ScarboroughRenovation from "./pages/locations/ScarboroughRenovation";
+import VaughanSimple from "./pages/locations/VaughanSimple";
+import VaughanRoofing from "./pages/locations/VaughanRoofing";
+import VaughanRenovation from "./pages/locations/VaughanRenovation";
+import MarkhamSimple from "./pages/locations/MarkhamSimple";
+import MarkhamRoofing from "./pages/locations/MarkhamRoofing";
+import MarkhamRenovation from "./pages/locations/MarkhamRenovation";
+import RichmondHillSimple from "./pages/locations/RichmondHillSimple";
+import RichmondHillRoofing from "./pages/locations/RichmondHillRoofing";
+import RichmondHillRenovation from "./pages/locations/RichmondHillRenovation";
+import AuroraSimple from "./pages/locations/AuroraSimple";
+import AuroraRoofing from "./pages/locations/AuroraRoofing";
+import AuroraRenovation from "./pages/locations/AuroraRenovation";
+import BurlingtonSimple from "./pages/locations/BurlingtonSimple";
+import BurlingtonRoofing from "./pages/locations/BurlingtonRoofing";
+import BurlingtonRenovation from "./pages/locations/BurlingtonRenovation";
+import AjaxSimple from "./pages/locations/AjaxSimple";
+import AjaxRoofing from "./pages/locations/AjaxRoofing";
+import AjaxRenovation from "./pages/locations/AjaxRenovation";
 
 const queryClient = new QueryClient();
 
@@ -73,18 +97,51 @@ const App = () => (
           <Route path="/services/:slug" element={<Services />} />
 
           {/* Location Routes */}
-          <Route path="/locations/brampton" element={<Brampton />} />
-          <Route path="/locations/mississauga" element={<Mississauga />} />
-          <Route path="/locations/milton" element={<Milton />} />
-          <Route path="/locations/oakville" element={<Oakville />} />
-          <Route path="/locations/etobicoke" element={<Etobicoke />} />
-          <Route path="/locations/scarborough" element={<Scarborough />} />
-          <Route path="/locations/vaughan" element={<Vaughan />} />
-          <Route path="/locations/markham" element={<Markham />} />
-          <Route path="/locations/richmond-hill" element={<RichmondHill />} />
-          <Route path="/locations/aurora" element={<Aurora />} />
-          <Route path="/locations/burlington" element={<Burlington />} />
-          <Route path="/locations/ajax" element={<Ajax />} />
+          <Route path="/locations/brampton" element={<BramptonSimple />} />
+          <Route path="/locations/brampton/roofing" element={<BramptonRoofing />} />
+          <Route path="/locations/brampton/renovation" element={<BramptonRenovation />} />
+          <Route path="/locations/mississauga" element={<MississaugaSimple />} />
+          <Route path="/locations/mississauga/roofing" element={<MississaugaRoofing />} />
+          <Route path="/locations/mississauga/renovation" element={<MississaugaRenovation />} />
+          <Route path="/locations/milton" element={<MiltonSimple />} />
+          <Route path="/locations/milton/roofing" element={<MiltonRoofing />} />
+          <Route path="/locations/milton/renovation" element={<MiltonRenovation />} />
+          <Route path="/locations/oakville" element={<OakvilleSimple />} />
+          <Route path="/locations/oakville/roofing" element={<OakvilleRoofing />} />
+          <Route path="/locations/oakville/renovation" element={<OakvilleRenovation />} />
+          <Route path="/locations/etobicoke" element={<EtobicokeSimple />} />
+          <Route path="/locations/etobicoke/roofing" element={<EtobicokeRoofing />} />
+          <Route path="/locations/etobicoke/renovation" element={<EtobicokeRenovation />} />
+          <Route path="/locations/scarborough" element={<ScarboroughSimple />} />
+          <Route path="/locations/scarborough/roofing" element={<ScarboroughRoofing />} />
+          <Route path="/locations/scarborough/renovation" element={<ScarboroughRenovation />} />
+import VaughanSimple from "./pages/locations/VaughanSimple";
+import VaughanRoofing from "./pages/locations/VaughanRoofing";
+import VaughanRenovation from "./pages/locations/VaughanRenovation";
+import MarkhamSimple from "./pages/locations/MarkhamSimple";
+import MarkhamRoofing from "./pages/locations/MarkhamRoofing";
+import MarkhamRenovation from "./pages/locations/MarkhamRenovation";
+import RichmondHillSimple from "./pages/locations/RichmondHillSimple";
+import RichmondHillRoofing from "./pages/locations/RichmondHillRoofing";
+import RichmondHillRenovation from "./pages/locations/RichmondHillRenovation";
+          <Route path="/locations/vaughan" element={<VaughanSimple />} />
+          <Route path="/locations/vaughan/roofing" element={<VaughanRoofing />} />
+          <Route path="/locations/vaughan/renovation" element={<VaughanRenovation />} />
+          <Route path="/locations/markham" element={<MarkhamSimple />} />
+          <Route path="/locations/markham/roofing" element={<MarkhamRoofing />} />
+          <Route path="/locations/markham/renovation" element={<MarkhamRenovation />} />
+          <Route path="/locations/richmond-hill" element={<RichmondHillSimple />} />
+          <Route path="/locations/richmond-hill/roofing" element={<RichmondHillRoofing />} />
+          <Route path="/locations/richmond-hill/renovation" element={<RichmondHillRenovation />} />
+          <Route path="/locations/aurora" element={<AuroraSimple />} />
+          <Route path="/locations/aurora/roofing" element={<AuroraRoofing />} />
+          <Route path="/locations/aurora/renovation" element={<AuroraRenovation />} />
+          <Route path="/locations/burlington" element={<BurlingtonSimple />} />
+          <Route path="/locations/burlington/roofing" element={<BurlingtonRoofing />} />
+          <Route path="/locations/burlington/renovation" element={<BurlingtonRenovation />} />
+          <Route path="/locations/ajax" element={<AjaxSimple />} />
+          <Route path="/locations/ajax/roofing" element={<AjaxRoofing />} />
+          <Route path="/locations/ajax/renovation" element={<AjaxRenovation />} />
 
           <Route path="/contact" element={<Contact />} />
 
@@ -97,3 +154,5 @@ const App = () => (
 );
 
 export default App;
+
+

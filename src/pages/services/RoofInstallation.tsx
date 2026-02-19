@@ -202,55 +202,22 @@ export default function RoofInstallation() {
             {/* Residential Options */}
             <section className="py-20 bg-[#F9F9F9]">
                 <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Residential Roof Installation Options for GTA Toronto Homes</h2>
-                    <p className="mb-12 text-muted-foreground">Choosing the right roofing material depends on your home's architecture. Here's what works best across GTA neighborhoods:</p>
+                    <h2 className="text-3xl font-bold uppercase mb-8">Residential Roof Installation Options for GTA Toronto Homes</h2>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 gap-6 mt-8">
                         <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow">
-                            <Home className="h-8 w-8 text-[#FF9C45] mb-4" />
-                            <h3 className="font-bold text-xl mb-4">Asphalt Shingles</h3>
-                            <p className="text-xs font-bold uppercase text-muted-foreground mb-2">Perfect for: Single-family homes, semis, townhouses</p>
-                            <ul className="text-sm space-y-2 text-muted-foreground mb-4">
-                                <li>• Durability: 50 years American architectural shingles, 15-25 years 3-tab</li>
-                                <li>• Toronto Advantages: Impact-resistant for hail, algae-resistant for humid summers, thousands of color options</li>
-                                <li>• Best Brands: GAF Timberline HDZ</li>
-                            </ul>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow">
-                            <Shield className="h-8 w-8 text-[#FF9C45] mb-4" />
-                            <h3 className="font-bold text-xl mb-4">Metal Roofing</h3>
-                            <p className="text-xs font-bold uppercase text-muted-foreground mb-2">Modern homes, cottages</p>
-                            <ul className="text-sm space-y-2 text-muted-foreground mb-4">
-                                <li>• 50-70+ years durability</li>
-                                <li>• $800-$1,400/sq installed</li>
-                                <li>• Snow slides off easily</li>
-                            </ul>
-                            <p className="text-xs text-muted-foreground italic">Standing seam, 5V crimp</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow">
-                            <Building2 className="h-8 w-8 text-[#FF9C45] mb-4" />
-                            <h3 className="font-bold text-xl mb-4">Tile Roofing</h3>
-                            <p className="text-xs font-bold uppercase text-muted-foreground mb-2">Custom, Historic</p>
-                            <ul className="text-sm space-y-2 text-muted-foreground mb-4">
-                                <li>• 50-100 years durability</li>
-                                <li>• $900-$1,300/sq installed</li>
-                                <li>• Class A fire rating</li>
-                            </ul>
-                            <p className="text-xs text-muted-foreground italic">Concrete or Clay</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow">
-                            <Ruler className="h-8 w-8 text-[#FF9C45] mb-4" />
-                            <h3 className="font-bold text-xl mb-4">Flat Roofing</h3>
-                            <p className="text-xs font-bold uppercase text-muted-foreground mb-2">Low-slope, Commercial</p>
-                            <ul className="text-sm space-y-2 text-muted-foreground mb-4">
-                                <li>• 25-50 years durability</li>
-                                <li>• $600-$1,000/sq installed</li>
-                                <li>• White reflective TPO</li>
-                            </ul>
-                            <p className="text-xs text-muted-foreground italic">TPO, EPDM, Mod Bit</p>
+                            <div className="flex items-start gap-6">
+                                <Home className="h-8 w-8 text-[#FF9C45] shrink-0 mt-1" />
+                                <div className="flex-1">
+                                    <h3 className="font-bold text-xl mb-2">Asphalt Shingles</h3>
+                                    <p className="text-xs font-bold uppercase text-muted-foreground mb-3">Perfect for: Single-family homes, semis, townhouses</p>
+                                    <div className="space-y-2 text-sm text-muted-foreground">
+                                        <p>• Durability: 50 years American architectural shingles, 15-25 years 3-tab</p>
+                                        <p>• Toronto Advantages: Impact-resistant for hail, algae-resistant for humid summers, thousands of color options</p>
+                                        <p>• Best Brands: GAF Timberline HDZ</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -268,8 +235,7 @@ export default function RoofInstallation() {
                             {[
                                 "TPO Single-Ply Membranes: 20–30-year warranties, energy-efficient white finish",
                                 "EPDM Rubber Roofing: Ballasted or fully adhered, 30–50-years lifespan",
-                                "Modified Bitumen: Multi-layer torch-down systems for high-traffic roofs",
-                                "Metal Deck Recovery: Overlay existing metal without tear-off"
+                                "Modified Bitumen: Multi-layer torch-down systems for high-traffic roofs"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-center gap-2">
                                     <div className="h-2 w-2 rounded-full bg-[#FF9C45]" />
@@ -300,7 +266,7 @@ export default function RoofInstallation() {
                                 step: "02",
                                 title: "Custom Quote & Material Selection",
                                 time: "(Same Day)",
-                                desc: "No pushy sales. We present three options: Budget-friendly: 3-tab shingles, Best value: Architectural shingles, Premium: Luxury laminated shingles. Financing options, RRSP Home Efficiency grants, and insurance claim assistance available."
+                                desc: "No pushy sales. We present three options: Budget-friendly: 3-tab shingles, Best value: Architectural shingles, Premium: Luxury laminated shingles. Insurance claim assistance available."
                             },
                             {
                                 step: "03",
@@ -311,7 +277,7 @@ export default function RoofInstallation() {
                             {
                                 step: "04",
                                 title: "Final Walkthrough & Warranty Activation",
-                                time: "(Day 4)",
+                                time: "",
                                 desc: "Joint inspection confirming: No popped nails or loose shingles, Perfect ridge cap and flashing alignment, Gutter flow test and fascia alignment, Attic ventilation verification. Warranty package includes manufacturer lifetime limited warranty, our 20-year workmanship warranty, and seasonal maintenance checklist."
                             }
                         ].map((item, i) => (
@@ -434,13 +400,11 @@ export default function RoofInstallation() {
                     <h2 className="headline-lg text-2xl md:text-3xl mb-8 text-center">Frequently Asked Questions</h2>
                     <div className="space-y-6">
                         {[
-                            { q: "How much does roof installation cost in Toronto 2026?", a: "Average Toronto home (2,000 sq.ft.): $18,000-$32,000 installed. Factors include pitch, material choice, and accessibility." },
-                            { q: "Do you offer free roof inspections in Toronto?", a: "YES, Free drone inspections valued at $350 for all Toronto/GTA properties regardless of condition." },
-                            { q: "How long does professional roof installation take?", a: "Asphalt shingles: 1-2 days. Metal roofing: 2-4 days. Tile: 4-7 days. Weather dependent." },
+                            { q: "Do you offer free roof inspections in Toronto?", a: "YES, Free drone inspections valued at $200 for all Toronto/GTA properties regardless of condition." },
+                            { q: "How long does professional roof installation take?", a: "Asphalt shingles: 1-2 days." },
                             { q: "What Toronto building code requirements do you follow?", a: "Full compliance including ice barrier (36\" from eaves), high wind nailing (160km/h), proper flashing at all penetrations." },
                             { q: "Do you handle insurance storm damage claims?", a: "Complete claim assistance from drone documentation through contractor selection approval." },
-                            { q: "Can you repair interior water damage too?", a: "Yes, full interior renovations including drywall, ceilings, painting, insulation replacement." },
-                            { q: "Do you offer financing for Toronto homeowners?", a: "Yes, 0% interest financing up to 24 months. RRSP grants available for energy-efficient upgrades." }
+                            { q: "Can you repair interior water damage too?", a: "Yes, full interior renovations including drywall, ceilings, painting, insulation replacement." }
                         ].map((faq, i) => (
                             <div key={i} className="bg-white p-6 rounded-lg border border-border">
                                 <h4 className="font-bold text-base mb-2 flex items-start gap-2">

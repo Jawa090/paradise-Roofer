@@ -10,27 +10,27 @@ const ratings = [
 const testimonials = [
   {
     quote: "I thought I’d have buckets everywhere in our Toronto home. Instead, the team fixed our shingle roof leak fast and cleaned up perfectly. Roof and sanity saved!",
-    author: "Mark T.",
+    author: "",
     role: "Homeowner, Brampton, ON",
   },
   {
     quote: "Expected mess and delays for Shingle roof replacement. Got clean work, friendly Canadian crew, and my yard looking better. Roofing made it easy!",
-    author: "Jennifer L.",
+    author: "",
     role: "Homeowner, Mississauga, ON",
   },
   {
     quote: "The pro team showed up with top tools for emergency storm repair. I even sent drone photos after now I recommend them across GTA!",
-    author: "Robert K.",
+    author: "",
     role: "Homeowner, Milton, ON",
   },
   {
     quote: "Called three roofers—one ghosted, one overpriced. Paradise Roofers experts did the Shingle roof install fast, fair, and flawlessly.",
-    author: "Sarah M.",
+    author: "",
     role: "Business Owner, Scarborough ON",
   },
   {
     quote: "Free roof inspection caught skylight leaks early. Honest local pros saved us thousands on our Oakville home.",
-    author: "David S.",
+    author: "",
     role: "Homeowner, Oakville, ON",
   },
 ];
@@ -54,18 +54,6 @@ export default function ReviewsPreview() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center font-heading">
             Don't take our word for it — take theirs
           </h2>
-        </div>
-
-        {/* Ratings */}
-        <div className="flex flex-wrap justify-center gap-6 md:gap-12 mb-12">
-          {ratings.map((rating, i) => (
-            <div key={i} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold font-heading mb-1" style={{ color: 'rgb(33, 32, 27)' }}>
-                {rating.score}
-              </div>
-              <div className="text-sm text-muted-foreground">{rating.label}</div>
-            </div>
-          ))}
         </div>
       </div>
 

@@ -101,13 +101,13 @@ export default function Hero3D() {
           </Link>
 
           {/* Phone Button */}
-          <a href="tel:2125027604">
+          <a href="tel:437-564-2790">
             <button
               className="inline-flex items-center gap-3 px-6 py-4 rounded-full font-semibold uppercase text-sm tracking-wide transition-all hover:opacity-90 group"
               style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'rgb(255, 252, 252)' }}
             >
               <Phone className="h-5 w-5 fill-current" />
-              <span>(212) 502-7604</span>
+              <span>(437) 564-2790</span>
               <div className="flex items-center -space-x-2">
                 <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
                 <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />

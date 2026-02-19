@@ -133,7 +133,7 @@ export default function InteriorRenos() {
                                 desc: "Chipped laminate counters that scream 1980s. Kitchen feels closed off and dated."
                             },
                             {
-                                title: "Pink/Green 70s Bathrooms",
+                                title: "Pink/Green 80s Bathrooms",
                                 icon: Layers,
                                 desc: "Avocado fixtures needing full gut. Tiny vanities, no storage, poor lighting."
                             },
@@ -455,42 +455,6 @@ export default function InteriorRenos() {
                                 <p className="text-sm text-muted-foreground">{item.desc}</p>
                             </div>
                         ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Toronto Neighborhood Interior Coverage */}
-            <section className="py-20 bg-background">
-                <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-4">Toronto Neighborhood Interior Coverage</h2>
-                    <p className="text-muted-foreground mb-12 max-w-3xl">500+ full renovations – bungalows flipped, semis transformed, heritage preserved.</p>
-
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
-                                <MapPin className="h-6 w-6 text-[#FF9C45]" />
-                                Luxury Service Zones
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• North York</span>
-                                <span>• Leaside</span>
-                                <span>• Lawrence Park</span>
-                                <span>• Mimico</span>
-                                <span>• Clarkson</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
-                                <Home className="h-6 w-6 text-[#FF9C45]" />
-                                Premium GTA
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• Mississauga</span>
-                                <span>• Vaughan</span>
-                                <span>• Markham</span>
-                                <span>• Richmond Hill</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>

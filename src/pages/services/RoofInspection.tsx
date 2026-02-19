@@ -34,7 +34,7 @@ export default function RoofInspection() {
                                     $200 service is 100% FREE. No obligation. No hard sell. We do this across Toronto, Mississauga Brampton, Milton, Oakville and everywhere in the GTA. It takes 15 minutes and you get a digital report the same day with pictures showing exactly what we found.
                                 </p>
                                 <p className="text-lg font-bold text-[#FF9C45]">
-                                    Book your FREE drone check now, we only have room for 10 houses per week.
+                                    Book your FREE drone check now, we only have room for 10 houses per week
                                 </p>
                             </div>
 
@@ -83,7 +83,7 @@ export default function RoofInspection() {
                     <div className="mt-12 max-w-4xl">
                         <h3 className="text-2xl font-bold mb-4">Why Drone Checks Beat Climbing Ladders Every Time</h3>
                         <p className="text-lg text-muted-foreground mb-4">
-                            I've climbed more roofs than I can count, and ladders miss most problems. You can't safely walk steep pitches or see behind chimneys. No good photos means no proof for insurance. Plus Toronto rain cancels half the inspections anyway.
+                            I've climbed more roofs than I can count, and ladders miss most problems. You can't safely walk steep pitches or see behind vents. No good photos means no proof for repairs. Plus Toronto rain cancels half the inspections anyway.
                         </p>
                         <p className="text-lg text-muted-foreground">
                             Drones fix all that. We get crystal clear 4K pictures of every shingle and flashing. The heat camera finds wet spots under shingles 2 years before your ceiling stains. 36x zoom lets us check ridge caps from 50 feet away – completely safe. Small fixes now save big money later. That's why we do this free.
@@ -135,12 +135,12 @@ export default function RoofInspection() {
                                 ]
                             },
                             {
-                                title: "Most Generous Free Inspection",
+                                title: "Reports Delivered Same Day Always",
                                 icon: CheckCircle2,
                                 points: [
-                                    "Reports delivered same day always",
-                                    "No hidden fees",
-                                    "Complete GTA coverage"
+                                    "Digital PDF report with photos",
+                                    "Detailed findings and recommendations",
+                                    "Email delivery within 24 hours"
                                 ]
                             }
                         ].map((item, i) => (
@@ -194,7 +194,7 @@ export default function RoofInspection() {
                                 icon: Wind
                             },
                             { 
-                                title: "Bad Chimney Flashing", 
+                                title: "Bad Vents Flashing", 
                                 desc: "Fails years before water shows inside house.",
                                 icon: Home
                             },
@@ -239,7 +239,7 @@ export default function RoofInspection() {
                                 step: "01",
                                 title: "First 5 minutes",
                                 time: "Drone Flight",
-                                desc: "Drone flies front, back, valleys, chimneys – 4K video of everything."
+                                desc: "Drone flies front, back, valleys, vents – 4K video of everything."
                             },
                             {
                                 step: "02",
@@ -320,36 +320,9 @@ export default function RoofInspection() {
                 </div>
             </section>
 
-            {/* Coverage & FAQs */}
+            {/* FAQs */}
             <section className="py-20 bg-[#F9F9F9] border-t border-border">
                 <div className="container max-w-6xl space-y-20">
-
-                    {/* Coverage */}
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                Service Areas
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• Toronto (All Districts)</span>
-                                <span>• Mississauga & Brampton</span>
-                                <span>• Vaughan & Richmond Hill</span>
-                                <span>• Markham & Scarborough</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <Camera className="h-5 w-5 text-[#FF9C45]" />
-                                Drone Fleet
-                            </h3>
-                            <div className="grid grid-cols-1 gap-2 text-sm text-muted-foreground">
-                                <span>• DJI Mavic 3 Enterprise (Thermal)</span>
-                                <span>• DJI Mini 4 Pro (Tight Spaces)</span>
-                                <span>• Licensed Advanced Pilot Certificate</span>
-                            </div>
-                        </div>
-                    </div>
 
                     {/* FAQs */}
                     <div>
@@ -360,8 +333,7 @@ export default function RoofInspection() {
                                 { q: "How good are drones vs humans?", a: "95% better. Heat vision finds wet spots 2 years early. 4K zoom sees cracks we can't see walking roofs." },
                                 { q: "Nothing wrong? Do I still get the report?", a: "Yes, 100% free. Full picture set + \"your roof is good\" certificate good for a year." },
                                 { q: "Hard sell after?", a: "Nope. Pictures are yours forever. Call us back anytime for quotes." },
-                                { q: "How soon can you come?", a: "This week normally. Leaks get us same/next day." },
-                                { q: "Insurance likes drone pictures?", a: "Love them. Clear 4K proof beats vague notes every time." }
+                                { q: "How soon can you come?", a: "This week normally. Leaks get us same/next day." }
                             ].map((faq, i) => (
                                 <div key={i} className="bg-muted/30 p-6 rounded-lg border border-border">
                                     <h4 className="font-bold text-base mb-2 flex items-start gap-2">
