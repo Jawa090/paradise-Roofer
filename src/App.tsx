@@ -115,15 +115,6 @@ const App = () => (
           <Route path="/locations/scarborough" element={<ScarboroughSimple />} />
           <Route path="/locations/scarborough/roofing" element={<ScarboroughRoofing />} />
           <Route path="/locations/scarborough/renovation" element={<ScarboroughRenovation />} />
-import VaughanSimple from "./pages/locations/VaughanSimple";
-import VaughanRoofing from "./pages/locations/VaughanRoofing";
-import VaughanRenovation from "./pages/locations/VaughanRenovation";
-import MarkhamSimple from "./pages/locations/MarkhamSimple";
-import MarkhamRoofing from "./pages/locations/MarkhamRoofing";
-import MarkhamRenovation from "./pages/locations/MarkhamRenovation";
-import RichmondHillSimple from "./pages/locations/RichmondHillSimple";
-import RichmondHillRoofing from "./pages/locations/RichmondHillRoofing";
-import RichmondHillRenovation from "./pages/locations/RichmondHillRenovation";
           <Route path="/locations/vaughan" element={<VaughanSimple />} />
           <Route path="/locations/vaughan/roofing" element={<VaughanRoofing />} />
           <Route path="/locations/vaughan/renovation" element={<VaughanRenovation />} />
@@ -154,5 +145,3 @@ import RichmondHillRenovation from "./pages/locations/RichmondHillRenovation";
 );
 
 export default App;
-
-
