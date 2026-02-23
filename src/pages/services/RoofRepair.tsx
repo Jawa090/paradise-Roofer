@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Droplets, Wind, Snowflake, AlertTriangle, Home, Ruler, FileText, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofInspection from "@/assets/roof-inspection.jpg";
+import roofRepair from "@/assets/Home_page/RoofRepairServices.webp";
 import completedRoof from "@/assets/completed-roof.jpg";
 import metalRoof from "@/assets/metal-roof.jpg";
 import roofCoating from "@/assets/roof-coating.jpg";
@@ -59,7 +59,7 @@ export default function RoofRepair() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofInspection} alt="Roof Inspection" className="w-full h-full object-cover" />
+                            <img src={roofRepair} alt="Roof Inspection" className="w-full h-full object-cover object-[center_20%]" />
                         </div>
 
                         {/* Badges Bar */}

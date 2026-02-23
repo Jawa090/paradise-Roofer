@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Home, HardHat, Crown, CheckCircle2, Box } from "lucide-react";
 import { Link } from "react-router-dom";
-import completedRoof from "@/assets/completed-roof.jpg";
+import residentialRoofing from "@/assets/Home_page/ResidentialRoofingSolutions.webp";
 import roofCoating from "@/assets/roof-coating.jpg"; // Placeholder
 import metalRoof from "@/assets/metal-roof.jpg";
 
@@ -58,7 +58,7 @@ export default function ResidentialRoofing() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={completedRoof} alt="Luxury Residential Roof" className="w-full h-full object-cover" />
+                            <img src={residentialRoofing} alt="Luxury Residential Roof" className="w-full h-full object-cover object-[center_20%]" />
                         </div>
 
                         {/* Badges Bar */}
@@ -239,7 +239,7 @@ export default function ResidentialRoofing() {
                         {[
                             {
                                 title: "Scarborough Bungalow",
-                                img: completedRoof,
+                                img: residentialRoofing,
                                 problem: "20-year old 3-tab shingles meant for trash",
                                 result: "GAF Timberline HDZ in Pewter Grey. 15 Bundles."
                             },

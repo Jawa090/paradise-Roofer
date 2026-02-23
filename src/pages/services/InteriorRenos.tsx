@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Phone, ArrowRight, Shield, MapPin, PaintBucket, CheckCircle2, Home, Layers, Eye } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofInstallation from "@/assets/roof-installation.jpg";
+import interiorRenovation from "@/assets/Home_page/CompleteInteriorRenovationsinTorontoGTA.webp";
 
 export default function InteriorRenos() {
     return (
@@ -56,7 +56,7 @@ export default function InteriorRenos() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofInstallation} alt="Interior Renovation" className="w-full h-full object-cover" />
+                            <img src={interiorRenovation} alt="Interior Renovation" className="w-full h-full object-cover" />
                         </div>
 
                         {/* Badges Bar */}

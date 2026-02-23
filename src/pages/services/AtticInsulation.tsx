@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Phone, ArrowRight, MapPin, Thermometer, DollarSign, Home, CheckCircle2, AlertTriangle, Snowflake } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofCoating from "@/assets/roof-coating.jpg";
+import atticInsulation from "@/assets/Home_page/AtticInsulationTorontoGTA.webp";
 
 export default function AtticInsulation() {
     return (
@@ -56,7 +56,7 @@ export default function AtticInsulation() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofCoating} alt="Attic Insulation" className="w-full h-full object-cover" />
+                            <img src={atticInsulation} alt="Attic Insulation" className="w-full h-full object-cover" />
                         </div>
 
                         {/* Badges Bar */}

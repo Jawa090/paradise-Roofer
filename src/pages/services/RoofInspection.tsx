@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Phone, ArrowRight, Shield, MapPin, Eye, FileText, Camera, CheckCircle2, AlertTriangle, CloudRain, Wind, Home, Zap, Target, Users } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofInspection from "@/assets/roof-inspection.jpg";
+import roofInspection from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
 
 export default function RoofInspection() {
     return (
@@ -59,7 +59,7 @@ export default function RoofInspection() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofInspection} alt="Drone Roof Analysis" className="w-full h-full object-cover" />
+                            <img src={roofInspection} alt="Drone Roof Analysis" className="w-full h-full object-cover object-[center_20%]" />
                         </div>
 
                         {/* Badges Bar */}

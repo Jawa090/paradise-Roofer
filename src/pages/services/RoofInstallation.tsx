@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Building2, Home, Hammer, Ruler } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofInstallation from "@/assets/roof-installation.jpg";
+import roofInstallation from "@/assets/Home_page/ProfessionalRoofInstallationinTorontoTheGTA.webp";
 import completedRoof from "@/assets/completed-roof.jpg";
 import metalRoof from "@/assets/metal-roof.jpg";
 import roofInspection from "@/assets/roof-inspection.jpg";
@@ -60,7 +60,7 @@ export default function RoofInstallation() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofInstallation} alt="Roofers working" className="w-full h-full object-cover" />
+                            <img src={roofInstallation} alt="Roofers working" className="w-full h-full object-cover object-[center_80%]" />
                         </div>
 
                         {/* Badges Bar */}

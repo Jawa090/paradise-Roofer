@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Move } from "lucide-react";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
+import beforeImage from "@/assets/Home_page/before.webp";
+import afterImage from "@/assets/Home_page/after.webp";
 
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -56,7 +56,7 @@ export default function BeforeAfterSlider() {
     >
       {/* After Image (Base Layer) */}
       <img
-        src={project2}
+        src={afterImage}
         alt="After Design"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ opacity: 1 }}
@@ -71,7 +71,7 @@ export default function BeforeAfterSlider() {
         }}
       >
         <img
-          src={project1}
+          src={beforeImage}
           alt="Before Design"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 1 }}

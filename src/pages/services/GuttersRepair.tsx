@@ -4,7 +4,7 @@ import { Phone, ArrowRight, Shield, Award, MapPin, Ruler, CloudRain, Droplets, A
 import { Link } from "react-router-dom";
 import completedRoof from "@/assets/completed-roof.jpg";
 import roofCoating from "@/assets/roof-coating.jpg"; // Placeholder
-import roofingBanner from "@/assets/roofers-banner.jpg";
+import gutterRepair from "@/assets/Home_page/GutterRepairServices.webp";
 
 export default function GuttersRepair() {
     return (
@@ -58,7 +58,7 @@ export default function GuttersRepair() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofingBanner} alt="Seamless Gutter Installation" className="w-full h-full object-cover" />
+                            <img src={gutterRepair} alt="Seamless Gutter Installation" className="w-full h-full object-cover object-[center_20%]" />
                         </div>
 
                         {/* Badges Bar */}
@@ -427,7 +427,7 @@ export default function GuttersRepair() {
                             },
                             {
                                 title: "Commercial Plaza Emergency",
-                                img: roofingBanner,
+                                img: gutterRepair,
                                 problem: "18 downspouts crushed by fallen tree during storm",
                                 result: "Underground leader system + commercial-grade leaf guards + 24-hour completion. Zero business interruption, insurance covered 100%"
                             },

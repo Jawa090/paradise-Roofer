@@ -85,7 +85,7 @@ export default function BurlingtonSimple() {
                                     <span>Eavestrough, Soffit & Fascia Services</span>
                                 </li>
                             </ul>
-                            <Link to="/locations/Burlington/roofing">
+                            <Link to="/locations/burlington/roofing">
                                 <button className="bg-[#FF9C45] text-black px-6 py-3 font-bold uppercase tracking-wide hover:bg-[#ff8a22] transition-colors flex items-center gap-2">
                                     View Roofing Services <ArrowRight className="h-4 w-4" strokeWidth={3} />
                                 </button>
@@ -126,7 +126,7 @@ export default function BurlingtonSimple() {
                                     <span>Exterior Renovations & Siding</span>
                                 </li>
                             </ul>
-                            <Link to="/locations/Burlington/renovation">
+                            <Link to="/locations/burlington/renovation">
                                 <button className="bg-[#FF9C45] text-black px-6 py-3 font-bold uppercase tracking-wide hover:bg-[#ff8a22] transition-colors flex items-center gap-2">
                                     View Renovation Services <ArrowRight className="h-4 w-4" strokeWidth={3} />
                                 </button>

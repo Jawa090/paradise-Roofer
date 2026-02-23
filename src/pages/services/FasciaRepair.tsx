@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Phone, ArrowRight, Shield, Award, MapPin, Component, Home, Search, Hammer, CheckCircle2, AlertTriangle, Layers, Wrench, FileText, Zap, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
-import fasciaImage from "@/assets/roof-coating.jpg";
+import fasciaImage from "@/assets/Home_page/FasciaRepairReplacementinTorontoGTA.webp";
 
 export default function FasciaRepair() {
     return (

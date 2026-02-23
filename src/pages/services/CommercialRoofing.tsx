@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Check, Phone, ArrowRight, Shield, Award, Star, MapPin, Building2, Wind, DollarSign, PenTool, CheckCircle2, Factory, Warehouse, Timer } from "lucide-react";
 import { Link } from "react-router-dom";
-import roofInstallation from "@/assets/roof-installation.jpg";
+import commercialRoofing from "@/assets/Home_page/CommercialServicesCommercialFlatRoofingSystemsToronto.webp";
 import metalRoof from "@/assets/metal-roof.jpg";
 import roofingBanner from "@/assets/roofers-banner.jpg";
 
@@ -58,7 +58,7 @@ export default function CommercialRoofing() {
                 <div className="container max-w-6xl">
                     <div className="relative">
                         <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-sm">
-                            <img src={roofInstallation} alt="Commercial Flat Roof" className="w-full h-full object-cover" />
+                            <img src={commercialRoofing} alt="Commercial Flat Roof" className="w-full h-full object-cover" />
                         </div>
 
                         {/* Badges Bar */}
