@@ -35,13 +35,13 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
-      <nav className="container flex items-center justify-between py-3">
+      <nav className="container flex items-center justify-between py-0">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center -my-8">
           <img 
-            src="https://framerusercontent.com/images/mt4YaqJEISV56hIFowhVDkDidw.png?width=469&height=469" 
-            alt="Paradise Roofer" 
-            className="h-24 w-24 object-contain"
+            src="https://framerusercontent.com/images/mt4YaqJEISV56hIFowhVDkDidw.png?width=469&height=469"
+            alt="Paradise Roofer"
+            className="h-32 w-32 object-contain"
           />
         </Link>
 

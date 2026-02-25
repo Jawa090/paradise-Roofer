@@ -140,12 +140,12 @@ export default function RoofingTypesPreview() {
         </div>
 
         {/* Roofing Types Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-sm mx-auto md:max-w-none">
           {roofingTypes.map((type) => (
             <Link
               key={type.id}
               to={type.href}
-              className="group block overflow-visible"
+              className="group block overflow-visible w-full"
               style={{ backgroundColor: 'rgb(255, 252, 252)' }}
             >
               {/* Header Content */}

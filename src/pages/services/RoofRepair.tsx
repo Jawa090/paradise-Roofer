@@ -294,89 +294,13 @@ export default function RoofRepair() {
                 </div>
             </section>
 
-            {/* Success Stories */}
-            <section className="py-20 bg-[#F9F9F9]">
-                <div className="container max-w-6xl">
-                    <h2 className="text-3xl font-bold uppercase mb-12 text-center">Real Toronto Repair Success Stories</h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        {[
-                            {
-                                title: "Leaside Century Home Skylight",
-                                img: roofCoating,
-                                problem: "Leaking skylight caused 200 sq.ft. ceiling collapse",
-                                result: "Complete rebuild, copper flashing, 0 callbacks."
-                            },
-                            {
-                                title: "Scarborough Ice Dam Nightmare",
-                                img: roofingBanner,
-                                problem: "8\" ice dam, attic flooding, $15K damage",
-                                result: "Zero ice dams next winter, 28% hydro savings."
-                            },
-                            {
-                                title: "Etobicoke 120km/h Wind Storm",
-                                img: completedRoof,
-                                problem: "200+ shingles blown off after gust front",
-                                result: "Color-matched GAF replacement, insurance approved."
-                            },
-                            {
-                                title: "North York Fascia/Soffit Rot",
-                                img: metalRoof,
-                                problem: "Complete rot causing foundation washout",
-                                result: "Like-new exterior, proper drainage restored."
-                            }
-                        ].map((story, i) => (
-                            <div key={i} className="bg-white rounded-xl overflow-hidden shadow-sm border border-border flex flex-col md:flex-row h-full">
-                                <div className="md:w-1/3 h-48 md:h-auto bg-muted">
-                                    <img src={story.img} alt={story.title} className="w-full h-full object-cover" />
-                                </div>
-                                <div className="p-6 md:w-2/3 flex flex-col justify-center">
-                                    <h3 className="font-bold text-lg mb-2">{story.title}</h3>
-                                    <div className="space-y-1 text-sm">
-                                        <p><span className="font-bold text-red-600">Problem:</span> {story.problem}</p>
-                                        <p><span className="font-bold text-green-600">Result:</span> {story.result}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Coverage & FAQs */}
+            {/* FAQs */}
             <section className="py-20 bg-background border-t border-border">
                 <div className="container max-w-6xl space-y-20">
 
-                    {/* Coverage */}
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                Toronto Neighborhoods
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• North York (Bayview, Don Mills)</span>
-                                <span>• Scarborough (Agincourt, Woburn)</span>
-                                <span>• Etobicoke (Kingsway, Mimico)</span>
-                                <span>• East York (Leaside, Danforth)</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
-                                <MapPin className="h-5 w-5 text-[#FF9C45]" />
-                                GTA Cities
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-                                <span>• Mississauga (Erin Mills, Port Credit)</span>
-                                <span>• Vaughan (Woodbridge, Maple)</span>
-                                <span>• Markham (Unionville, Wismer)</span>
-                                <span>• Richmond Hill & Oakville 24/7</span>
-                            </div>
-                        </div>
-                    </div>
-
                     {/* FAQs */}
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">Frequently Asked Questions</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold uppercase mb-8">FAQs</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
                                 { q: "Do you offer free roof inspections in Toronto?", a: "YES, Free drone inspections valued at $200 for all Toronto/GTA properties regardless of condition." },

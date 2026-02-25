@@ -4,10 +4,18 @@ import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Hammer, Home, PaintBucket, ShieldCheck, Building2, Wind, Thermometer, Component, Ruler, Camera, ChevronsRight, Droplets } from "lucide-react";
-import roofInstallation from "@/assets/roof-installation.jpg";
-import roofInspection from "@/assets/roof-inspection.jpg";
-import roofCoating from "@/assets/roof-coating.jpg";
-import completedRoof from "@/assets/completed-roof.jpg";
+import roofInspectionImg from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
+import roofInstallationImg from "@/assets/Home_page/ProfessionalRoofInstallationinTorontoTheGTA.webp";
+import roofRepairImg from "@/assets/Home_page/RoofRepairServices.webp";
+import roofReplacementImg from "@/assets/Home_page/CompleteRoofReplacementinToront0GTA.webp";
+import fasciaRepairImg from "@/assets/Home_page/FasciaRepairReplacementinTorontoGTA.webp";
+import guttersRepairImg from "@/assets/Home_page/GutterRepairServices.webp";
+import soffitRepairImg from "@/assets/Home_page/Complete_Soffit_Repair__Replacement_in_Toronto__GTA.webp";
+import atticInsulationImg from "@/assets/Home_page/AtticInsulationTorontoGTA.webp";
+import interiorRenosImg from "@/assets/Home_page/CompleteInteriorRenovationsinTorontoGTA.webp";
+import residentialRoofingImg from "@/assets/Home_page/ResidentialRoofingSolutions.webp";
+import commercialRoofingImg from "@/assets/Home_page/CommercialServicesCommercialFlatRoofingSystemsToronto.webp";
+import roofCoatingImg from "@/assets/roof-coating.jpg";
 
 const services = [
   {
@@ -15,7 +23,7 @@ const services = [
     title: "Roof Inspections",
     subtitle: "Spot problems early, fix them fast, and keep your roof happy.",
     description: "Our maintenance and inspection service is like a checkup for your roof—preventing big issues with a little love, care, and expert eyes.",
-    image: roofInspection,
+    image: roofInspectionImg,
     icon: Calendar,
     tags: ["Drone Roof Inspections", "Detailed Digital Reports", "Leak Detection", "Storm Damage Assessment", "Preventative Maintenance"],
     link: "/services/inspection"
@@ -25,7 +33,7 @@ const services = [
     title: "Roof Installation",
     subtitle: "Quality roof installation built to protect your home",
     description: "Protect your home with expert roof installation services across Toronto & the GTA—built to handle Canada's harsh weather year-round.",
-    image: roofInstallation,
+    image: roofInstallationImg,
     icon: Home,
     tags: ["New roof for custom homes", "Full roof replacement", "Asphalt shingle installation", "Metal roof installation", "Tile and slate roof installation", "Designer roof upgrades"],
     link: "/services/installation"
@@ -35,7 +43,7 @@ const services = [
     title: "Roof Repair",
     subtitle: "Fast, reliable fixes for leaks and storm damage",
     description: "Expert leak detection and repair services. We stop water intrusion immediately and repair wind-damaged shingles to prevent costly interior damage.",
-    image: roofInspection, // Using inspection image as placeholder for repair if separate one not available
+    image: roofRepairImg,
     icon: Hammer,
     tags: ["Emergency Leak Repair", "Shingle Replacement", "Flashing Repair", "Wind Damage Repair", "chimney Flashing"],
     link: "/services/repair"
@@ -45,7 +53,7 @@ const services = [
     title: "Roof Replacement",
     subtitle: "Complete roof system upgrades with lifetime warranties",
     description: "When it's time for a new roof, trust our Master Elite installers. We provide full tear-offs, premium underlayment, and expert installation of top-tier shingle systems.",
-    image: completedRoof,
+    image: roofReplacementImg,
     icon: ShieldCheck,
     tags: ["Full Tear-Offs", "Premium Asphalt Shingles", "Metal Roofing Options", "Warranty Protection", "Ventilation Upgrades"],
     link: "/services/replacement"
@@ -55,7 +63,7 @@ const services = [
     title: "Fascia Repair & Replacement",
     subtitle: "Protect your roof edges and improve curb appeal",
     description: "Rotten fascia can lead to gutter failure and water damage. We replace damaged boards with durable wood, aluminum, or PVC options to seal your roofline.",
-    image: roofCoating, // Placeholder
+    image: fasciaRepairImg,
     icon: Component,
     tags: ["Wood Rot Repair", "Aluminum Fascia Installation", "Visual Cladding", "Pest Protection", "Custom Color Matching"],
     link: "/services/fascia"
@@ -65,7 +73,7 @@ const services = [
     title: "Gutters Repair & Replacement",
     subtitle: "Seamless water management systems",
     description: "Keep your foundation safe with high-capacity 5\" and 6\" seamless gutter systems. We repair leaks, realign slopes, and install full replacements with leaf guards.",
-    image: completedRoof, // Placeholder
+    image: guttersRepairImg,
     icon: Ruler,
     tags: ["Seamless Gutters", "Gutter Cleaning", "Leaf Guards", "Downspout Extensions", "Re-sloping & Realignment"],
     link: "/services/gutters"
@@ -75,7 +83,7 @@ const services = [
     title: "Soffit Repair & Replacement",
     subtitle: "Essential intake ventilation for attic health",
     description: "Proper soffit ventilation is key to preventing ice dams and mold. We install vented aluminum and vinyl soffit panels to ensure maximum airflow.",
-    image: roofInspection, // Placeholder
+    image: soffitRepairImg,
     icon: Wind,
     tags: ["Vented Soffits", "Vinyl & Aluminum Options", "Intake Ventilation", "Attic Airflow Optimization", "Pest Exclusion"],
     link: "/services/soffit"
@@ -85,7 +93,7 @@ const services = [
     title: "Attic Insulation",
     subtitle: "Boost energy efficiency and prevent ice dams",
     description: "Upgrade your attic with R50 blown-in insulation. Proper insulation keeps your home warm in winter, cool in summer, and stops heat loss that causes ice dams.",
-    image: roofCoating, // Placeholder
+    image: atticInsulationImg,
     icon: Thermometer,
     tags: ["Blown-in Cellulose", "Fiberglass Batts", "R-Value Upgrades", "Air Sealing", "Energy Rebate Eligible"],
     link: "/services/attic-insulation"
@@ -95,7 +103,7 @@ const services = [
     title: "All Interior Renos",
     subtitle: "Complete restoration for water-damaged interiors",
     description: "We don't just fix the roof; we fix the damage below it. From drywall repair and painting to insulation replacement, we restore your home's interior to perfection.",
-    image: roofInstallation, // Placeholder
+    image: interiorRenosImg,
     icon: PaintBucket,
     tags: ["Drywall Repair", "Ceiling Painting", "Water Damage Restoration", "Insulation & Vapor Barrier", "Mold Remediation"],
     link: "/services/interior-renos"
@@ -105,7 +113,7 @@ const services = [
     title: "Residential Roofing",
     subtitle: "Complete roofing services for homeowners",
     description: "From asphalt shingles to cedar shakes, we offer a full range of residential roofing materials and services tailored to Toronto homes.",
-    image: completedRoof,
+    image: residentialRoofingImg,
     icon: Home,
     tags: ["Shingle Roofs", "Cedar Shake", "Slate & Tile", "Flat Roofs for Homes", "Skylight Installation"],
     link: "/services/residential"
@@ -115,7 +123,7 @@ const services = [
     title: "Commercial Roofing",
     subtitle: "Scalable solutions for businesses and industrial properties",
     description: "Specialized flat roofing systems including TPO, EPDM, and Tar & Gravel. We deliver durable, code-compliant roofing for warehouses, plazas, and office buildings.",
-    image: roofInstallation,
+    image: commercialRoofingImg,
     icon: Building2,
     tags: ["Flat Roof Systems", "TPO & EPDM", "Tar & Gravel", "Commercial Roof Coatings", "Maintenance Plans"],
     link: "/services/commercial"
@@ -125,7 +133,7 @@ const services = [
     title: "Roof Coating & Restoration",
     subtitle: "Extend your roof life by 20 years for half the cost",
     description: "Don't replace—restore. Our silicone roof coating systems waterproof your existing commercial roof, stop leaks instantly, and reflect UV rays to lower cooling costs.",
-    image: roofCoating,
+    image: roofCoatingImg,
     icon: Droplets,
     tags: ["Silicone Coatings", "Leak Stop", "Cool Roof Technology", "Cost Savings", "20-Year Warranty"],
     link: "/services/coating"
