@@ -21,12 +21,13 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { name: "X", href: "#" },
-  { name: "LinkedIn", href: "#" },
-  { name: "Facebook", href: "#" },
-  { name: "Instagram", href: "#" },
-  { name: "YouTube", href: "#" },
-  { name: "Pinterest", href: "#" },
+  { name: "X", href: "https://x.com/ParadisseRoofer" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/paradise-roofers/" },
+  { name: "Facebook", href: "https://www.facebook.com/paradiseroofers/" },
+  { name: "Instagram", href: "https://www.instagram.com/paradiseroofers" },
+  { name: "YouTube", href: "https://www.youtube.com/channel/UCVsy0Tk92uISc-LSw_z-8UQ" },
+  { name: "Pinterest", href: "https://www.pinterest.com/paradiseroofers/" },
+  { name: "TikTok", href: "https://www.tiktok.com/@paradiseroofers" },
 ];
 
 export default function Contact() {

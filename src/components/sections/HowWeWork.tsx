@@ -40,7 +40,7 @@ export default function HowWeWork() {
     <section className="py-20 bg-background">
       <div className="container">
         {/* Section Header */}
-        <div className="flex flex-col items-start mb-12">
+        <div className="flex flex-col items-center mb-12">
           {/* Label with orange lines */}
           <div className="flex items-center gap-4 mb-6">
             <div className="h-[2px] w-12" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>

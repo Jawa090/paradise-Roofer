@@ -38,12 +38,13 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "LINKEDIN", icon: Linkedin, href: "#" },
-  { name: "FACEBOOK", icon: Facebook, href: "#" },
-  { name: "TWITTER/X", icon: null, customIcon: "𝕏", href: "#" },
-  { name: "YOUTUBE", icon: Youtube, href: "#" },
-  { name: "INSTAGRAM", icon: Instagram, href: "#" },
-  { name: "PINTEREST", icon: null, customIcon: "P", href: "#" },
+  { name: "LINKEDIN", icon: Linkedin, href: "https://www.linkedin.com/company/paradise-roofers/" },
+  { name: "FACEBOOK", icon: Facebook, href: "https://www.facebook.com/paradiseroofers/" },
+  { name: "TWITTER/X", icon: null, customIcon: "𝕏", href: "https://x.com/ParadisseRoofer" },
+  { name: "YOUTUBE", icon: Youtube, href: "https://www.youtube.com/channel/UCVsy0Tk92uISc-LSw_z-8UQ" },
+  { name: "INSTAGRAM", icon: Instagram, href: "https://www.instagram.com/paradiseroofers" },
+  { name: "PINTEREST", icon: null, customIcon: "P", href: "https://www.pinterest.com/paradiseroofers/" },
+  { name: "TIKTOK", icon: null, customIcon: "TT", href: "https://www.tiktok.com/@paradiseroofers" },
 ];
 
 export default function Footer() {
@@ -171,21 +172,22 @@ export default function Footer() {
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Phone
               </h5>
-              <p className="text-sm text-background/70">(217) 555-0134</p>
-              <p className="text-sm text-primary">(217) 444-0154</p>
+              <p className="text-sm text-background/70">(437) 564-2790</p>
             </div>
             <div>
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Email
               </h5>
-              <p className="text-sm text-primary">sales@paradiseroofers.com</p>
+              <p className="text-sm text-primary">info@paradiseroofers.com</p>
             </div>
             <div>
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Address
               </h5>
               <p className="text-sm text-background/70">
-                123 Main Street, Suite 200, Austin, TX 78701
+                73 Richmond ST.W Suit No. 6,
+                Financial District,
+                Toronto, ON. Canada
               </p>
             </div>
             <div>
