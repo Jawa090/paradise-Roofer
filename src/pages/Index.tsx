@@ -11,14 +11,14 @@ import BeforeAfterSlider from "@/components/sections/BeforeAfterSlider";
 import ReviewsPreview from "@/components/sections/ReviewsPreview";
 import RoofingTypesPreview from "@/components/sections/RoofingTypesPreview";
 import roofInspectionImg from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
-import roofRepairImg from "@/assets/Home_page/RoofRepairServices.webp";
-import roofInstallationImg from "@/assets/Home_page/Roof_Installation.png";
+import roofRepairImg from "@/assets/Home_page/Roof_repair_image.png";
+import roofInstallationImg from "@/assets/Home_page/Roof_INstallation.png";
 import roofReplacementImg from "@/assets/Home_page/CompleteRoofReplacementinToront0GTA.webp";
 import roofCoatingImg from "@/assets/roof-coating.jpg";
 import gutterRepairImg from "@/assets/Home_page/Gutter_Repair.webp";
 import residentialRoofingImg from "@/assets/Home_page/ResidentialRoofingSolutions.webp";
 import commercialRoofingImg from "@/assets/Home_page/CommercialServicesCommercialFlatRoofingSystemsToronto.webp";
-import soffitRepairImg from "@/assets/Home_page/Soffit_Repair.png";
+import soffitRepairImg from "@/assets/Home_page/CompleteSoffitRepairReplacementinTorontoGTA.webp";
 import fasciaRepairImg from "@/assets/Home_page/FasciaRepairReplacementinTorontoGTA.webp";
 import atticInsulationImg from "@/assets/Home_page/AtticInsulationTorontoGTA.webp";
 import interiorRenosImg from "@/assets/Home_page/CompleteInteriorRenovationsinTorontoGTA.webp";
@@ -59,12 +59,6 @@ const services = [
     description: "Tailored for homeowners.",
     image: residentialRoofingImg,
     href: "/services/residential",
-  },
-  {
-    title: "Commercial Roofing",
-    description: "Large-scale installs and repairs for businesses.",
-    image: commercialRoofingImg,
-    href: "/services/commercial",
   },
   {
     title: "Soffit Repair & Replacement",
