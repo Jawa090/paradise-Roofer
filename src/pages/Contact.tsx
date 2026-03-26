@@ -6,7 +6,7 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Hotlines",
-    items: ["+1 (437) 564-2790"],
+    items: ["437-564-2790"],
   },
   {
     icon: Mail,
@@ -60,14 +60,14 @@ export default function Contact() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF9C45] mb-4">Hotline</h3>
                 <div className="space-y-2">
-                  <a href="tel:5551234567" className="block text-3xl font-bold hover:text-[#FF9C45] transition-colors">(437) 564-2790</a>
+                  <a href="tel:+14375642790" className="block text-3xl font-bold hover:text-[#FF9C45] transition-colors">437-564-2790</a>
                 </div>
               </div>
 
               {/* Email */}
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#FF9C45] mb-4">Email</h3>
-                <a href="mailto:sales@Paradiseroofers.com" className="text-2xl font-bold uppercase hover:text-[#FF9C45] transition-colors">sales@Paradiseroofers.com</a>
+                <a href="mailto:sales@paradiseroofers.com" className="text-2xl font-bold uppercase hover:text-[#FF9C45] transition-colors">sales@paradiseroofers.com</a>
               </div>
 
               {/* Address */}

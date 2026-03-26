@@ -136,7 +136,7 @@ export default function ContactForm({
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="jane@framer.com"
+                  placeholder="sales@paradiseroofers.com"
                   required
                   className="bg-gray-100/50 border-0 focus-visible:ring-1 focus-visible:ring-[#FF9C45] h-12 rounded-none placeholder:text-muted-foreground/50"
                 />

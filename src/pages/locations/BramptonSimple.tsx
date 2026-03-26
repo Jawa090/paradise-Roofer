@@ -38,9 +38,9 @@ export default function BramptonSimple() {
                                         Get Free Estimate <ArrowRight className="h-4 w-4" strokeWidth={3} />
                                     </button>
                                 </Link>
-                                <a href="tel:+16475550123" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
+                                <a href="tel:+14375642790" className="w-full sm:w-auto bg-muted text-foreground px-8 py-4 font-bold uppercase tracking-wide hover:bg-muted/80 transition-colors flex items-center justify-center gap-4">
                                     <Phone className="h-5 w-5 text-[#FF9C45]" />
-                                    +1 437-564-2790 <ArrowRight className="h-4 w-4" />
+                                    437-564-2790 <ArrowRight className="h-4 w-4" />
                                 </a>
                             </div>
                         </div>

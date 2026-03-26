@@ -107,7 +107,7 @@ export default function Hero3D() {
               style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'rgb(255, 252, 252)' }}
             >
               <Phone className="h-5 w-5 fill-current" />
-              <span>(437) 564-2790</span>
+              <span>437-564-2790</span>
               <div className="flex items-center -space-x-2">
                 <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={3} />
                 <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 delay-75" strokeWidth={3} />

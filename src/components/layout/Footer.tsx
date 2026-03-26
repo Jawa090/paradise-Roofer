@@ -138,7 +138,7 @@ export default function Footer() {
               <div className="flex gap-2 mb-6">
                 <Input
                   type="email"
-                  placeholder="jane@framer.com"
+                  placeholder="sales@paradiseroofers.com"
                   className="bg-background/10 border-background/20 text-background placeholder:text-background/50 h-12"
                 />
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 uppercase font-bold text-xs px-6 h-12 shrink-0">
@@ -172,13 +172,13 @@ export default function Footer() {
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Phone
               </h5>
-              <p className="text-sm text-background/70">(437) 564-2790</p>
+              <p className="text-sm text-background/70">437-564-2790</p>
             </div>
             <div>
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
                 Email
               </h5>
-              <p className="text-sm text-primary">[sales@Paradiseroofers.com]</p>
+              <p className="text-sm text-primary">[sales@paradiseroofers.com]</p>
             </div>
             <div>
               <h5 className="font-heading font-bold text-xs uppercase tracking-wider text-primary mb-2">
