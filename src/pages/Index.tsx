@@ -13,7 +13,7 @@ import RoofingTypesPreview from "@/components/sections/RoofingTypesPreview";
 import roofInspectionImg from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
 import roofRepairImg from "@/assets/Home_page/Roof_repair_image.png";
 import roofInstallationImg from "@/assets/Home_page/Roof_INstallation2.png";
-import roofReplacementImg from "@/assets/Home_page/Roof_Replacement_New.png";
+import roofReplacementImg from "@/assets/Home_page/CompleteRoofReplacementinToront0GTA.webp";
 import roofCoatingImg from "@/assets/roof-coating.jpg";
 import gutterRepairImg from "@/assets/Home_page/Gutter_Repair.webp";
 import residentialRoofingImg from "@/assets/Home_page/ResidentialRoofingSolutions.webp";
