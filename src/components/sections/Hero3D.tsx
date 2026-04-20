@@ -126,30 +126,19 @@ export default function Hero3D() {
     </div>
 
     {/* Section 3: Hero Image Wrapper */}
-    <div className="relative w-full overflow-visible" style={{
-      aspectRatio: "4.46097",
+    <div className="relative w-full" style={{
       backgroundColor: "#141414"
     }}>
-      <div
-        className="absolute overflow-hidden transition-transform duration-200 ease-out"
+      <img
+        src={heroImage}
+        alt="Professional roofers installing shingles"
+        className="w-full h-auto object-contain"
         style={{
-          inset: "-100px 50px -160px 50px",
-          transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg) scale(1.05)`,
-          transformStyle: "preserve-3d",
-          transformOrigin: "center center"
+          display: "block",
+          maxWidth: "100%",
+          height: "auto"
         }}
-      >
-        <img
-          src={heroImage}
-          alt="Professional roofers installing shingles"
-          className="w-full h-full object-cover"
-          style={{
-            willChange: "transform",
-            transform: `translateY(${scrollTransform.translateY}px) scale(${scrollTransform.scale})`,
-            transition: "transform 0.1s ease-out"
-          }}
-        />
-      </div>
+      />
     </div>
   </section>;
 }

@@ -81,9 +81,10 @@ function TiltCard({ image, title }: TiltCardProps) {
           backgroundColor: "transparent",
           backgroundImage: `url(${image})`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           display: "block",
+          borderRadius: "8px"
         }}
         aria-label={title}
       />
@@ -100,13 +101,17 @@ function TiltCard({ image, title }: TiltCardProps) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          padding: "20px",
+          padding: "16px",
           color: "white",
+          borderRadius: "8px"
         }}
       >
         <div className="text-center">
-          <h4 className="font-bold text-lg mb-2">{title}</h4>
-          <p className="text-sm">Click to see front</p>
+          <h4 className="font-bold text-base sm:text-lg mb-2">{title}</h4>
+          <p className="text-xs sm:text-sm opacity-90">Click to see front</p>
+          <div className="mt-2 text-xs opacity-75">
+            Premium Quality Material
+          </div>
         </div>
       </div>
     </div>
@@ -160,7 +165,7 @@ export default function RoofingTypesPreview() {
 
               {/* Image Container with 3D Tilt */}
               <div 
-                className="relative h-48 mx-4"
+                className="relative h-24 sm:h-28 md:h-32 lg:h-36 mx-4 mb-4"
                 style={{ 
                   backgroundColor: 'rgb(245, 245, 245)',
                   overflow: 'visible'
@@ -172,7 +177,7 @@ export default function RoofingTypesPreview() {
                     transform: 'translateY(-50%)',
                     transformOrigin: '50% 50% 0px',
                     willChange: 'transform',
-                    height: '200%',
+                    height: '100%',
                     top: '50%'
                   }}
                 >

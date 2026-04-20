@@ -28,16 +28,39 @@ export default function WhyChooseUs() {
     <section className="py-20 bg-muted">
       <div className="container">
         <div className="max-w-3xl mx-auto bg-background p-8 md:p-12">
-          <div className="text-center mb-10">
+          
+          <div className="flex flex-col items-center mb-12">
+            {/* Label with orange lines */}
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+              <p className="text-sm font-semibold uppercase tracking-wider">Why Choose Paradise Roofers?
+              </p>
+              <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+            </div>
+            {/* Centered H2 */}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
+              Choose Paradise Roofers for their high-end,
+              <br />
+              weather resilient materials and customer  
+              <br />
+              first approach that prioritize transparent 
+              <br />
+              pricing spotless job sites.
+            </h2>
+          </div>
+          {/* <div className="text-center mb-10">
+            
             <span className="section-label mb-4 inline-block">Why Choose Paradise Roofers?</span>
             <h2 className="headline-lg text-1xl md:text-2xl lg:text-3xl font-bold">
               Choose Paradise Roofers for their high-end,
               <br />
-              weather resilient materials and customer first approach
+              weather resilient materials and customer first 
               <br />
-              that prioritize transparent pricing spotless job sites.
+              approach that prioritize transparent pricing 
+              <br />
+              spotless job sites.
             </h2>
-          </div>
+          </div> */}
 
           <div className="grid md:grid-cols-2 gap-6">
             {reasons.map((reason, i) => (

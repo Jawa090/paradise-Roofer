@@ -10,6 +10,7 @@ import HowWeWork from "@/components/sections/HowWeWork";
 import BeforeAfterSlider from "@/components/sections/BeforeAfterSlider";
 import ReviewsPreview from "@/components/sections/ReviewsPreview";
 import RoofingTypesPreview from "@/components/sections/RoofingTypesPreview";
+import PartnerCards from "@/components/sections/PartnerCards";
 import roofInspectionImg from "@/assets/Home_page/FREERoofDroneInspectionTorontoGTAHomeowners.webp";
 import roofRepairImg from "@/assets/Home_page/Roof_repair_image.png";
 import roofInstallationImg from "@/assets/Home_page/Roof_INstallation2.png";
@@ -295,14 +296,22 @@ export default function Index() {
       {/* FAQ Section */}
       <section className="py-20 bg-background">
         <div className="container max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="section-label mb-4 inline-block">🔨 FAQs 🔨</span>
-            <h2 className="headline-lg text-3xl md:text-4xl">
+          <div className="flex flex-col items-center mb-12">
+            {/* Label with orange lines */}
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+              <p className="text-sm font-semibold uppercase tracking-wider">FAQs
+              </p>
+              <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
+            </div>
+            {/* Centered H2 */}
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
               Let's Climb Through Your
               <br />
-              Questions, One By One.
+              Questions, One By One.  
             </h2>
           </div>
+        
 
           <div className="space-y-0">
             {faqs.map((faq, i) => (
@@ -334,6 +343,9 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* Partner Cards Section */}
+      <PartnerCards />
 
       {/* Contact Form Section */}
       <ContactForm />

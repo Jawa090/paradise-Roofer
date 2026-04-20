@@ -1,11 +1,27 @@
 import { useState, useRef, useEffect } from "react";
-import { Move } from "lucide-react";
-import beforeImage from "@/assets/Home_page/before.webp";
-import afterImage from "@/assets/Home_page/after.webp";
+import { Move, ChevronLeft, ChevronRight } from "lucide-react";
+import beforeImage1 from "@/assets/Home_page/before2.webp";
+import afterImage1 from "@/assets/Home_page/after2.webp";
+import beforeImage2 from "@/assets/Home_page/before3.png";
+import afterImage2 from "@/assets/Home_page/after3.png";
+
+const imagesSets = [
+  {
+    before: beforeImage2,
+    after: afterImage2,
+    title: "Roof Restoration Project"
+  },
+  {
+    before: beforeImage1,
+    after: afterImage1,
+    title: "Roof Replacement Project"
+  }
+];
 
 export default function BeforeAfterSlider() {
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
+  const [currentImageSet, setCurrentImageSet] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleMove = (clientX: number) => {
@@ -21,6 +37,14 @@ export default function BeforeAfterSlider() {
   const handleMouseDown = () => setIsDragging(true);
   
   const handleMouseUp = () => setIsDragging(false);
+
+  const nextImageSet = () => {
+    setCurrentImageSet((prev) => (prev + 1) % imagesSets.length);
+  };
+
+  const prevImageSet = () => {
+    setCurrentImageSet((prev) => (prev - 1 + imagesSets.length) % imagesSets.length);
+  };
 
   useEffect(() => {
     const handleMouseMoveEvent = (e: MouseEvent) => {
@@ -48,6 +72,8 @@ export default function BeforeAfterSlider() {
     };
   }, [isDragging]);
 
+  const currentImages = imagesSets[currentImageSet];
+
   return (
     <div
       ref={containerRef}
@@ -56,7 +82,7 @@ export default function BeforeAfterSlider() {
     >
       {/* After Image (Base Layer) */}
       <img
-        src={afterImage}
+        src={currentImages.after}
         alt="After Design"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ opacity: 1 }}
@@ -71,13 +97,31 @@ export default function BeforeAfterSlider() {
         }}
       >
         <img
-          src={beforeImage}
+          src={currentImages.before}
           alt="Before Design"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 1 }}
           draggable={false}
         />
       </div>
+
+      {/* Navigation Arrows */}
+      {imagesSets.length > 1 && (
+        <>
+          <button
+            onClick={prevImageSet}
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors z-30"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={nextImageSet}
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors z-30"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </>
+      )}
 
       {/* Slider Line */}
       <div
@@ -104,8 +148,28 @@ export default function BeforeAfterSlider() {
 
       {/* Counter Badge */}
       <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-3 py-1 rounded-md text-gray-800 text-[10px] font-bold uppercase tracking-widest pointer-events-none">
-        1 / 1
+        {currentImageSet + 1} / {imagesSets.length}
       </div>
+
+      {/* Project Title */}
+      <div className="absolute bottom-6 right-6 bg-black/50 backdrop-blur-md px-3 py-1 rounded-md text-white text-[10px] font-bold uppercase tracking-widest pointer-events-none">
+        {currentImages.title}
+      </div>
+
+      {/* Dots Indicator */}
+      {imagesSets.length > 1 && (
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+          {imagesSets.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageSet(index)}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                index === currentImageSet ? 'bg-[#FF9C45]' : 'bg-white/50'
+              }`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
