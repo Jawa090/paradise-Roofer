@@ -4,6 +4,7 @@ import { useState } from "react";
 import Layout from "@/components/layout/Layout";
 import ContactForm from "@/components/sections/ContactForm";
 import Hero3D from "@/components/sections/Hero3D";
+import StatsCounter from "@/components/sections/StatsCounter";
 import SplitRevealSection from "@/components/sections/SplitRevealSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import HowWeWork from "@/components/sections/HowWeWork";
@@ -140,6 +141,9 @@ export default function Index() {
       />
       {/* Hero Section with 3D Mouse-Tracking Effect */}
       <Hero3D />
+
+      {/* Stats Counter Section */}
+      <StatsCounter />
 
       {/* Services Section */}
       <section className="py-20 bg-background" data-framer-name="Section - Services">

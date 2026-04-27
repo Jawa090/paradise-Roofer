@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className="min-h-screen flex flex-col">
       <TopHeader />
       <Header />
-      <main className="flex-1" style={{ paddingTop: '90px' }}>{children}</main>
+      <main className="flex-1" style={{ paddingTop: '100px' }}>{children}</main>
       <Footer />
     </div>
   );
