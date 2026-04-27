@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
-import { Linkedin, Facebook, Youtube, Instagram } from "lucide-react";
+import { Link as RouterLink } from "react-router-dom";
+import { Link, ExternalLink } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaPinterest, FaTiktok } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import workersSilhouette from "@/assets/workers-silhouette.png";
@@ -38,13 +39,13 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: "LINKEDIN", icon: Linkedin, href: "https://www.linkedin.com/company/paradise-roofers/" },
-  { name: "FACEBOOK", icon: Facebook, href: "https://www.facebook.com/paradiseroofers/" },
-  { name: "TWITTER/X", icon: null, customIcon: "𝕏", href: "https://x.com/ParadisseRoofer" },
-  { name: "YOUTUBE", icon: Youtube, href: "https://www.youtube.com/channel/UCVsy0Tk92uISc-LSw_z-8UQ" },
-  { name: "INSTAGRAM", icon: Instagram, href: "https://www.instagram.com/paradiseroofers" },
-  { name: "PINTEREST", icon: null, customIcon: "P", href: "https://www.pinterest.com/paradiseroofers/" },
-  { name: "TIKTOK", icon: null, customIcon: "TT", href: "https://www.tiktok.com/@paradiseroofers" },
+  { name: "LINKEDIN", icon: FaLinkedin, href: "https://www.linkedin.com/company/paradise-roofers/" },
+  { name: "FACEBOOK", icon: FaFacebook, href: "https://www.facebook.com/paradiseroofers/" },
+  { name: "TWITTER/X", icon: FaTwitter, href: "https://x.com/ParadisseRoofer" },
+  { name: "YOUTUBE", icon: FaYoutube, href: "https://www.youtube.com/channel/UCVsy0Tk92uISc-LSw_z-8UQ" },
+  { name: "INSTAGRAM", icon: FaInstagram, href: "https://www.instagram.com/paradiseroofers" },
+  { name: "PINTEREST", icon: FaPinterest, href: "https://www.pinterest.com/paradiseroofers/" },
+  { name: "TIKTOK", icon: FaTiktok, href: "https://www.tiktok.com/@paradiseroofers" },
 ];
 
 export default function Footer() {
@@ -73,12 +74,12 @@ export default function Footer() {
               <ul className="space-y-2">
                 {footerLinks.pages.map((link) => (
                   <li key={link.name}>
-                    <Link
+                    <RouterLink
                       to={link.href}
                       className="text-sm text-background/70 hover:text-background transition-colors"
                     >
                       {link.name}
-                    </Link>
+                    </RouterLink>
                   </li>
                 ))}
               </ul>
@@ -92,12 +93,12 @@ export default function Footer() {
               <ul className="space-y-2">
                 {footerLinks.services.map((link) => (
                   <li key={link.name}>
-                    <Link
+                    <RouterLink
                       to={link.href}
                       className="text-sm text-background/70 hover:text-background transition-colors"
                     >
                       {link.name}
-                    </Link>
+                    </RouterLink>
                   </li>
                 ))}
               </ul>
@@ -111,21 +112,21 @@ export default function Footer() {
               <ul className="space-y-2">
                 {footerLinks.locations.slice(0, 4).map((link) => (
                   <li key={link.name}>
-                    <Link
+                    <RouterLink
                       to={link.href}
                       className="text-sm text-background/70 hover:text-background transition-colors"
                     >
                       {link.name}
-                    </Link>
+                    </RouterLink>
                   </li>
                 ))}
                 <li>
-                  <Link
+                  <RouterLink
                     to="/locations"
                     className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
                   >
                     See More →
-                  </Link>
+                  </RouterLink>
                 </li>
               </ul>
             </div>
@@ -154,11 +155,7 @@ export default function Footer() {
                     href={social.href}
                     className="flex items-center justify-center gap-2 px-4 py-3 bg-background/10 hover:bg-background/20 transition-colors text-xs font-medium"
                   >
-                    {social.icon ? (
-                      <social.icon className="h-4 w-4" />
-                    ) : (
-                      <span className="text-sm font-bold">{social.customIcon}</span>
-                    )}
+                    <social.icon className="h-4 w-4" />
                     <span>{social.name}</span>
                   </a>
                 ))}
@@ -213,12 +210,12 @@ export default function Footer() {
           <div className="container py-4">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/60">
               <div className="flex gap-6 uppercase font-bold tracking-widest text-[10px]">
-                <Link to="/privacy" className="hover:text-primary transition-colors">
+                <RouterLink to="/privacy" className="hover:text-primary transition-colors">
                   Privacy Policy
-                </Link>
-                <Link to="/terms" className="hover:text-primary transition-colors">
+                </RouterLink>
+                <RouterLink to="/terms" className="hover:text-primary transition-colors">
                   Terms of Service
-                </Link>
+                </RouterLink>
               </div>
               <p>© {new Date().getFullYear()} Paradise Roofers. All rights reserved.</p>
             </div>

@@ -15,7 +15,7 @@ const partners = [
     description: "Professional construction cost estimation services providing accurate project budgeting and comprehensive takeoff solutions for all building trades."
   },
   {
-    name: "Contractor List",
+    name: "ContractorsList",
     url: "https://staging.contractorslist.com/",
     logo: "/footerlogos/contractorL.png",
     description: "Comprehensive contractor directory platform connecting property owners with verified, licensed contractors across various construction specialties."
@@ -45,77 +45,11 @@ const partners = [
     description: "Multi-industry corporation offering diverse business solutions and strategic consulting services across various sectors."
   },
   {
-    name: "Construction Estimating Texas",
-    url: "https://constructionestimatingtexas.com",
-    logo: "/footerlogos/Taxes.png",
-    description: "Professional construction cost estimation services for residential and commercial projects throughout Texas."
-  },
-  {
-    name: "Construction Estimating New York",
-    url: "https://constructionestimatingnewyork.com",
-    logo: "/footerlogos/newyork.png",
-    description: "Accurate construction estimating and project planning services for New York's building and development industry."
-  },
-  {
-    name: "Construction Estimating California",
-    url: "https://constructionestimatingcalifornia.com",
-    logo: "/footerlogos/california.png",
-    description: "Comprehensive construction cost analysis and estimation services for California's diverse construction market."
-  },
-  {
-    name: "Estimating Florida",
-    url: "https://estimatingflorida.com",
-    logo: "/footerlogos/florida.png",
-    description: "Specialized construction estimating services tailored for Florida's unique building requirements and regulations."
-  },
-  {
-    name: "Lumber Takeoff",
-    url: "https://lumberstakeoff.us",
-    logo: "/footerlogos/lumber.png",
-    description: "Precise lumber quantity calculations and material takeoff services for construction and woodworking projects."
-  },
-  {
-    name: "Drywall Estimating",
-    url: "https://drywallestimating.us",
-    logo: "/footerlogos/drywall.png",
-    description: "Expert drywall material estimation and cost analysis services for interior construction projects."
-  },
-  {
-    name: "Plumbing Takeoff",
-    url: "https://www.plumbingtakeoff.com",
-    logo: "/footerlogos/plumbing.png",
-    description: "Professional plumbing system design and material takeoff services for residential and commercial buildings."
-  },
-  {
-    name: "Electrical Estimates",
-    url: "https://electricalestimates.us",
-    logo: "/footerlogos/electrical.png",
-    description: "Comprehensive electrical system estimation and cost analysis for construction and renovation projects."
-  },
-  {
     name: "MEP Estimate",
     url: "https://mepestimate.us",
     logo: "/footerlogos/mep.png",
     description: "Mechanical, Electrical, and Plumbing estimation services providing integrated building systems cost analysis."
   },
-  {
-    name: "USA Construction Takeoff",
-    url: "https://usaconstructiontakeoff.com",
-    logo: "/footerlogos/usa.png",
-    description: "Nationwide construction takeoff and estimation services covering all major building trades and specialties."
-  },
-  {
-    name: "Phoenix Estimating",
-    url: "https://phoenixestimating.com/",
-    logo: "/footerlogos/pheonix.png",
-    description: "Professional construction estimating services specializing in Arizona's commercial and residential markets."
-  },
-  {
-    name: "Roofing Estimators",
-    url: "https://roofingestimators.us/",
-    logo: "/footerlogos/roofing.png",
-    description: "Specialized roofing cost estimation and material takeoff services for all types of roofing systems and repairs."
-  }
 ];
 
 export default function PartnerCards() {
@@ -126,14 +60,14 @@ export default function PartnerCards() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
-            <p className="text-sm font-semibold uppercase tracking-wider">Our Trusted Partners</p>
+            <p className="text-sm font-semibold uppercase tracking-wider">Our Group of Companies</p>
             <div className="h-[2px] w-12 bg-primary" style={{ backgroundColor: 'rgb(255, 131, 59)' }}></div>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4">
-            Industry Leading Partners
+            Industry Leading Companies
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We collaborate with top-tier companies across various industries to deliver exceptional services and innovative solutions to our clients.
+            A network of specialized companies delivering excellence in construction, estimating, technology, and more. Click on any company below to explore their services and offerings.
           </p>
         </div>
 

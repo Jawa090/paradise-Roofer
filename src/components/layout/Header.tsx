@@ -34,7 +34,7 @@ export default function Header() {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border">
+    <header className="fixed left-0 right-0 z-50 bg-background border-b border-border" style={{ top: '40px' }}>
       <nav className="container flex items-center justify-between py-0">
         {/* Logo */}
         <Link to="/" className="flex items-center -my-8">
